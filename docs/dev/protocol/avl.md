@@ -4,18 +4,20 @@ tags:
   - Data Structures
   - Ergo
 owner: docs
-last_reviewed: 2026-07-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo_avltree_rust
     branch: main
     paths:
-      - README.MD
+      - README.md
+      - src
   - repo: K-Singh/Plasma-Toolkit
     branch: master
     paths:
       - README.md
 source_of_truth:
   - https://github.com/ergoplatform/ergo_avltree_rust
+  - https://github.com/ergoplatform/ergo_avltree_rust/pull/24
   - https://github.com/K-Singh/Plasma-Toolkit
   - https://github.com/K-Singh/Plasma-Toolkit/releases/tag/v1.1.0
 ---
@@ -33,6 +35,8 @@ Ergo utilizes AVL trees to bolster the security and efficiency of a variety of a
 Developers can effortlessly integrate AVL trees into their Ergo applications with the help of the [GetBlok Plasma](plasma.md) library, which is built on the [Ergo Appkit](appkit.md). This library streamlines the integration process by offering an abstraction layer that aids in incorporating AVL trees (also referred to as Plasma) into [off-chain code](off-chain-overview.md). It provides developers with a convenient method to utilize AVL trees as a [Layer-2 scaling solution](layer2.md) in [smart contracts](ergoscript.md), off-chain code, and distributed systems that manage the Plasma infrastructure.
 
 Lower-level and experimental references include [ergo_avltree_rust](https://github.com/ergoplatform/ergo_avltree_rust), the Rust implementation of Ergo's AVL+ tree, and [Plasma Toolkit](https://github.com/K-Singh/Plasma-Toolkit), an Ergo AppKit-based library for interacting with AVL trees as an L2-style data structure. [Plasma Toolkit v1.1.0](https://github.com/K-Singh/Plasma-Toolkit/releases/tag/v1.1.0) updates to AppKit 6.0.0 and Scala 2.12.20, adds `InsertOrUpdate` and `PlasmaMap.empty`, and fixes deep-copy proof generation. Its SBT coordinate is `"io.github.k-singh" %% "plasma-toolkit" % "1.1.0"`.
+
+The Rust implementation's merged [adversarial-proof fix](https://github.com/ergoplatform/ergo_avltree_rust/pull/24) makes malformed rotation proofs return verification errors instead of triggering prover-only invariant panics. It also replaces recursive label calculation on deep proof spines with an explicit stack, preventing small crafted proofs from exhausting the verifier thread's stack. These changes are on `main`; check upstream before depending on a packaged release.
 
 ## Efficiency and Proof Size of AVL Trees
 

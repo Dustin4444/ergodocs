@@ -6,7 +6,7 @@ tags:
   - dApp
   - dApp-InDev
 owner: docs
-last_reviewed: 2026-07-27
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo-jde
     branch: main
@@ -22,6 +22,7 @@ source_repos:
     branch: master
     paths:
       - contracts/bank/intervention.es
+      - paper-jft/dexy.tex
       - src/test/scala/dexy/bank/InterventionSpec.scala
 source_of_truth:
   - https://github.com/ergoplatform/ergo-jde/tree/main/kiosk/src/test/scala/kiosk/dexy
@@ -30,6 +31,7 @@ source_of_truth:
   - https://github.com/arkadianet/citadel/releases/tag/v0.2.4-alpha
   - https://github.com/arkadianet/citadel
   - https://github.com/kushti/dexy-stable/pull/7
+  - https://github.com/kushti/dexy-stable/pull/11
   - https://github.com/DefiLlama/peggedassets-server/pull/700
   - https://github.com/DefiLlama/DefiLlama-Adapters/pull/17015
 ---
@@ -40,7 +42,7 @@ source_of_truth:
 
 Dexy is an innovative stablecoin design that leverages seigniorage and oracle price feeds to maintain a peg. It is currently under development.
 
-Read the [draft whitepaper](../assets/pdf/dexy.pdf) for more details.
+Read the [introductory draft](../assets/pdf/dexy.pdf) or the newer upstream manuscript, [*Dexy: A Simple Stablecoin Design Based on an Algorithmic Central Bank*](https://github.com/kushti/dexy-stable/blob/master/paper-jft/dexy.pdf), for more detail.
 
 ## Recent updates
 
@@ -52,6 +54,7 @@ Read the [draft whitepaper](../assets/pdf/dexy.pdf) for more details.
 - [Citadel](https://github.com/arkadianet/citadel/releases) shipped several alpha releases. [`v0.2.4-alpha`](https://github.com/arkadianet/citadel/releases/tag/v0.2.4-alpha) added a SigUSD smart router, token-to-token direct swaps, LP deposits and redeems, Dexy LP holdings fixes, and oracle-vs-DEX divergence indicators.
 - Citadel is a local-first desktop client that connects directly to an Ergo node and uses Nautilus for signing. Its current alpha supports Dexy alongside other Ergo DeFi protocols; it requires the node's `extraIndex = true` setting and can submit transactions involving real ERG, so review its warnings and source before use.
 - [kushti/dexy-stable#7](https://github.com/kushti/dexy-stable/pull/7) proposed UIP-001 intervention balancing: calculating interventions from LP reserves, reducing each intervention from 1% to 0.5% of LP reserves, and increasing frequency from 360 to 180 blocks. The PR was closed unmerged when checked, so treat it as a reviewed proposal rather than active protocol behavior.
+- [kushti/dexy-stable#11](https://github.com/kushti/dexy-stable/pull/11) merged a revised JFT-format manuscript and its reviewer revisions in a dedicated `paper-jft` source/PDF tree. This updates the research paper, not the deployed contract state.
 - Caveat: explorers that assume one mint output can misreport emission when a mint spans multiple output boxes.
 
 ## DexyGold

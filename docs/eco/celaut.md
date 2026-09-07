@@ -8,13 +8,15 @@ tags:
   - Artificial Economic Intelligence  
   - Service Virtualization  
 owner: docs
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-07
 source_repos:
   - repo: celaut-project/nodo
     branch: stable
     release_watch: true
     paths:
       - README.md
+      - docs/PRICING.md
+      - docs/USAGE.md
   - repo: celaut-project/paradigm
     branch: master
     paths:
@@ -27,6 +29,10 @@ source_of_truth:
   - https://github.com/celaut-project/nodo
   - https://github.com/celaut-project/nodo/releases/tag/v2
   - https://github.com/celaut-project/nodo/releases/tag/guest-kernel-v2
+  - https://github.com/celaut-project/nodo/pull/239
+  - https://github.com/celaut-project/nodo/pull/241
+  - https://github.com/celaut-project/nodo/pull/243
+  - https://github.com/celaut-project/nodo/pull/266
   - https://github.com/celaut-project/paradigm
   - https://github.com/celaut-project/skills
   - https://celaut-project.github.io/skills/?env=dev
@@ -48,6 +54,9 @@ Celaut is a decentralized, peer-to-peer runtime for deploying and coordinating *
 - `May 8`: Nodo `v1` shipped a Windows 11 WSL installer. The README now marks local execution and packaging as beta on Linux and Windows, local networking and trustless networking as alpha, and macOS as unsupported.
 - `Jul 17`: Nodo `v2` refreshed the Windows 11 WSL release assets. Follow-up source fixes added `iproute2`, systemd startup, and `nodo.service` to the release root filesystem; confirm the current release assets before reinstalling an older WSL image.
 - `Aug 14`: Nodo published `guest-kernel-v2`, a pinned guest kernel plus BusyBox userspace for its Cloud Hypervisor microVM path. Install scripts select it through `GUEST_KERNEL_VERSION`; treat this component release separately from the Nodo `v2` application release.
+- `Aug 8` to `Aug 14`: Nodo exposed peer payment contracts in its CLI/TUI, replaced UUID-style peer identities with signed public-key identities, and then switched those signatures to Ergo-compatible Schnorr proofs over Blake2b256. These changes break compatibility with older peers and remain pre-production.
+- `Aug 11` to `Aug 18`: the old gas model was replaced by per-resource CPU, memory, disk, and network prices. Nodo accounts internally in integer monetary units (MU), while each payment contract declares the MU conversion rate; Ergo is currently the only implemented settlement system. Follow-up fixes aligned quotes with allocated resources and converted balances correctly between peers with different rates.
+- `Aug 17`: operator views gained separate peer/client pages, payment and reputation-event histories, counterparties for recorded transactions, and a switch for automatic peer-deposit refills.
 
 ---
 
@@ -83,7 +92,7 @@ With Celaut:
 
 - Trading bots run as portable services with on-chain reputation.
 - Users select them based on past performance and trustworthiness.
-- Payments and gas usage are settled on Ergo automatically.
+- Resource use is accounted for by the node and payments are settled through Ergo contracts.
 - Developers cannot modify deployed bots post-factum, ensuring integrity.
 
 This creates a transparent ecosystem where bot performance and trust are the sole indicators of value.
@@ -95,7 +104,7 @@ This creates a transparent ecosystem where bot performance and trust are the sol
 ### Nodes ([Nodo Implementation](https://github.com/celaut-project/nodo))
 
 - Execute services in containerized sandboxes
-- Handle communication, scheduling, and gas metering
+- Handle communication, scheduling, and per-resource metering
 - Publish metadata such as compute cost, architecture support, and uptime
 - Install on Linux with the `stable` branch install script, or use the Windows installer from the current `v2` release.
 
@@ -117,17 +126,18 @@ The experimental [Celaut Skills registry](https://celaut-project.github.io/skill
 - **Payments**
   - Handled via Ergo smart contracts
   - Pay-per-use or subscription models
-  - Payments correlate to gas usage and may involve dynamic bidding
+  - Payment contracts advertise how their settlement unit converts to the node's internal MU accounting unit
 
 ---
 
-## Gas Metering and Incentives
+## Resource Pricing and Incentives
 
-- Nodes advertise their price-per-gas and capacity
-- Clients buy gas via Ergo transactions; deposit tokens are not Ergo tokens but UUIDs used to identify the payment request inside the node
-- Gas is consumed during execution; each node has its own internal gas currency to quantify resource use, which is not a chain token
-- Nodes pay Ergo in exchange for gas for each of their peers, allowing them to delegate the execution of services to others if beneficial
-- Load balancing is guided by gas efficiency, uptime, and reputation
+- Nodes advertise separate CPU, memory, disk, network, build, tunnel, and resource-modification prices.
+- Prices, balances, and charges use integer MU internally. MU has no intrinsic value; each payment contract declares its own `mu_per_unit` conversion rate.
+- Ergo is currently the only implemented settlement system and defaults to one MU per nanoERG, but operators can change that rate. Clients and peers must read the advertised contract rate rather than assume a fixed peg.
+- Deposit tokens are UUID identifiers for payment requests, not Ergo tokens.
+- Nodes can pay peers for delegated execution; cross-peer balances are converted through the matching payment-contract rates.
+- Load balancing is guided by resource price, capacity, uptime, and reputation.
 - Each node has its own balance, service delegation, and pricing policies
 
 ---
@@ -159,7 +169,7 @@ The system is described in detail in the [Reputation System](reputation-system.m
 
 1. A user needs a specific automated task, such as running a DeFi strategy.
 2. They select a service with strong [Reputation System](reputation-system.md) proofs.
-3. The task is deployed to a Celaut node, which consumes gas.  (take into account that the correct way to operate is that every user has it's own celaut node, because he can trust on it more than the others. Nodes can be close to external execution requests).
+3. The task is deployed to a Celaut node, which meters the resources it consumes. Users normally operate their own trusted node and may disable incoming execution requests.
 4. If optimal, the node delegates execution to a lower-cost peer.
 5. The user receives results and optionally updates their trust evaluation.
 
@@ -173,7 +183,7 @@ Celaut is an orchestration layer that runs **on top of** blockchains like Ergo. 
 |-------------------------|-------------------------------------|-------------------------------------|
 | Service Execution       | ❌                                  | ✅                                   |
 | Node Management         | ❌                                  | ✅                                   |
-| Gas Metering & Tracking | ✅ (via smart contracts)             | ✅ (within nodes)                    |
+| Resource metering       | ❌                                  | ✅ (within nodes)                    |
 | Payments & Licensing    | ✅ (settled on Ergo)                 | ❌                                   |
 | Reputation System       | ✅ (reputation tokens and contracts) | ✅ (used in service orchestration)   |
 | Service Metadata        | ✅ (optional, for transparency)      | ✅ (mandatory for operations)        |

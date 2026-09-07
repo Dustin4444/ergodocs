@@ -1,14 +1,21 @@
 ---
 owner: docs
-last_reviewed: 2026-06-08
+last_reviewed: 2026-09-07
 source_repos:
   - repo: arkadianet/ergo-vanitygen-rust
     branch: main
     paths:
       - README.md
+  - repo: arkadianet/Argus
+    branch: main
+    release_watch: true
+    paths:
+      - app/pubspec.yaml
 source_of_truth:
   - https://github.com/epmw/epmw
   - https://github.com/arkadianet/ergo-vanitygen-rust
+  - https://github.com/arkadianet/Argus
+  - https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.43
   - https://github.com/ergoplatform/ergo-wallet-app/pull/212
   - https://github.com/ergoplatform/ergo-wallet-app/releases/tag/v2.4.2313
   - https://github.com/nautls/nautilus-wallet/releases/tag/v1.3.3
@@ -27,6 +34,7 @@ Use this page to choose a wallet and learn basic wallet safety.
 | Desktop wallet | [Minotaur](minotaur.md) | Desktop-focused wallet option. |
 | Desktop wallet with optional full node | [Satergo](satergo.md) | Useful if you want a desktop wallet with node-oriented options. |
 | Mobile wallet | [Ergo Mobile Wallet](https://ergoplatform.org/en/ergo-wallet-app/) | Good fit for mobile holding and payments. |
+| Experimental Android wallet | [Argus](https://github.com/arkadianet/Argus/releases) | Debug-signed, unaudited alpha for testing only; do not use production funds. |
 | Hardware wallet | [Ledger](ledger.md) | Better for higher-value custody and hardware signing. |
 | Experimental DIY hardware | [EPMW](https://github.com/epmw/epmw) | Developer hardware-wallet project; not a normal end-user wallet path. |
 | Offline storage | [Cold Wallet Guide](cold-wallet.md) | Use for long-term holding and reduced online exposure. |
@@ -43,6 +51,7 @@ For broader comparison, see [Wallets Overview](wallets.md).
 - A May 2026 dev-wallet update identified chained mobile transactions as a mempool-awareness issue. [Draft PR #212](https://github.com/ergoplatform/ergo-wallet-app/pull/212) explored a local metadata-only pending-transaction WAL for hot wallet, cold wallet, and ErgoPay flows; treat it as development work unless release notes say it shipped.
 - [Nautilus `v1.3.3`](https://github.com/nautls/nautilus-wallet/releases/tag/v1.3.3) adds Crux and HOF token metadata, updates token-rate fetching, adds Javanese and Malaysian translations, and bumps dependencies.
 - [Satergo `v1.9.4`](https://github.com/Satergo/Satergo/releases/tag/v1.9.4) fixes node launching and improves send-option address labels.
+- [Argus `v1.0.0-alpha.43`](https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.43) is an experimental Android wallet with wallet creation/import, watch-only addresses, ErgoPay, an EIP-12 dApp browser, UTXO tools, token-fee support, swaps and liquidity, several Ergo DeFi integrations, Rosen transfers, stealth addresses, and ZeroJoin mixing. The release is debug-signed, unaudited, not device-tested, and explicitly not for production funds.
 
 ## Quick Decision
 
