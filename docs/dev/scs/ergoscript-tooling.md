@@ -3,7 +3,7 @@ tags:
   - ErgoScript
   - Tooling
 owner: docs
-last_reviewed: 2026-06-08
+last_reviewed: 2026-09-07
 source_repos:
   - repo: Emurgo/Emurgo-Research
     branch: master
@@ -21,11 +21,16 @@ source_repos:
     branch: main
     paths:
       - README.md
+  - repo: arkadianet/ergo-forge
+    branch: main
+    paths:
+      - README.md
 source_of_truth:
   - https://github.com/Emurgo/Emurgo-Research/tree/master/smart-contracts/High%20Level%20Design%20Patterns%20In%20Extended%20UTXO%20Systems.md
   - https://github.com/ScorexFoundation/sigmastate-interpreter/tree/develop/docs/LangSpec.md
   - https://github.com/paideiadao/paideia-contracts/tree/main/paideia_contracts/contracts/plasma_staking/ErgoScript/latest/plasmaStaking.es
   - https://github.com/Lithos-Protocol/ErgoScript-IntelliJ
+  - https://github.com/arkadianet/ergo-forge
 ---
 
 # ErgoScript Tooling
@@ -45,6 +50,7 @@ The ErgoScript ecosystem offers a wide range of tools and resources to help deve
 - There is also [Scastie](https://scastie.scala-lang.org/greenhat/T2jSEv11QcWpXX1XrcHUdw/31)
 - [Kiosk](kiosk.md) lets anyone play with ErgoScript using a basic web-based UI
 - [ergoscript-compiler](https://github.com/ergoplatform/ergoscript-compiler)
+- [ergo-forge](https://github.com/arkadianet/ergo-forge) is an experimental build, inspect, audit, and test playground backed by the independent Rust node's compiler and interpreter.
 
 ### Editor Support
 

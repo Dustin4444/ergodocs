@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-05-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/sigma-rust
     branch: develop
@@ -14,6 +14,8 @@ source_repos:
       - shared/src/main/scala/scorex/crypto/authds/merkle/MerkleTree.scala
       - shared/src/main/scala/scorex/crypto/authds/merkle/serialization/BatchMerkleProofSerializer.scala
 source_of_truth:
+  - https://github.com/ergoplatform/scrypto/commit/987e7c7fd5531dcab9241be91d4f6e3ca717b56d
+  - https://github.com/ergoplatform/scrypto/commit/08ef4efc86add19f2d07ec8454ed42393b8d5183
   - https://github.com/ergoplatform/sigma-rust/tree/develop/ergo-merkle-tree/src/batchmerkleproof.rs
   - https://github.com/ergoplatform/sigma-rust/tree/develop/ergo-merkle-tree/src/merkletree.rs
   - https://github.com/ergoplatform/scrypto/tree/master/shared/src/main/scala/scorex/crypto/authds/merkle/BatchMerkleProof.scala
@@ -169,6 +171,8 @@ println(s"Merkle Root: ${hf.encode(tree.rootHash)}")
 
 In Scrypto, you can generate a batch Merkle proof by specifying the indices of the leaves you want to prove.
 
+Prefer `proofByIndices` when the tree may contain duplicate leaf hashes. `proofByElementHash` selects the first matching position, while index-based proof generation identifies the intended occurrence explicitly.
+
 ```scala
 import scorex.crypto.authds.merkle.{BatchMerkleProof, Leaf}
 
@@ -190,6 +194,8 @@ println(s"Batch Merkle Proof is valid: $isValid")
 #### Step 5: Serialization and Deserialization
 
 To serialize and deserialize the proof, Scrypto provides dedicated classes and methods, ensuring the proof can be efficiently stored or transmitted.
+
+Treat proof bytes as canonical input: current `scrypto` rejects trailing bytes, negative indices, invalid side markers, and malformed collection lengths during deserialization.
 
 ```scala
 import scorex.crypto.authds.merkle.serialization.BatchMerkleProofSerializer

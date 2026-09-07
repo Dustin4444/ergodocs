@@ -5,7 +5,7 @@ tags:
   - Infrastructure
   - Experimental
 owner: docs
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-07
 source_repos:
   - repo: mwaddip/ergo-node-rust
     branch: master
@@ -75,7 +75,8 @@ source_of_truth:
   - https://github.com/mwaddip/santa-vixen
   - https://github.com/mwaddip/santa-donner
   - https://github.com/arkadianet/ergo
-  - https://github.com/arkadianet/ergo/releases/tag/v0.5.3
+  - https://github.com/arkadianet/ergo/releases/tag/v0.7.0
+  - https://github.com/arkadianet/ergo/releases/tag/v0.6.0
 ---
 
 # Ergo Rust Node
@@ -113,7 +114,7 @@ Recent release highlights:
 - [v0.3.1](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.3.1) unblocked mainnet sync stalls around a voting-epoch boundary and a sigma-rust v6 parse-time type check. [v0.3.0](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.3.0) reduced observed peak RSS during mainnet sync from about `14.95 GB` to about `9.5 GB`.
 - [v0.1.0](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.1.0) was the first public release after early P2P, sync, NiPoPoW, and mining-endpoint work. Treat these early releases as historical implementation milestones, not stable-node recommendations.
 
-The independent [arkadianet/ergo v0.5.3](https://github.com/arkadianet/ergo/releases/tag/v0.5.3) release added configurable mining extension fields and digest-mode ADProofs scheduling, while fixing storage-rent candidate construction, mempool orphan eviction, sync bounds, snapshot authentication, and several consensus-parity issues. It remains pre-1.0 alpha software; verify results against the Scala reference node.
+The independent [arkadianet/ergo v0.7.0](https://github.com/arkadianet/ergo/releases/tag/v0.7.0) release builds on the `v0.6.0` line with consensus-parity fixes for activated ErgoTree versions, collection costs, value forms and canonical IDs, serializer rejection, persistence durability, header checkpoints, and sync modes. It also adds SSRF protection, mempool budgets, and stricter peer-address handling. It remains pre-1.0 alpha software; verify results against the Scala reference node.
 
 Current development areas include mining endpoint support, NiPoPoW bootstrapping, RequestModifiers serving, mempool/API work, peer penalties, indexer behavior, API parity, and validation against JVM behavior.
 

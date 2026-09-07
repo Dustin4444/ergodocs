@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-05-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -9,6 +9,7 @@ source_repos:
       - ergo-core/src/main/scala/org/ergoplatform/modifiers/history/popow/NipopowAlgos.scala
       - ergo-core/src/main/scala/org/ergoplatform/modifiers/history/popow/NipopowProof.scala
 source_of_truth:
+  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.5
   - https://github.com/ergoplatform/ergo/tree/master/ergo-core/src/main/scala/org/ergoplatform/modifiers/history/extension/Extension.scala
   - https://github.com/ergoplatform/ergo/tree/master/ergo-core/src/main/scala/org/ergoplatform/modifiers/history/popow/NipopowAlgos.scala
   - https://github.com/ergoplatform/ergo/tree/master/ergo-core/src/main/scala/org/ergoplatform/modifiers/history/popow/NipopowProof.scala
@@ -27,6 +28,8 @@ The PoPow protocol is built on top of several key data structures that facilitat
 The PoPow protocol relies on a combination of interlink vectors, NiPoPoW proofs, and Merkle trees to achieve its goals. Each of these data structures plays a specific role in enabling efficient verification of the blockchain's integrity.
 
 Current node code keeps PoPoW proof types and algorithms inside `ergo-core`, including `NipopowProof.scala` and `NipopowAlgos.scala`. This keeps proof construction and verification close to the core block-section and extension-section types used by the node.
+
+Node `v6.0.5` hardens proof ingestion by validating locally requested proof parameters, checking proof of work on every proof header before bootstrap insertion, and rejecting invalid inbound `m` and `k` parameters.
 
 1. [**Interlink Vectors**](interlink-vectors.md):
       - **Purpose**: Interlink vectors store references to previous block headers at different difficulty levels. They allow lightweight clients to verify the blockchain's integrity by checking only a subset of blocks, rather than the entire chain.

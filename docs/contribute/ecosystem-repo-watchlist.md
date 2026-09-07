@@ -6,7 +6,7 @@ tags:
   - automation
   - source-watch
 owner: docs
-last_reviewed: 2026-05-29
+last_reviewed: 2026-09-07
 repo_inventory_note: Broad maintainer inventory derived from ecosystem repo lists. These entries are not active Source Watch refs.
 ---
 
@@ -40,6 +40,8 @@ These repositories are retained as a broad maintainer reference list. They are n
 | [`aRobSn/sigmajs-crypto-facade`](https://github.com/aRobSn/sigmajs-crypto-facade) | `default` | `README.md` |
 | [`aRobSn/tslib-template`](https://github.com/aRobSn/tslib-template) | `default` | `README.md` |
 | [`aragogi/scanner`](https://github.com/aragogi/scanner) | `default` | `README.md` |
+| [`arkadianet/Argus`](https://github.com/arkadianet/Argus) | `default` | `README.md` |
+| [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | `default` | `README.md` |
 | [`aslesarenko/bouncycastle-js`](https://github.com/aslesarenko/bouncycastle-js) | `default` | `README.md` |
 | [`aslesarenko/ergo-appkit-examples`](https://github.com/aslesarenko/ergo-appkit-examples) | `default` | `README.md` |
 | [`aslesarenko/rust-benchmarks`](https://github.com/aslesarenko/rust-benchmarks) | `default` | `README.md` |
@@ -79,6 +81,7 @@ These repositories are retained as a broad maintainer reference list. They are n
 | [`ergoplatform/ergoscript-compiler`](https://github.com/ergoplatform/ergoscript-compiler) | `default` | `README.md` |
 | [`ergoplatform/oracle-core`](https://github.com/ergoplatform/oracle-core) | `default` | `README.md` |
 | [`ergoplatform/sigma-rust`](https://github.com/ergoplatform/sigma-rust) | `default` | `README.md`<br>`bindings/ergo-lib-wasm/examples/address-generation-demo`<br>`bindings/ergo-lib-wasm/examples/create-transaction-demo` |
+| [`FlyingPig5/SigmaFleet`](https://github.com/FlyingPig5/SigmaFleet) | `default` | `README.md` |
 | [`FlyingPig69/YAAT`](https://github.com/FlyingPig69/YAAT) | `default` | `README.md` |
 | [`freeboy0/ergo-token-analysis`](https://github.com/freeboy0/ergo-token-analysis) | `default` | `README.md` |
 | [`gsblabsio/ergo-analytics`](https://github.com/gsblabsio/ergo-analytics) | `default` | `README.md` |

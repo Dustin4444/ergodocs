@@ -2,7 +2,7 @@
 tags:
   - Sigma protocols
 owner: docs
-last_reviewed: 2026-06-08
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ScorexFoundation/sigmastate-interpreter
     branch: develop
@@ -16,6 +16,8 @@ source_repos:
       - shared/src/main/scala/scorex/crypto/hash/Blake2b.scala
       - shared/src/main/scala/scorex/crypto/hash/Sha256.scala
 source_of_truth:
+  - https://github.com/ergoplatform/scrypto/commit/1e4f5a1a5042162c53c365911408bc508c32d682
+  - https://github.com/ergoplatform/scrypto/commit/07bc16af7ce71b89244ba5f83ff76f47ea76fdb6
   - https://github.com/ScorexFoundation/sigmastate-interpreter/tree/develop/interpreter/shared/src/test/scala/sigmastate/crypto/SigningSpecification.scala
   - https://github.com/ergoplatform/scrypto/tree/master/shared/src/main/scala/scorex/crypto/authds/avltree/batch/BatchAVLProver.scala
   - https://github.com/ergoplatform/scrypto/tree/master/shared/src/main/scala/scorex/crypto/authds/avltree/batch/BatchAVLVerifier.scala
@@ -170,6 +172,8 @@ Ergo employs specialized cryptographic data structures to ensure secure and effi
 ### AVL+ Trees
 
 Ergo uses **AVL+ trees** as part of its **Authenticated Dynamic Dictionary (ADD)** to track UTXO state changes. These trees provide cryptographic proofs of state changes while maintaining logarithmic complexity for inserts, lookups, and deletions. AVL+ trees are essential for the UTXO model’s scalability and efficiency, enabling fast and secure updates across the network.
+
+The `scrypto` verifier bounds proof depth, requires exact subtree parsing and balanced structure, and caps verifier values at 4 MiB. These checks reject malformed or resource-amplifying proofs before they can be treated as valid authenticated state transitions.
 
 - **Implementation**: Learn more about AVL+ trees in [BatchAVLProver.scala](https://github.com/ergoplatform/scrypto/blob/master/shared/src/main/scala/scorex/crypto/authds/avltree/batch/BatchAVLProver.scala) and [BatchAVLVerifier.scala](https://github.com/ergoplatform/scrypto/blob/master/shared/src/main/scala/scorex/crypto/authds/avltree/batch/BatchAVLVerifier.scala).
 

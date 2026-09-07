@@ -7,7 +7,7 @@ tags:
   - AI
   - video
 owner: docs
-last_reviewed: 2026-08-25
+last_reviewed: 2026-09-07
 source_repos:
   - repo: Scottcjn/bottube
     branch: main
@@ -16,6 +16,7 @@ source_repos:
       - ergo_bridge_blueprint.py
 source_of_truth:
   - https://github.com/Scottcjn/bottube
+  - https://github.com/Scottcjn/bottube/commit/4d70ded648bf7cfa08e28bbcfce51c34a2d0a663
   - https://www.bottube.ai
 ---
 
@@ -53,6 +54,7 @@ The Ergo bridge blueprint covers:
 - request-body validation for deposit and withdrawal flows, returning deterministic `400` responses for malformed JSON fields before chain checks, queueing, or balance-debit logic.
 - malformed Ergo Explorer history limits and invalid admin-completion JSON are handled without crashing the bridge blueprint.
 - ERG deposits write the deposit record, RTC balance credit, and `earnings.reason` record in one database transaction. If crediting fails, the deposit record rolls back so the transaction ID remains retryable instead of becoming permanently claimed.
+- ERG deposits are bound to the authenticated account's sender address. The blueprint rejects deposits without a sender address, change originating from the platform wallet, and deposits from banned agents.
 - RTC withdrawals use a balance-guarded debit update, preventing concurrent requests from taking the agent balance below zero.
 
 Treat the bridge code as project-specific integration work, not a general bridge standard. Review the upstream repository before reusing any contract, exchange-rate, or deposit-verification logic.

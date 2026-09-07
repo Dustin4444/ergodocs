@@ -4,7 +4,7 @@ tags:
   - Light Clients
   - Sidechains
 owner: docs
-last_reviewed: 2026-05-27
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -20,6 +20,7 @@ source_of_truth:
   - https://github.com/ergoplatform/ergo/pull/2396
   - https://github.com/ergoplatform/ergo/pull/2417
   - https://github.com/ergoplatform/ergo/pull/2416
+  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.5
   - https://github.com/sdaveas/nipopow-verifier
 ---
 
@@ -41,7 +42,7 @@ Ergo's [block structure](block.md) goes beyond the traditional header and transa
 
 ### Node implementation hardening
 
-The open Ergo node 6.0.5 release candidate includes three merged NiPoPoW validation fixes: locally requested proof parameters are checked, each proof header's proof of work is validated before bootstrap insertion, and invalid inbound `m`/`k` parameters are rejected. These fixes are on the `v6.0.5` candidate branch; they are not a released node version yet.
+Ergo node `v6.0.5` includes three NiPoPoW validation fixes: locally requested proof parameters are checked, each proof header's proof of work is validated before bootstrap insertion, and invalid inbound `m`/`k` parameters are rejected.
 
 ## Applications of NIPoPoWs
 

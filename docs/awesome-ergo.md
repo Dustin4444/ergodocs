@@ -410,6 +410,7 @@
 
 ### 🎮 Gaming & Metaverse <a id="gaming--metaverse"></a>
 
+- [SigmaFleet](https://github.com/FlyingPig5/SigmaFleet) – zero-knowledge, on-chain Battleships contracts and cryptography on Ergo. [`ErgoScript`, `Scala`]
 - [BlitzTCG](https://blitz-tcg.com/) – Trading Card Game *(Beta)*. *(Active)*
 - [CyberVerse](https://cyberverseteam.itch.io/cyberverse) – Metaverse/Gaming project *(Live)*. [Telegram](https://t.me/CyberVersegame) *(Active)*
 - [NightOwl Casino](https://nightowlcasino.io/) – decentralized casino *(Live)*. [GitHub Org](https://github.com/nightowlcasino) | [Telegram](https://t.me/nightowlcasino) *(Active)*

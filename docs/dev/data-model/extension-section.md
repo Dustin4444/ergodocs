@@ -4,7 +4,7 @@ tags:
   - Block
   - Data Model
 owner: docs
-last_reviewed: 2026-05-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: master

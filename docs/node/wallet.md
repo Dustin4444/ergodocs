@@ -12,7 +12,7 @@ tags:
   - BIP39
   - BIP32
 owner: docs
-last_reviewed: 2026-06-27
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -23,6 +23,7 @@ source_repos:
       - src/main/scala/org/ergoplatform/http/api/WalletApiOperations.scala
       - src/main/scala/org/ergoplatform/http/api/UtilsApiRoute.scala
 source_of_truth:
+  - https://github.com/ergoplatform/ergo/pull/2430
   - https://github.com/ergoplatform/ergo/commit/d4ed37891cec
   - https://github.com/ergoplatform/ergo/pull/2290
   - https://github.com/ergoplatform/ergo/pull/2337
@@ -90,6 +91,8 @@ If your wallet has a non-zero balance, you can initiate transactions (e.g., send
 Wallet box queries such as `/wallet/boxes` and `/wallet/boxes/unspent` support `minConfirmations=-1` when you want mempool boxes considered. For confirmed-only views, use a non-negative confirmation count.
 
 Recent transaction-builder code validates supplied input IDs before constructing unsigned inputs. Input IDs must be valid hex strings of the expected modifier-ID length; malformed or too-short IDs are rejected instead of being silently dropped.
+
+Token burn requests can be combined with asset issuance. Node `v6.0.5` preserves the requested burn, issuance, and payment ordering while building outputs; older affected code could filter burns too early, associate issuance with the wrong output, and fail with `NotEnoughTokensError`.
 
 ![send ergs](https://user-images.githubusercontent.com/23208922/71129066-a28c1080-2214-11ea-9806-7d768059980a.png)
 
