@@ -43,6 +43,10 @@ Here are popular and well-regarded wallets used by the Ergo community:
   * **Description:** Experimental Ergo mobile wallet fork in public testing during 2026, with direct LP swap, dApp integration, webview support, USE mint/swap support, and an active dApps view.
   * **Best For:** Testing Degens.World wallet features. Review the codebase and release notes before using meaningful funds.
 
+* **[Argus](https://github.com/arkadianet/Argus/releases)**
+  * **Description:** Experimental Android wallet with ErgoPay, an EIP-12 dApp browser, UTXO tools, swaps, DeFi integrations, Rosen transfers, stealth addresses, and ZeroJoin mixing.
+  * **Best For:** Testing fast-moving wallet and dApp integrations. Current builds are debug-signed, unaudited alpha releases and must not be used with production funds.
+
 * **[Minotaur Wallet](minotaur.md)**
   * **Description:** Offers advanced features like [multi-signature](multi.md) capabilities (requiring multiple approvals for transactions).
   * **Best For:** Users needing shared fund control or enhanced security via multi-sig. May be more complex for beginners. *(Note: Check development status for latest features/stability).*
@@ -87,6 +91,7 @@ This table provides a simplified overview to help you compare options:
 |-------------------------|--------------------|------------------------|--------------------|--------------------------------|------------------------------------------------|
 | Ergo Mobile / Terminus  | iOS, Android       | High                   | Limited (ErgoPay)  | Yes (via offline mode)         | Convenient mobile use, NFT support             |
 | Degen Wallet            | Android test build | Medium                 | Testing            | No                             | Experimental dApp browser, swap, USE mint      |
+| Argus                   | Android test build | Low                    | Testing            | No                             | Experimental wallet, DeFi, bridge, privacy     |
 | Nautilus                | Browser Extension  | Medium                 | Yes (Directly)     | No                             | Seamless dApp interaction, popular             |
 | Satergo                 | Desktop (Win/Mac/Lin)| Medium                 | No                 | Yes (if PC is offline)         | User-friendly full node wallet                 |
 | SAFEW                   | Web                | Medium-Low             | Yes (Directly)     | No                             | Advanced features, Mixer access                |

@@ -18,19 +18,19 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 ## Summary
 
 - Source-watched pages: `240`
-- Watched repositories: `237`
+- Watched repositories: `238`
 - Watched GitHub owners: `101`
-- Watched repo/branch pairs: `243`
-- Watched paths: `511`
-- Release-watched page/repository refs: `14`
+- Watched repo/branch pairs: `244`
+- Watched paths: `517`
+- Release-watched page/repository refs: `15`
 
 ## Coverage Groups
 
 | Group | Owners | Repositories | Pages | Paths |
 | --- | ---: | ---: | ---: | ---: |
-| Core / infrastructure | 5 | 31 | 133 | 195 |
+| Core / infrastructure | 5 | 31 | 133 | 196 |
 | Ecosystem org | 10 | 39 | 25 | 36 |
-| Developer / project | 83 | 164 | 119 | 98 |
+| Developer / project | 83 | 165 | 119 | 102 |
 | External standard/vendor | 3 | 3 | 6 | 6 |
 
 ## Coverage By Area
@@ -53,14 +53,14 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 
 | Owner | Group | Repositories | Pages | Paths |
 | --- | --- | ---: | ---: | ---: |
-| [`ergoplatform`](https://github.com/ergoplatform) | Core / infrastructure | 18 | 109 | 156 |
+| [`ergoplatform`](https://github.com/ergoplatform) | Core / infrastructure | 18 | 109 | 157 |
 | [`ScorexFoundation`](https://github.com/ScorexFoundation) | Core / infrastructure | 1 | 24 | 31 |
 | [`rosen-bridge`](https://github.com/rosen-bridge) | Core / infrastructure | 10 | 10 | 6 |
 | [`mwaddip`](https://github.com/mwaddip) | Developer / project | 8 | 9 | 7 |
-| [`arkadianet`](https://github.com/arkadianet) | Developer / project | 6 | 8 | 3 |
+| [`arkadianet`](https://github.com/arkadianet) | Developer / project | 7 | 8 | 4 |
 | [`cannonQ`](https://github.com/cannonQ) | Developer / project | 5 | 8 | 3 |
 | [`mgpai22`](https://github.com/mgpai22) | Developer / project | 5 | 7 | 4 |
-| [`kushti`](https://github.com/kushti) | Developer / project | 4 | 6 | 7 |
+| [`kushti`](https://github.com/kushti) | Developer / project | 4 | 6 | 8 |
 | [`SavonarolaLabs`](https://github.com/SavonarolaLabs) | Ecosystem org | 7 | 6 | 8 |
 | [`ThierryM1212`](https://github.com/ThierryM1212) | Developer / project | 4 | 6 | 5 |
 | [`Lithos-Protocol`](https://github.com/Lithos-Protocol) | Ecosystem org | 3 | 5 | 4 |
@@ -88,7 +88,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`spectrum-finance`](https://github.com/spectrum-finance) | Ecosystem org | 3 | 3 | 6 |
 | [`StabilityNexus`](https://github.com/StabilityNexus) | Developer / project | 2 | 3 | 1 |
 | [`4EYESConsulting`](https://github.com/4EYESConsulting) | Developer / project | 1 | 2 | 1 |
-| [`celaut-project`](https://github.com/celaut-project) | Developer / project | 3 | 2 | 1 |
+| [`celaut-project`](https://github.com/celaut-project) | Developer / project | 3 | 2 | 3 |
 | [`ergoMixer`](https://github.com/ergoMixer) | Developer / project | 1 | 2 | 2 |
 | [`ErgoRaffle`](https://github.com/ErgoRaffle) | Developer / project | 2 | 2 | 2 |
 | [`fleet-sdk`](https://github.com/fleet-sdk) | Core / infrastructure | 1 | 2 | 2 |
@@ -159,7 +159,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 
 | Repository | Owner group | Branches | Pages | Paths |
 | --- | --- | --- | ---: | ---: |
-| [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | Core / infrastructure | `master`, `testnet60`, `v6.0.3`, `weak-blocks` | 50 | 55 |
+| [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | Core / infrastructure | `master`, `testnet60`, `v6.0.3`, `weak-blocks` | 50 | 56 |
 | [`ergoplatform/eips`](https://github.com/ergoplatform/eips) | Core / infrastructure | `eip16`, `master` | 25 | 18 |
 | [`ScorexFoundation/sigmastate-interpreter`](https://github.com/ScorexFoundation/sigmastate-interpreter) | Core / infrastructure | `develop` | 24 | 31 |
 | [`ergoplatform/sigma-rust`](https://github.com/ergoplatform/sigma-rust) | Core / infrastructure | `develop` | 14 | 33 |
@@ -193,7 +193,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`BetterMoneyLabs/braid`](https://github.com/BetterMoneyLabs/braid) | Ecosystem org | `master` | 2 | 6 |
 | [`cannonQ/ergo-p2p-options-frontend`](https://github.com/cannonQ/ergo-p2p-options-frontend) | Developer / project | `master` | 2 | 3 |
 | [`cannonQ/nft-races`](https://github.com/cannonQ/nft-races) | Developer / project | `main` | 2 | 1 |
-| [`celaut-project/nodo`](https://github.com/celaut-project/nodo) | Developer / project | `stable` | 2 | 1 |
+| [`celaut-project/nodo`](https://github.com/celaut-project/nodo) | Developer / project | `stable` | 2 | 3 |
 | [`celaut-project/paradigm`](https://github.com/celaut-project/paradigm) | Developer / project | `master` | 2 | 1 |
 | [`DeCo-Education/DeCo-Homeworks`](https://github.com/DeCo-Education/DeCo-Homeworks) | Developer / project | `main` | 2 | 3 |
 | [`DeCo-Education/ErgoScript-Developer-Course`](https://github.com/DeCo-Education/ErgoScript-Developer-Course) | Developer / project | `main` | 2 | 1 |
@@ -248,6 +248,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`anon-real/ErgoUtils`](https://github.com/anon-real/ErgoUtils) | Developer / project | `master` | 1 | 1 |
 | [`anon-real/sigma-usd`](https://github.com/anon-real/sigma-usd) | Developer / project | `master` | 1 | 1 |
 | [`arkadianet/Aegis-USE`](https://github.com/arkadianet/Aegis-USE) | Developer / project | `main` | 1 | 3 |
+| [`arkadianet/Argus`](https://github.com/arkadianet/Argus) | Developer / project | `main` | 1 | 1 |
 | [`arkadianet/erg-vanity-gpu`](https://github.com/arkadianet/erg-vanity-gpu) | Developer / project | `main` | 1 | 1 |
 | [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | Developer / project | `main` | 1 | 1 |
 | [`arkadianet/ergo-vanitygen-rust`](https://github.com/arkadianet/ergo-vanitygen-rust) | Developer / project | `main` | 1 | 1 |
@@ -297,7 +298,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`ergoplatform/bounded-vec`](https://github.com/ergoplatform/bounded-vec) | Core / infrastructure | `develop` | 1 | 1 |
 | [`ergoplatform/ergo-headless-dapp-framework`](https://github.com/ergoplatform/ergo-headless-dapp-framework) | Core / infrastructure | `main` | 1 | 4 |
 | [`ergoplatform/ergo-wallet`](https://github.com/ergoplatform/ergo-wallet) | Core / infrastructure | `master` | 1 | 1 |
-| [`ergoplatform/ergo_avltree_rust`](https://github.com/ergoplatform/ergo_avltree_rust) | Core / infrastructure | `main` | 1 | 1 |
+| [`ergoplatform/ergo_avltree_rust`](https://github.com/ergoplatform/ergo_avltree_rust) | Core / infrastructure | `main` | 1 | 2 |
 | [`ergoplatform/ergoweb`](https://github.com/ergoplatform/ergoweb) | Core / infrastructure | `master` | 1 | 1 |
 | [`ergoplatform/sigmaverse`](https://github.com/ergoplatform/sigmaverse) | Core / infrastructure | `master` | 1 | 1 |
 | [`ErgoRaffle/raffle-backend`](https://github.com/ErgoRaffle/raffle-backend) | Developer / project | `master` | 1 | 1 |
@@ -322,7 +323,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`K-Singh/Plasma-Toolkit`](https://github.com/K-Singh/Plasma-Toolkit) | Developer / project | `master` | 1 | 1 |
 | [`KeystoneHQ/keystone-sdk-base`](https://github.com/KeystoneHQ/keystone-sdk-base) | External standard/vendor | `master` | 1 | 2 |
 | [`knizhnik/scorex_crypto_avltree`](https://github.com/knizhnik/scorex_crypto_avltree) | Developer / project | `main` | 1 | 1 |
-| [`kushti/dexy-stable`](https://github.com/kushti/dexy-stable) | Developer / project | `master` | 1 | 2 |
+| [`kushti/dexy-stable`](https://github.com/kushti/dexy-stable) | Developer / project | `master` | 1 | 3 |
 | [`kushti/ergo-book`](https://github.com/kushti/ergo-book) | Developer / project | `master` | 1 | 1 |
 | [`lazypinkpatrick/minotaur-wallet`](https://github.com/lazypinkpatrick/minotaur-wallet) | Developer / project | `main` | 1 | 1 |
 | [`ldgaetano/hodlcoin-contracts`](https://github.com/ldgaetano/hodlcoin-contracts) | Developer / project | `main` | 1 | 1 |
@@ -447,6 +448,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`anon-real/ErgoUtils`](https://github.com/anon-real/ErgoUtils) | `master` | `src/utils/mixerHop.js` | `docs/eco/ergomixer/identifiability.md` |
 | [`anon-real/sigma-usd`](https://github.com/anon-real/sigma-usd) | `master` | `ageusd` | `docs/dev/scs/contracts.md` |
 | [`arkadianet/Aegis-USE`](https://github.com/arkadianet/Aegis-USE) | `main` | `README.md`<br>`ROADMAP.md`<br>`dev-docs/sidechain` | `docs/uses/sidechains.md` |
+| [`arkadianet/Argus`](https://github.com/arkadianet/Argus) | `main` | `app/pubspec.yaml` | `docs/wallets-overview.md` |
 | [`arkadianet/citadel`](https://github.com/arkadianet/citadel) | `main` | `README.md` | `docs/eco/dexy.md`<br>`docs/uses/stablecoins.md` |
 | [`arkadianet/erg-vanity-gpu`](https://github.com/arkadianet/erg-vanity-gpu) | `main` | `README.md` | `docs/eco/vanity-gpu.md` |
 | [`arkadianet/ergo`](https://github.com/arkadianet/ergo) | `main` | `README.md` | `docs/node/rust-node.md`<br>`docs/roadmap.md` |
@@ -471,7 +473,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`cannonQ/ergo-use-x402`](https://github.com/cannonQ/ergo-use-x402) | `master` | `README.md` | `docs/eco/emerging-projects.md`<br>`docs/eco/ergo-use-x402.md`<br>`docs/uses/use_stablecoin.md` |
 | [`cannonQ/nft-races`](https://github.com/cannonQ/nft-races) | `main` | `README.md` | `docs/eco/emerging-projects.md`<br>`docs/eco/nft-races.md` |
 | [`capt-nemo429/sigmafi-ui`](https://github.com/capt-nemo429/sigmafi-ui) | `main` | `src/offchain/plugins.ts` | `docs/eco/sigmafi.md` |
-| [`celaut-project/nodo`](https://github.com/celaut-project/nodo) | `stable` | `README.md` | `docs/eco/celaut.md`<br>`docs/eco/celaut_v_netnotes.md` |
+| [`celaut-project/nodo`](https://github.com/celaut-project/nodo) | `stable` | `README.md`<br>`docs/PRICING.md`<br>`docs/USAGE.md` | `docs/eco/celaut.md`<br>`docs/eco/celaut_v_netnotes.md` |
 | [`celaut-project/paradigm`](https://github.com/celaut-project/paradigm) | `master` | `README.md` | `docs/eco/celaut.md`<br>`docs/eco/celaut_v_netnotes.md` |
 | [`celaut-project/skills`](https://github.com/celaut-project/skills) | `main` | `README.md` | `docs/eco/celaut.md` |
 | [`ChainCashLabs/chaincash`](https://github.com/ChainCashLabs/chaincash) | `master` | `contracts`<br>`contracts/onchain/note.es`<br>`contracts/onchain/reserve.es`<br>`docs/server.md`<br>`docs/whitepaper/chaincash.pdf` | `docs/dev/scs/contracts.md`<br>`docs/dev/scs/tx/fsm-example.md`<br>`docs/roadmap.md`<br>`docs/uses/chaincash.md` |
@@ -519,12 +521,12 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | `master` | `avldb/src/main/scala/org/ergoplatform/serialization/ErgoSerializer.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/mining/AutolykosPowScheme.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/modifiers`<br>`ergo-core/src/main/scala/org/ergoplatform/modifiers/history/ADProofs.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/modifiers/history/BlockTransactions.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/modifiers/history/extension/Extension.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/modifiers/history/extension/ExtensionCandidate.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/modifiers/history/extension/ExtensionSerializer.scala`<br>+42 more | `docs/dev/data-model/block-adproofs.md`<br>`docs/dev/data-model/block-header.md`<br>`docs/dev/data-model/block-transactions.md`<br>`docs/dev/data-model/extension-section.md`<br>`docs/dev/data-model/merkle-tree-overview.md`<br>`docs/dev/data-model/structures/interlink-vectors.md`<br>+40 more |
 | [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | `testnet60` | `src/main/resources/testnet.conf` | `docs/dev/p2p/network.md`<br>`docs/dev/p2p/p2p-handshake.md` |
 | [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | `v6.0.3` | `ergo-core/src/main/scala/org/ergoplatform/settings/ValidationRules.scala`<br>`ergo-core/src/main/scala/org/ergoplatform/validation/ModifierError.scala`<br>`src/main/scala/org/ergoplatform/network/ErgoNodeViewSynchronizer.scala`<br>`src/main/scala/org/ergoplatform/nodeView/mempool/ErgoMemPool.scala`<br>`src/main/scala/org/ergoplatform/nodeView/mempool/OrderedTxPool.scala` | `docs/node/protocol.md`<br>`docs/node/synchronisation.md` |
-| [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | `weak-blocks` | `papers/inputblocks/main.pdf` | `docs/uses/sidechains/subblocks.md` |
+| [`ergoplatform/ergo`](https://github.com/ergoplatform/ergo) | `weak-blocks` | `ergo-core/src/main/scala/org/ergoplatform/network/message/inputblocks`<br>`papers/inputblocks/main.pdf` | `docs/uses/sidechains/subblocks.md` |
 | [`ergoplatform/ergo-appkit`](https://github.com/ergoplatform/ergo-appkit) | `develop` | `README.md`<br>`appkit/src` | `docs/dev/stack/appkit.md`<br>`docs/dev/stack/appkit/gradle.md`<br>`docs/roadmap.md` |
 | [`ergoplatform/ergo-headless-dapp-framework`](https://github.com/ergoplatform/ergo-headless-dapp-framework) | `main` | `src/encoding.rs`<br>`tutorials/Math_Bounty/1-math-bounty-dApp-getting-started.md`<br>`tutorials/Math_Bounty/2-math-bounty-dApp-finishing-the-headless-dapp.md`<br>`tutorials/Math_Bounty/3-math-bounty-dApp-writing-a-cli-frontend-that-allows-creating-bounties.md` | `docs/dev/stack/headless.md` |
 | [`ergoplatform/ergo-jde`](https://github.com/ergoplatform/ergo-jde) | `main` | `kiosk/src/test/scala/kiosk/dexy`<br>`kiosk/src/test/scala/kiosk/dexy/Dexy.md`<br>`kiosk/src/test/scala/kiosk/dexy/DexySpec.scala`<br>`kiosk/src/test/scala/kiosk/mixer`<br>`kiosk/src/test/scala/kiosk/mixer/doc/main.pdf`<br>`kiosk/src/test/scala/kiosk/schnorr/SchnorrSpec.scala`<br>`readme.md` | `docs/dev/scs/contracts.md`<br>`docs/dev/scs/sigma/verifying.md`<br>`docs/dev/stack/jde.md`<br>`docs/documents.md`<br>`docs/eco/dexy.md`<br>`docs/eco/sigmajoin.md`<br>+1 more |
 | [`ergoplatform/ergo-wallet`](https://github.com/ergoplatform/ergo-wallet) | `master` | `src/main/resources/wordlist` | `docs/node/wallet-setup.md` |
-| [`ergoplatform/ergo_avltree_rust`](https://github.com/ergoplatform/ergo_avltree_rust) | `main` | `README.MD` | `docs/dev/protocol/avl.md` |
+| [`ergoplatform/ergo_avltree_rust`](https://github.com/ergoplatform/ergo_avltree_rust) | `main` | `README.md`<br>`src` | `docs/dev/protocol/avl.md` |
 | [`ergoplatform/ergoscript-by-example`](https://github.com/ergoplatform/ergoscript-by-example) | `main` | `doubleChainSwap.md`<br>`escrowDepositContract.md`<br>`grantorBeneficiaryPinLock.md`<br>`headsOrTails.md`<br>`headsOrTailsParallel.md`<br>`pinLockContract.md`<br>`selfReplicatingTokenSale.md`<br>`simpleSend.md`<br>+4 more | `docs/dev/scs/contracts.md`<br>`docs/dev/scs/ergoscript/reusable-functions.md` |
 | [`ergoplatform/ergoweb`](https://github.com/ergoplatform/ergoweb) | `master` | `README.md` | `docs/contribute.md` |
 | [`ergoplatform/explorer-backend`](https://github.com/ergoplatform/explorer-backend) | `master` | `modules/chain-grabber`<br>`modules/chain-grabber/src/main/resources/application.conf` | `docs/dev/tutorials/blockchain-indexing/custom-indexer.md`<br>`docs/node/deploy-runbook.md`<br>`docs/node/explorer-stack.md` |
@@ -563,7 +565,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`KeystoneHQ/keystone-sdk-base`](https://github.com/KeystoneHQ/keystone-sdk-base) | `master` | `packages/ur-registry-ergo`<br>`packages/ur-registry-ergo/README.md` | `docs/dev/tutorials/hardware-wallet-integration.md` |
 | [`knizhnik/scorex_crypto_avltree`](https://github.com/knizhnik/scorex_crypto_avltree) | `main` | `crypto_avltree.md` | `docs/dev/lang/rust.md` |
 | [`kushti/chaincash`](https://github.com/kushti/chaincash) | `master` | `docs/whitepaper/chaincash.pdf`<br>`src/main/scala/chaincash/offchain`<br>`src/test/scala/chaincash/ChainCashSpec.scala` | `docs/dev/scs/sigma/verifying.md`<br>`docs/documents.md`<br>`docs/uses/chaincash.md` |
-| [`kushti/dexy-stable`](https://github.com/kushti/dexy-stable) | `master` | `contracts/bank/intervention.es`<br>`src/test/scala/dexy/bank/InterventionSpec.scala` | `docs/eco/dexy.md` |
+| [`kushti/dexy-stable`](https://github.com/kushti/dexy-stable) | `master` | `contracts/bank/intervention.es`<br>`paper-jft/dexy.tex`<br>`src/test/scala/dexy/bank/InterventionSpec.scala` | `docs/eco/dexy.md` |
 | [`kushti/ergo-book`](https://github.com/kushti/ergo-book) | `master` | `src/SUMMARY.md` | `docs/ef/ef-future.md` |
 | [`kushti/kya`](https://github.com/kushti/kya) | `master` | `kya.pdf` | `docs/contribute/standards/kya.md`<br>`docs/documents.md` |
 | [`lazypinkpatrick/minotaur-wallet`](https://github.com/lazypinkpatrick/minotaur-wallet) | `main` | `doc/MultiSig.md` | `docs/events/ergohack.md` |

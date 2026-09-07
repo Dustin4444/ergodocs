@@ -123,6 +123,7 @@
 - **[Satergo](https://satergo.com/)** – privacy-focused desktop wallet with full node *(Live)*. [GitHub](https://github.com/Satergo/Satergo) [`Java`] *(Active)*
 - **[Ergo Mobile Wallet (Android)](https://play.google.com/store/apps/details?id=org.ergoplatform.android)** – official Android wallet *(Live)*. [GitHub](https://github.com/ergoplatform/ergo-wallet-app) [`Kotlin`] *(Active)*
 - **[Ergo Mobile Wallet (iOS)](https://apps.apple.com/us/app/ergo-wallet-app/id1569044501)** – official iOS wallet *(Live)*. [GitHub](https://github.com/ergoplatform/ergo-wallet-app) [`Swift`] *(Active)*
+- [Argus](https://github.com/arkadianet/Argus/releases) – experimental Android wallet with ErgoPay, dApp, DeFi, bridge, and privacy integrations; current builds are debug-signed, unaudited alphas not intended for production funds. [GitHub](https://github.com/arkadianet/Argus) [`Dart`, `Rust`] *(Alpha)*
 - [Minotaur Wallet](https://minotaur-wallet.io/) – Android, iOS & Desktop wallet with multi-sig *(Live)*. [GitHub](https://github.com/minotaur-ergo/minotaur-wallet) [`JS/TS`] *(Active)*
   - [Multi-Sig Server](https://github.com/minotaur-ergo/Minotaur-Signing-Server) / [Alternative](https://github.com/lazypinkpatrick/cosigning-server)
 - [SAFEW](https://chrome.google.com/webstore/detail/safew/lmjcdljhgidjbcpdkfknpfknbbkfpogg) – browser wallet with dApp Connector *(Live)*. [GitHub](https://github.com/ThierryM1212/SAFEW) [`JS/TS`] *(Active)*

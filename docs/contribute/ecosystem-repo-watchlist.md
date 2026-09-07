@@ -40,7 +40,6 @@ These repositories are retained as a broad maintainer reference list. They are n
 | [`aRobSn/sigmajs-crypto-facade`](https://github.com/aRobSn/sigmajs-crypto-facade) | `default` | `README.md` |
 | [`aRobSn/tslib-template`](https://github.com/aRobSn/tslib-template) | `default` | `README.md` |
 | [`aragogi/scanner`](https://github.com/aragogi/scanner) | `default` | `README.md` |
-| [`arkadianet/Argus`](https://github.com/arkadianet/Argus) | `default` | `README.md` |
 | [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | `default` | `README.md` |
 | [`aslesarenko/bouncycastle-js`](https://github.com/aslesarenko/bouncycastle-js) | `default` | `README.md` |
 | [`aslesarenko/ergo-appkit-examples`](https://github.com/aslesarenko/ergo-appkit-examples) | `default` | `README.md` |

@@ -1,15 +1,17 @@
 ---
 owner: docs
-last_reviewed: 2026-07-02
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: weak-blocks
     paths:
       - papers/inputblocks/main.pdf
+      - ergo-core/src/main/scala/org/ergoplatform/network/message/inputblocks
 source_of_truth:
   - https://github.com/ergoplatform/ergo/tree/weak-blocks/papers/inputblocks/main.pdf
   - https://github.com/ergoplatform/ergo/pull/2372
   - https://github.com/ergoplatform/ergo/pull/2180
+  - https://github.com/ergoplatform/ergo/pull/2490
   - https://github.com/ergoplatform/sigmastate-interpreter/pull/1069
 ---
 
@@ -65,6 +67,7 @@ Late-2025 and 2026 input-block / ordering-block work moved under the Matrix impl
 - `Apr 22`: Matrix was merged with the 6.0.3 candidate line, the network difficulty check for input blocks was completed, and a new jar was deployed to devnet.
 - `Apr 28`: extra P2P checks were added to reduce DoS exposure and the external miner API was implemented. Stratum proxy tweaks remained before GPU mining tests.
 - `Jul 1`: the Matrix branch added verification that delivered input-block transaction bodies match the transaction digest announced in the proven input-block fields, rejecting mismatched bodies before they are cached or processed.
+- `Aug 23`: [ergoplatform/ergo#2490](https://github.com/ergoplatform/ergo/pull/2490) bounded untrusted item counts in Matrix message types 102, 104, and 105 by the bytes actually remaining in the frame. This prevents tiny crafted payloads from requesting huge transaction arrays or loops. It was merged to the `weak-blocks` branch; global frame-length limits and unsolicited-message gating remain separate follow-ups.
 Testing notes:
 
 - The December 2025 rollout plan was gradual: early Matrix peers would be mining pools and solo miners forming an input-block-aware P2P subnetwork, while non-upgraded peers continued normal block propagation. Early extension-section fields were not assumed to be present for every block during that phase.
