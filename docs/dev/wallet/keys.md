@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-07
 source_repos:
   - repo: satoshilabs/slips
     branch: master

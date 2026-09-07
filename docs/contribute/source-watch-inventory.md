@@ -18,10 +18,10 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 ## Summary
 
 - Source-watched pages: `240`
-- Watched repositories: `236`
+- Watched repositories: `237`
 - Watched GitHub owners: `101`
-- Watched repo/branch pairs: `242`
-- Watched paths: `510`
+- Watched repo/branch pairs: `243`
+- Watched paths: `511`
 - Release-watched page/repository refs: `14`
 
 ## Coverage Groups
@@ -30,7 +30,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | --- | ---: | ---: | ---: | ---: |
 | Core / infrastructure | 5 | 31 | 133 | 195 |
 | Ecosystem org | 10 | 39 | 25 | 36 |
-| Developer / project | 83 | 163 | 119 | 98 |
+| Developer / project | 83 | 164 | 119 | 98 |
 | External standard/vendor | 3 | 3 | 6 | 6 |
 
 ## Coverage By Area
@@ -57,8 +57,8 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`ScorexFoundation`](https://github.com/ScorexFoundation) | Core / infrastructure | 1 | 24 | 31 |
 | [`rosen-bridge`](https://github.com/rosen-bridge) | Core / infrastructure | 10 | 10 | 6 |
 | [`mwaddip`](https://github.com/mwaddip) | Developer / project | 8 | 9 | 7 |
+| [`arkadianet`](https://github.com/arkadianet) | Developer / project | 6 | 8 | 3 |
 | [`cannonQ`](https://github.com/cannonQ) | Developer / project | 5 | 8 | 3 |
-| [`arkadianet`](https://github.com/arkadianet) | Developer / project | 5 | 7 | 3 |
 | [`mgpai22`](https://github.com/mgpai22) | Developer / project | 5 | 7 | 4 |
 | [`kushti`](https://github.com/kushti) | Developer / project | 4 | 6 | 7 |
 | [`SavonarolaLabs`](https://github.com/SavonarolaLabs) | Ecosystem org | 7 | 6 | 8 |
@@ -249,6 +249,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`anon-real/sigma-usd`](https://github.com/anon-real/sigma-usd) | Developer / project | `master` | 1 | 1 |
 | [`arkadianet/Aegis-USE`](https://github.com/arkadianet/Aegis-USE) | Developer / project | `main` | 1 | 3 |
 | [`arkadianet/erg-vanity-gpu`](https://github.com/arkadianet/erg-vanity-gpu) | Developer / project | `main` | 1 | 1 |
+| [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | Developer / project | `main` | 1 | 1 |
 | [`arkadianet/ergo-vanitygen-rust`](https://github.com/arkadianet/ergo-vanitygen-rust) | Developer / project | `main` | 1 | 1 |
 | [`arobsn/keystone-ergo-js`](https://github.com/arobsn/keystone-ergo-js) | Developer / project | `master` | 1 | 1 |
 | [`aslesarenko/ergo-appkit`](https://github.com/aslesarenko/ergo-appkit) | Developer / project | `master` | 1 | 1 |
@@ -408,10 +409,10 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`events/ergohack.md`](ergohack.md) | 8 | 8 |
 | [`node/rust-node.md`](rust-node.md) | 8 | 8 |
 | [`dev/stack/sigma-rust.md`](sigma-rust.md) | 6 | 17 |
+| [`dev/scs/ergoscript-tooling.md`](ergoscript-tooling.md) | 5 | 5 |
 | [`dev/scs/ergoscript.md`](ergoscript.md) | 5 | 9 |
 | [`dev/tutorials/blockchain-indexing.md`](blockchain-indexing.md) | 5 | 5 |
 | [`eco/mew-finance.md`](mew-finance.md) | 5 | 5 |
-| [`dev/scs/ergoscript-tooling.md`](ergoscript-tooling.md) | 4 | 4 |
 | [`dev/tutorials/blockchain-indexing/custom-indexer.md`](custom-indexer.md) | 4 | 5 |
 | [`dev/tutorials/hardware-wallet-integration.md`](hardware-wallet-integration.md) | 4 | 6 |
 | [`eco/celaut_v_netnotes.md`](celaut_v_netnotes.md) | 4 | 4 |
@@ -449,6 +450,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`arkadianet/citadel`](https://github.com/arkadianet/citadel) | `main` | `README.md` | `docs/eco/dexy.md`<br>`docs/uses/stablecoins.md` |
 | [`arkadianet/erg-vanity-gpu`](https://github.com/arkadianet/erg-vanity-gpu) | `main` | `README.md` | `docs/eco/vanity-gpu.md` |
 | [`arkadianet/ergo`](https://github.com/arkadianet/ergo) | `main` | `README.md` | `docs/node/rust-node.md`<br>`docs/roadmap.md` |
+| [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | `main` | `README.md` | `docs/dev/scs/ergoscript-tooling.md` |
 | [`arkadianet/ergo-vanitygen-rust`](https://github.com/arkadianet/ergo-vanitygen-rust) | `main` | `README.md` | `docs/wallets-overview.md` |
 | [`arobsn/hergmes`](https://github.com/arobsn/hergmes) | `master` | `README.md` | `docs/dev/tutorials/blockchain-indexing.md`<br>`docs/dev/tutorials/blockchain-indexing/custom-indexer.md` |
 | [`arobsn/keystone-ergo-js`](https://github.com/arobsn/keystone-ergo-js) | `master` | `README.md` | `docs/dev/tutorials/hardware-wallet-integration.md` |

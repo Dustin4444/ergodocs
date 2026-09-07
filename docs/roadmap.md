@@ -2,7 +2,7 @@
 tags:
   - Roadmap
 owner: docs
-last_reviewed: 2026-08-25
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/eips
     branch: master
@@ -112,7 +112,7 @@ source_repos:
 source_of_truth:
   - https://github.com/ergoplatform/eips/tree/master/eip-0044.md
   - https://github.com/ergoplatform/ergo/releases
-  - https://github.com/ergoplatform/ergo/pull/2416
+  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.5
   - https://github.com/ScorexFoundation/sigmastate-interpreter/releases
   - https://github.com/ergoplatform/sigma-rust
   - https://github.com/ergoplatform/ergo-appkit/releases/tag/v6.0.1
@@ -125,7 +125,7 @@ source_of_truth:
   - https://github.com/mwaddip/ergots
   - https://github.com/odiseusme/matrix-pulse
   - https://github.com/decentbob/ergo-marketplace
-  - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.0.0-test
+  - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test
   - https://github.com/rosen-bridge
   - https://github.com/ChainCashLabs/chaincash
   - https://github.com/StabilityNexus/Gluon-Ergo-UI
@@ -151,7 +151,7 @@ source_of_truth:
 
 # Ergo Development Roadmap & History
 
-This page tracks major Ergo development history and active work as of **August 21, 2026**. It is not a promise of delivery dates. Public repositories, release notes, EIPs, and project pages are the source of truth.
+This page tracks major Ergo development history and active work as of **September 7, 2026**. It is not a promise of delivery dates. Public repositories, release notes, EIPs, and project pages are the source of truth.
 
 Ergo's roadmap is research-led: protocol changes move through papers, EIPs, testnets, client releases, and community review before mainnet activation. Ecosystem projects move at different speeds, so items below are grouped as **completed**, **active**, or **experimental** rather than presented as a single linear release plan.
 
@@ -170,6 +170,13 @@ Ergo's roadmap is research-led: protocol changes move through papers, EIPs, test
 Month buckets summarize roadmap-relevant changes from the latest docs sweep. Use the linked project pages, repositories, and release notes for caveats and source detail.
 
 ### 2026
+
+#### September
+
+- [Ergo node](protocol.md): [v6.0.5](https://github.com/ergoplatform/ergo/releases/tag/v6.0.5) is the latest checked stable release. It hardens NiPoPoW validation, fee bounds, peer buffering and blacklisting, token burn/issuance handling, and deferred ExtraIndexer catch-up. [v6.1.5](https://github.com/ergoplatform/ergo/releases/tag/v6.1.5) carries the same changes with RocksDB and remains a prerelease.
+- [Rust node](rust-node.md): independent `arkadianet/ergo` [v0.7.0](https://github.com/arkadianet/ergo/releases/tag/v0.7.0) adds further consensus-parity, persistence, sync, SSRF, mempool-budget, and peer-routing fixes. It remains pre-1.0 alpha software.
+- [Lithos](lithos.md): [v5.2.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test) reduces peak NISP transaction size through commitment rollups, changes bond/slashing parameters, and updates contracts, APIs, configuration, and fraud-proof handling. It remains a testnet release.
+- [Rosen Bridge](rosen.md): watcher and guard apps reached `4.5.0` with Next.js 16, while `rosen-service 4.4.1` simplified Bitcoin Runes configuration and updated its datasource.
 
 #### August
 
@@ -246,7 +253,7 @@ This is the clearest short-form view of what is in the pipeline. Items are group
 | Rust / TypeScript stack | **Active implementation research**: `sigma-rust`, `mwaddip/ergo-node-rust`, `arkadianet/ergo`, `ergots`, and SANTA runners are differential-testing surfaces, not replacements for the JVM consensus authority unless upstream marks a path stable. |
 | Scaling | **Research / testnet**: sub-blocks, Braid / merged-mined sidechain design, NiPoPoW bootstrapping, pruned operation, and devnet testing remain active tracks. |
 | Interoperability | **Live + expanding**: Rosen Bridge is live across Ergo, Cardano, BTC, EVM/BSC, and DOGE, with more chain work and Runes-related support in progress. |
-| Mining decentralization | **Testnet**: Lithos has moved through multiple 2026 testnet releases, reaching `v5.0.0-test`. |
+| Mining decentralization | **Testnet**: Lithos has moved through multiple 2026 testnet releases, reaching `v5.2.0-test`. |
 | DeFi and monetary systems | **Mixed**: Spectrum, SigmaUSD, Dexy, Gluon Gold, SigmaFi, Duckpools, Machina, Etcha, ChainCash/Basis, Ergo Marketplace, and related tools cover live, alpha, and prototype stages. |
 | Data and observability | **Active tooling**: eBiome, Matrix Pulse, Ergo Mempool Watcher, explorers, and knowledge-base tooling expand monitoring, analytics, forensics, and project-context surfaces. |
 | Governance and funding | **Decentralizing**: the Ergo Foundation has narrowed its role; [Sigmanauts](sigmanauts.md), [GitCircles](gitcircles.md), and independent teams now manage more ecosystem functions. See [Ergo Foundation Treasury](ef-treasury.md), [EF Votes](ef-votes.md), and [EF Future](ef-future.md). |

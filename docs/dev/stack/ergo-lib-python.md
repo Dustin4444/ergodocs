@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-05-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/sigma-rust
     branch: develop
@@ -8,6 +8,7 @@ source_repos:
       - bindings/ergo-lib-python
 source_of_truth:
   - https://github.com/ergoplatform/sigma-rust/tree/develop/bindings/ergo-lib-python
+  - https://github.com/ergoplatform/sigma-rust/commit/1e9b80b976aa063f94bc8aed1d989567b4299998
 ---
 
 # ergo-lib-python Documentation
@@ -28,6 +29,7 @@ Recent binding updates track current `sigma-rust` internals:
 * Python 3.14 support is enabled through newer `pyo3`.
 * Header `nBits` uses an unsigned 32-bit representation.
 * Dlog public images are precomputed in wallet key paths, reducing repeated elliptic-curve work when signing or deriving public images.
+* Type stubs expose the precise `ErgoBoxCandidate(value=..., script=..., creation_height=...)` constructor, so named-argument calls like the examples below are checked correctly.
 
 ## Installation
 

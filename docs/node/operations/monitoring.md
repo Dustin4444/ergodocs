@@ -5,7 +5,7 @@ tags:
   - Monitoring
   - Alerts
 owner: docs
-last_reviewed: 2026-08-25
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -68,5 +68,3 @@ chmod o+x ./prometheus-agent/entrypoint.sh
 ```
 
 Use these symbolic modes rather than fixed numeric permissions; they remain effective under restrictive umasks such as `007`.
-
-cAdvisor filesystem and disk-I/O panels may show no data on cgroup v2 hosts; Rosen's source guide calls out full `container_fs_*` coverage as a cgroup v1 limitation.

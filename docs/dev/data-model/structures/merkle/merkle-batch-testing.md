@@ -2,7 +2,7 @@
 tags:
   - Merkle
 owner: docs
-last_reviewed: 2026-05-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/sigma-rust
     branch: develop
@@ -17,6 +17,8 @@ source_repos:
       - shared/src/main/scala/scorex/crypto/authds/merkle/MerkleTree.scala
       - shared/src/main/scala/scorex/crypto/authds/merkle/serialization/BatchMerkleProofSerializer.scala
 source_of_truth:
+  - https://github.com/ergoplatform/scrypto/commit/987e7c7fd5531dcab9241be91d4f6e3ca717b56d
+  - https://github.com/ergoplatform/scrypto/commit/08ef4efc86add19f2d07ec8454ed42393b8d5183
   - https://github.com/ergoplatform/sigma-rust/tree/develop/ergo-merkle-tree/src/batchmerkleproof.rs
   - https://github.com/ergoplatform/sigma-rust/tree/develop/ergo-merkle-tree/src/merkletree.rs
   - https://github.com/ergoplatform/sigma-rust/tree/develop/sigma-ser/src/scorex_serialize.rs
@@ -28,6 +30,8 @@ source_of_truth:
 # Testing Merkle Batch Proofs
 
 Testing Merkle Batch Proofs is crucial to ensure the correctness of their implementation in the Ergo blockchain. This section provides examples of how to write tests for Merkle Batch Proofs using both Rust (`sigma-rust`) and Scala (`scrypto`). These tests cover the creation, verification, serialization, and deserialization of batch Merkle proofs.
+
+Include adversarial cases alongside round trips: duplicate leaf hashes at different indices, trailing bytes, negative indices, invalid side markers, and malformed collection lengths. For duplicate leaves, assert index-based proofs for each occurrence; hash-based lookup intentionally resolves the first match.
 
 ### Rust (`sigma-rust`) Testing
 

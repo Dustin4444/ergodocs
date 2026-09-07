@@ -2,7 +2,7 @@
 tags:
   - Merkle
 owner: docs
-last_reviewed: 2026-05-26
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -14,6 +14,8 @@ source_repos:
       - shared/src/main/scala/scorex/crypto/authds/merkle/BatchMerkleProof.scala
       - shared/src/main/scala/scorex/crypto/authds/merkle/MerkleTree.scala
 source_of_truth:
+  - https://github.com/ergoplatform/scrypto/commit/987e7c7fd5531dcab9241be91d4f6e3ca717b56d
+  - https://github.com/ergoplatform/scrypto/commit/08ef4efc86add19f2d07ec8454ed42393b8d5183
   - https://github.com/ergoplatform/ergo/tree/master/ergo-core/src/main/scala/org/ergoplatform/modifiers/history/BlockTransactions.scala
   - https://github.com/ergoplatform/scrypto/tree/master/shared/src/main/scala/scorex/crypto/authds/merkle/BatchMerkleProof.scala
   - https://github.com/ergoplatform/scrypto/tree/master/shared/src/main/scala/scorex/crypto/authds/merkle/MerkleTree.scala
@@ -46,7 +48,7 @@ For transaction roots, leaf content depends on the block version:
 - In the initial block version, leaves are transaction IDs.
 - In later block versions, leaves are transaction IDs followed by witness IDs. A witness ID is the digest of the transaction's serialized spending proofs.
 
-Each leaf data item is 32 bytes. The leaf node hash is computed by concatenating a **1-byte prefix** (used for domain separation), the **position** of the leaf within the tree, and the 32-byte data item. The prefix for a leaf node is `0x00`. This data is then hashed using the `Blake2b256` hash function.
+The leaf node hash is `Blake2b256(0x00 || data)`. The `0x00` prefix provides domain separation; the leaf position is not part of the hash. Equal data therefore produces equal leaf hashes. Current `scrypto` trees retain every leaf position, and hash-based proof lookup chooses the first equal hash; use index-based lookup when duplicate leaves must be distinguished.
 
 - **Code Reference**: The implementation of leaf node hashing can be found in the [MerkleTree.scala](https://github.com/ergoplatform/scrypto/blob/master/shared/src/main/scala/scorex/crypto/authds/merkle/MerkleTree.scala) file in the `scrypto` repository.
 
@@ -79,6 +81,8 @@ The encoding consists of the following elements:
 2. **32-byte stored value**: This is the sibling hash for the current node. The proof provides the path of sibling hashes from the leaf to the root, allowing the verifier to recompute the root hash.
 
 When verifying a proof, the verifier reconstructs the path from the leaf node to the Merkle Root using the provided sibling hashes and the original leaf hash. If the computed root matches the expected Merkle Root, the proof is valid.
+
+The `scrypto` proof deserializer requires the input to end exactly at the proof boundary and rejects negative indices, invalid side markers, malformed lengths, and trailing bytes.
 
 - **Code Reference**: The `BatchMerkleProof` class, handling Merkle proof generation and verification, is implemented in the [BatchMerkleProof.scala](https://github.com/ergoplatform/scrypto/blob/master/shared/src/main/scala/scorex/crypto/authds/merkle/BatchMerkleProof.scala) file.
 

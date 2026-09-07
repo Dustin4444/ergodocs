@@ -7,7 +7,7 @@ tags:
   - dApp
   - dApp-Beta
 owner: docs
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-07
 source_repos:
   - repo: rosen-bridge/watcher
     branch: master
@@ -51,6 +51,9 @@ source_repos:
       - src/lib
 source_of_truth:
   - https://rosen.tech
+  - https://github.com/rosen-bridge/ui/releases/tag/watcher-app-4.5.0
+  - https://github.com/rosen-bridge/ui/releases/tag/guard-app-4.5.0
+  - https://github.com/rosen-bridge/ui/releases/tag/rosen-service-4.4.1
   - https://github.com/rosen-bridge/watcher/releases/tag/6.3.1
   - https://github.com/rosen-bridge/watcher/releases/tag/6.3.0
   - https://github.com/rosen-bridge/watcher/releases/tag/6.2.2
@@ -113,6 +116,7 @@ Please see [this video](https://www.youtube.com/watch?v=Xsiy-yPJQ6w) for a visua
 
 ## Recent updates
 
+- [Watcher app 4.5.0](https://github.com/rosen-bridge/ui/releases/tag/watcher-app-4.5.0) and [guard app 4.5.0](https://github.com/rosen-bridge/ui/releases/tag/guard-app-4.5.0) update the application stack from Next.js 15 to 16 with related dependency changes. [rosen-service 4.4.1](https://github.com/rosen-bridge/ui/releases/tag/rosen-service-4.4.1) removes the redundant Bitcoin Runes `initialHeight` setting and updates the datasource dependency.
 - `Jul 21` to `Jul 24`: Rosen reported that guards rejected 84 invalid Cardano events from an unsuccessful attack. [Watcher 6.2.2](https://github.com/rosen-bridge/watcher/releases/tag/6.2.2) and [rosen-service 4.3.7](https://github.com/rosen-bridge/ui/releases/tag/rosen-service-4.3.7) now verify final Cardano transaction results in Koios and Ogmios data so failed transactions are ignored.
 - [Guard service 10.0.0](https://github.com/rosen-bridge/guard-service/releases/tag/10.0.0) integrated Firo, public event-status reporting, rejected-event storage, API rate limits, and scanner/API changes. [10.0.1](https://github.com/rosen-bridge/guard-service/releases/tag/10.0.1) followed with a Firo ElectrumX dependency fix. Released component support does not by itself prove that every Firo route or asset is enabled in the public bridge app.
 - `Feb 11` to `Apr 22`: Firo and Handshake integrations moved through watcher, guard-service, and rosen-service updates.

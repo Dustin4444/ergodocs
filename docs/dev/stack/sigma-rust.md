@@ -15,7 +15,7 @@ tags:
   - Ruby
   - Python
 owner: docs
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-07
 source_repos:
   - repo: ergoplatform/bounded-vec
     branch: develop
@@ -53,6 +53,9 @@ source_repos:
     paths:
       - README.md
 source_of_truth:
+  - https://github.com/ergoplatform/sigma-rust/commit/ff1b7fb5c0b33d00e2807d4723b44edb07108b89
+  - https://github.com/ergoplatform/sigma-rust/commit/1e9b80b976aa063f94bc8aed1d989567b4299998
+  - https://github.com/ergoplatform/sigma-rust/releases/tag/ergo-lib-v0.28.0
   - https://github.com/ergoplatform/bounded-vec
   - https://github.com/ergonames/sdk/tree/master/rust
   - https://github.com/ergoplatform/sigma-rust/tree/develop/bindings/ergo-lib-c
@@ -87,6 +90,7 @@ Rust implementation of [ErgoScript (sigmastate-interpreter)](sigmastate-interpre
 
 ## Recent updates
 
+- `Sep`: the development branch prepared `0.29.0` package versions and changelog entries, but the latest tagged GitHub release remains [`ergo-lib-v0.28.0`](https://github.com/ergoplatform/sigma-rust/releases/tag/ergo-lib-v0.28.0). Do not treat the version-preparation commit as a published release.
 - `Aug`: SANTA's AuthDS review removed fixtures for three AVL operations that are unreachable from current ErgoScript and node paths. Its reachable verifier corpus then showed JVM and `ergots` agreement on 37 of 37 fixtures. This narrows one reported divergence; it does not establish full sigma-rust or node parity.
 - `Jul`: merged development-branch conformance fixes added checked ERG summation during stateful transaction validation ([#891](https://github.com/ergoplatform/sigma-rust/pull/891)), rejected unsupported tuple arities during evaluation ([#897](https://github.com/ergoplatform/sigma-rust/pull/897)), and rejected self context-extension keys that the JVM cannot construct ([#906](https://github.com/ergoplatform/sigma-rust/pull/906)). These fixes are not a new tagged `ergo-lib` release; downstream users should verify their pinned revision.
 - `Jun`: SANTA-backed conformance work exposed a broad sigma-rust/JVM alignment stream. Review and PR work covered JIT costing, v5/v6 evaluation behavior, AVL method semantics, context-extension handling, header-version signedness, serializer details, and other consensus-sensitive edge cases. Treat this as an active review stream unless a downstream release explicitly marks the relevant path stable.
@@ -119,6 +123,7 @@ Library and binding notes:
 - August 2025 WASM binding work changed reduced-transaction `SigmaBoolean` JSON serialization to base-16 strings, matching ErgoTree-style encoding.
 - `UnsignedBigInt` support has been added to C/Swift bindings.
 - Python bindings track newer `pyo3` for Python 3.14 support.
+- Python type stubs preserve the named `ErgoBoxCandidate(value=..., script=..., creation_height=...)` constructor signature for static type checkers.
 - WASM serializes `SigmaBoolean` values as base-16 strings.
 - `ergo-lib` and WASM bindings have moved through newer Rust toolchains and dependency updates; downstream projects should pin compatible package versions rather than assuming every binding release supports the same host toolchain.
 

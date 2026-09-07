@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-08-25
+last_reviewed: 2026-09-07
 source_repos:
   - repo: Scottcjn/Rustchain
     branch: main
@@ -17,6 +17,8 @@ source_repos:
 source_of_truth:
   - https://rustchain.org/
   - https://github.com/Scottcjn/Rustchain
+  - https://github.com/Scottcjn/Rustchain/commit/bc2b308cc861349a8859a30240f8ae8d38ff49b6
+  - https://github.com/Scottcjn/Rustchain/commit/4f1a50296d52bb7809ee5b20975357ff438cda64
   - https://github.com/Scottcjn/rustchain-bounties
   - https://github.com/Scottcjn/sophia-rustchain-bridge
 ---
@@ -75,6 +77,8 @@ RustChain utilizes a blend of modern and AI-driven technologies:
 - Later June updates report `64,000+` RTC paid to `1,000+` recipients, `44` BCOS certificates, a 5-node network across three continents/local lab, wRTC live but thinly liquid on Solana, and a published Proof of Provenance spec. These remain project-reported figures and should be checked against live RustChain endpoints for time-sensitive use.
 - `Jul 3`: project docs corrected the emission schedule to match RIP-0004 and the running node: a fixed `1.5 RTC` per 144-block epoch, with no halving, until the `8,388,608 RTC` cap.
 - `Jul 2026`: the project reports its first commercial anchoring engagement: deterministic legal-corpus inference batches are committed as Merkle roots to RustChain, with Proof-of-Antiquity hardware fingerprints used as provenance evidence. The client, scale, and performance claims come from the project README and have not been independently verified.
+- A read-only compatibility lab now exercises four `GET` routes using a canonical OpenAPI description, offline fixtures, a probe, and CI documentation checks. It is an API-conformance surface, not authority to perform state-changing calls.
+- Hardware scoring now applies a `0.8x` multiplier to modern `x86_64`; earlier material that showed `1.0x` was corrected.
 
 ### 6. Current Status & Progress (ErgoHack 10)
 

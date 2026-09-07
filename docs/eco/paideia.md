@@ -7,7 +7,7 @@ tags:
   - dApp
   - dApp-Live
 owner: docs
-last_reviewed: 2026-05-30
+last_reviewed: 2026-09-07
 source_repos:
   - repo: paideiadao/paideia-sdk
     branch: dev
@@ -19,6 +19,7 @@ source_of_truth:
   - https://www.paideia.im
   - https://app.paideia.im/
   - https://github.com/paideiadao/paideia-sdk
+  - https://github.com/paideiadao/paideia-sdk/commit/37b91e00a982e6a7ebd3a2bddfb57809b280850d
 ---
 
 /// details | DeepWiki Documentation
@@ -84,6 +85,8 @@ The Paideia team continues to work hard on improving the platform. Recent update
 - Planning a move to EIP-5 standard for contracts
 
 The [paideia-sdk](https://github.com/paideiadao/paideia-sdk) repository contains the DAO contracts and immediate off-chain code. Its README documents the contract bug bounty scope, contract configuration serialization, AVL-tree-backed DAO configuration values, default DAO/staking/proposal configuration keys, and the versioned contracts under `src/main/resources/ergoscript`.
+
+SDK integrations can use `PaideiaSession` to isolate registries, configuration, and AVL stores by thread/session and `storeRoot`. The SDK exposes `withSession` for scoped work plus `default` and `setDefault` for the process-wide default; concurrent or test code should prefer an explicit session to avoid sharing mutable SDK state unintentionally.
 
 ## Support and Issue Reporting
 
