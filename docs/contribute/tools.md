@@ -6,7 +6,7 @@ tags:
   - maintainer
   - tooling
 owner: docs
-last_reviewed: 2026-05-27
+last_reviewed: 2026-09-08
 ---
 
 # Documentation Tools
@@ -90,6 +90,23 @@ Use Markdown output for review notes:
 ```bash
 .venv/bin/python tools/structure_audit.py --markdown
 ```
+
+### `tools/external_link_audit.py`
+
+Checks outbound links found in rendered HTML. It retries failed requests with browser-like headers and lower concurrency, excludes local/private example URLs and the Google Fonts preconnect, and writes JSON and Markdown reports.
+
+Build and scan locally:
+
+```bash
+.venv/bin/python -m mkdocs build --site-dir /tmp/ergodocs-link-audit
+.venv/bin/python tools/external_link_audit.py scan /tmp/ergodocs-link-audit \
+  --json-report /tmp/external-link-audit.json \
+  --markdown-report /tmp/external-link-audit.md
+```
+
+Confirmed `404`, `410`, malformed URL, DNS, TLS, and redirect failures are actionable after retry. Access controls, rate limits, server errors, ordinary connection errors, and timeouts remain warnings for rechecking.
+
+The weekly `.github/workflows/external-link-audit.yml` run uploads both reports and creates or updates one `External link audit: actionable failures` issue. It closes that issue after a clean scan. Pull-request runs are advisory and do not write issues.
 
 ### `tools/discord_dev_digest/discord_dev_digest.py`
 
