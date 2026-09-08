@@ -39,6 +39,7 @@ This page is the quick map for people or agents maintaining ErgoDocs.
 - `tools/discord_dev_digest/discord_dev_digest.py`: exports Discord development chat and prepares source-verification leads for docs updates.
 - `tools/nav_audit.py`: checks navigation coverage and obvious nav problems.
 - `tools/structure_audit.py`: checks section structure, orphan pages, and duplicate labels.
+- `tools/external_link_audit.py`: checks external links in rendered HTML, writes JSON and Markdown reports, and maintains one actionable-failures issue.
 - `tools/hooks.py`: MkDocs hook code used during rendering.
 - `tools/ai_docs_review_prompt.md`: prompt template for source-backed docs review.
 - `tools/markdown_prompt.md`: compact Markdown formatting prompt for docs authors or AI-assisted cleanup.
@@ -64,6 +65,8 @@ Use `tools/nav_audit.py --strict` after nav edits. It fails on missing nav targe
 
 Use `tools/structure_audit.py --strict` after large section moves. It reports active docs, nav coverage, duplicate targets, source-watched page counts, area counts, and orphan pages.
 
+Use `tools/external_link_audit.py scan` against a rendered site when checking outbound links. It retries failures and keeps access blocks and timeouts as report-only warnings.
+
 Use `tools/source_watch.py scan --strict` after adding or changing `source_repos`. It validates required metadata without calling GitHub.
 
 Use GitHub-backed Source Watch scans when checking whether upstream repos changed:
@@ -81,6 +84,7 @@ Use `tools/source_watch.py mark-reviewed docs/path/page.md` only after checking 
 - `.github/workflows/docs-quality.yml`: PR workflow for docs/tooling changes. It installs dependencies, builds MkDocs, runs nav audit, and validates Source Watch metadata.
 - `.github/workflows/source-watch.yml`: weekly/manual workflow that runs GitHub Source Watch, uploads reports, and can create/update GitHub issues for changed watched source.
 - `.github/workflows/weekly-discord-docs.yml`: Friday `Weekly Docs Review` workflow. It can run `full`, `discord-only`, or `source-only`; `full` combines Discord lead reports with an independent scan of all source-linked docs repositories.
+- `.github/workflows/external-link-audit.yml`: weekly external-link scan with advisory pull-request runs, uploaded reports, and one deduplicated issue for actionable failures.
 - `.github/workflows/ai-docs-draft-prs.yml`: manual GitHub Models workflow that turns Source Watch candidates into draft PRs for human review.
 - `.github/workflows/ci.yml`: main-branch deploy workflow. It syncs the checked-out repo to the server, builds there on Linux, publishes live site, and runs non-blocking sanity checks. Remote warnings that do not appear locally usually mean a Git-tracked path case mismatch or a locally present file ignored by `.gitignore`.
 - `.github/workflows/ci-debug.yml`: manual/push diagnostic workflow for checking GitHub Actions trigger context.
