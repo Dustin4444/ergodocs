@@ -15,7 +15,7 @@ For external discovery, also check [Sigmaverse](sigmaverse.md).
 | Project | Live site | Status | Last verified activity |
 | --- | --- | --- | --- |
 | [Rosen Bridge](rosen.md) | [rosen.tech](https://rosen.tech) | Active bridge infrastructure | 2026-06-03 |
-| [Lithos](lithos.md) | - | Active testnet client | 2026-07-01 |
+| [Lithos](lithos.md) | [Operator docs](https://github.com/Lithos-Protocol/Lithos-WebDocs) | Testnet mining; limited mainnet pre-release | 2026-09-22 |
 | [Oracle Pools](oracles-v2.md) | [Oracle Stats](https://error1100.github.io/oracle-stats/), [multi-oracle dashboard](https://multi-oracle-dashboard.vercel.app/) | Active | 2026-01-10 |
 
 ### DeFi & Markets
@@ -37,7 +37,7 @@ For external discovery, also check [Sigmaverse](sigmaverse.md).
 | [ergo-use-x402](ergo-use-x402.md) | [GitHub](https://github.com/cannonQ/ergo-use-x402) | Experimental | 2026-06-22 |
 | [Ergo Marketplace](ergo-marketplace.md) | [GitHub](https://github.com/decentbob/ergo-marketplace) | Design / prototype | 2026-06-08 |
 | [The Field](the-field.md) | [Oracle dashboard](http://multi-oracle-dashboard.vercel.app) | Pre-launch / audit fixes | 2026-07-01 |
-| [ChainCash](chaincash.md) | [GitHub](https://github.com/ChainCashLabs) | Prototype / research | 2026-07-01 |
+| [ChainCash](chaincash.md) | [GitHub](https://github.com/BetterMoneyLabs) | Prototype / research | 2026-07-01 |
 | [ErgoDex](spectrum.md) | [spectrum.fi](https://spectrum.fi) | Infrastructure running | 2023-09-19 |
 | [Palmyra](palmyra.md) | [palmyra.app](https://palmyra.app/) | Live, usable | None verified |
 | [P2P Trading](p2p-trading.md) | - | Overview | None verified |

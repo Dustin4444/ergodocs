@@ -2,7 +2,7 @@
 tags:
   - Roadmap
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: ergoplatform/eips
     branch: master
@@ -33,7 +33,7 @@ source_repos:
       - README.md
       - appkit/src
   - repo: mwaddip/ergo-node-rust
-    branch: master
+    branch: main
     paths:
       - README.md
   - repo: mwaddip/santa
@@ -88,7 +88,7 @@ source_repos:
     branch: master
     paths:
       - README.md
-  - repo: ChainCashLabs/chaincash
+  - repo: BetterMoneyLabs/chaincash
     branch: master
     paths:
       - contracts
@@ -112,7 +112,7 @@ source_repos:
 source_of_truth:
   - https://github.com/ergoplatform/eips/tree/master/eip-0044.md
   - https://github.com/ergoplatform/ergo/releases
-  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.5
+  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.6
   - https://github.com/ScorexFoundation/sigmastate-interpreter/releases
   - https://github.com/ergoplatform/sigma-rust
   - https://github.com/ergoplatform/ergo-appkit/releases/tag/v6.0.1
@@ -127,7 +127,7 @@ source_of_truth:
   - https://github.com/decentbob/ergo-marketplace
   - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test
   - https://github.com/rosen-bridge
-  - https://github.com/ChainCashLabs/chaincash
+  - https://github.com/BetterMoneyLabs/chaincash
   - https://github.com/StabilityNexus/Gluon-Ergo-UI
   - https://github.com/machinafi/sdk/releases/tag/0.1.0-alpha.0
   - https://github.com/cannonQ/ergo-p2p-options-frontend
@@ -151,7 +151,7 @@ source_of_truth:
 
 # Ergo Development Roadmap & History
 
-This page tracks major Ergo development history and active work as of **September 7, 2026**. It is not a promise of delivery dates. Public repositories, release notes, EIPs, and project pages are the source of truth.
+This page tracks major Ergo development history and active work as of **September 22, 2026**. It is not a promise of delivery dates. Public repositories, release notes, EIPs, and project pages are the source of truth.
 
 Ergo's roadmap is research-led: protocol changes move through papers, EIPs, testnets, client releases, and community review before mainnet activation. Ecosystem projects move at different speeds, so items below are grouped as **completed**, **active**, or **experimental** rather than presented as a single linear release plan.
 
@@ -173,10 +173,11 @@ Month buckets summarize roadmap-relevant changes from the latest docs sweep. Use
 
 #### September
 
-- [Ergo node](protocol.md): [v6.0.5](https://github.com/ergoplatform/ergo/releases/tag/v6.0.5) is the latest checked stable release. It hardens NiPoPoW validation, fee bounds, peer buffering and blacklisting, token burn/issuance handling, and deferred ExtraIndexer catch-up. [v6.1.5](https://github.com/ergoplatform/ergo/releases/tag/v6.1.5) carries the same changes with RocksDB and remains a prerelease.
-- [Rust node](rust-node.md): independent `arkadianet/ergo` [v0.7.0](https://github.com/arkadianet/ergo/releases/tag/v0.7.0) adds further consensus-parity, persistence, sync, SSRF, mempool-budget, and peer-routing fixes. It remains pre-1.0 alpha software.
-- [Lithos](lithos.md): [v5.2.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test) reduces peak NISP transaction size through commitment rollups, changes bond/slashing parameters, and updates contracts, APIs, configuration, and fraud-proof handling. It remains a testnet release.
-- [Rosen Bridge](rosen.md): watcher and guard apps reached `4.5.0` with Next.js 16, while `rosen-service 4.4.1` simplified Bitcoin Runes configuration and updated its datasource.
+- [Ergo node](protocol.md): [v6.0.6](https://github.com/ergoplatform/ergo/releases/tag/v6.0.6) improves NiPoPoW and UTXO-snapshot bootstrap recovery, retries cached block sections after headers arrive, retries mining candidate assembly after proof-generation failure, checks wallet change-address ownership, and exposes mempool transaction validation cost. [v6.1.6](https://github.com/ergoplatform/ergo/releases/tag/v6.1.6) carries the same release changes on RocksDB and remains a prerelease.
+- [Rust node](rust-node.md): `mwaddip/ergo-node-rust` [v0.8.2](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.2) checks peer-delivered section IDs against their bytes, hardens bootstrap response handling, and exposes block validation cost for conformance tooling. Both Rust node implementations remain experimental; the independent `arkadianet/ergo` project remains pre-1.0 alpha.
+- [Lithos](lithos.md): [v5.4.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.4.0-test) adds LithosDex order batching and candidate/mempool improvements. The separate [v1.0.0-prerelease](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v1.0.0-prerelease) enables mainnet LithosDex pool/vault and order batching; mining, emissions, and rollup services remain disabled.
+- [Rosen Bridge](rosen.md): guard-service `11.0.0` versions its agreement/reprocessing/synchronization protocols and changes payment-hash verification and API-key authentication. `11.0.1` updates dependencies; watcher `6.3.2`, rosen-service `4.4.2`, and the `4.5.1` operator apps carry related configuration and dependency updates.
+- [sigma-rust](sigma-rust.md): development-branch work validates reduced transactions, restricts deterministic signing inputs, checks unsigned integer conversions, and aligns context-extension ordering and tree-version evaluation with the reference implementation. The latest tagged `ergo-lib` release remains `0.28.0`; downstream users must check their pinned revision.
 
 #### August
 
@@ -247,13 +248,13 @@ This is the clearest short-form view of what is in the pipeline. Items are group
 
 | Area | Status |
 | --- | --- |
-| Reference node | **Released / testnet**: mainnet 6.0.x line is active; 6.1.x and 6.5.0 Matrix DevNet builds are used for testing newer work. |
-| Sigma / ErgoScript | **Released**: Sigma SDK 6.0.x has shipped, with 6.0.5 released in June 2026. |
+| Reference node | **Released / prerelease**: v6.0.6 is stable; v6.1.6 is its RocksDB prerelease counterpart. The 6.5.0 Matrix build is for DevNet testing. |
+| Sigma / ErgoScript | **Released**: Sigma SDK 6.0.x has shipped through 6.0.6. |
 | AppKit | **Released**: AppKit 6.0.1 was released in August 2026 on Sigma SDK 6.0.6. |
 | Rust / TypeScript stack | **Active implementation research**: `sigma-rust`, `mwaddip/ergo-node-rust`, `arkadianet/ergo`, `ergots`, and SANTA runners are differential-testing surfaces, not replacements for the JVM consensus authority unless upstream marks a path stable. |
 | Scaling | **Research / testnet**: sub-blocks, Braid / merged-mined sidechain design, NiPoPoW bootstrapping, pruned operation, and devnet testing remain active tracks. |
 | Interoperability | **Live + expanding**: Rosen Bridge is live across Ergo, Cardano, BTC, EVM/BSC, and DOGE, with more chain work and Runes-related support in progress. |
-| Mining decentralization | **Testnet**: Lithos has moved through multiple 2026 testnet releases, reaching `v5.2.0-test`. |
+| Mining decentralization | **Testnet**: Lithos mining remains on the `v5.4.0-test` line. Its separate mainnet pre-release enables only LithosDex pool/vault and order batching. |
 | DeFi and monetary systems | **Mixed**: Spectrum, SigmaUSD, Dexy, Gluon Gold, SigmaFi, Duckpools, Machina, Etcha, ChainCash/Basis, Ergo Marketplace, and related tools cover live, alpha, and prototype stages. |
 | Data and observability | **Active tooling**: eBiome, Matrix Pulse, Ergo Mempool Watcher, explorers, and knowledge-base tooling expand monitoring, analytics, forensics, and project-context surfaces. |
 | Governance and funding | **Decentralizing**: the Ergo Foundation has narrowed its role; [Sigmanauts](sigmanauts.md), [GitCircles](gitcircles.md), and independent teams now manage more ecosystem functions. See [Ergo Foundation Treasury](ef-treasury.md), [EF Votes](ef-votes.md), and [EF Future](ef-future.md). |
@@ -356,12 +357,12 @@ The emphasis in 2026 is validation and application work on top of the 6.x stack,
 
 | Track | Current state | Watch next |
 | --- | --- | --- |
-| Sigma SDK | 6.0.x released through 6.0.5. | New SDK releases, EIP-50 finalization, and compatibility notes. |
+| Sigma SDK | 6.0.x released through 6.0.6. | New SDK releases, EIP-50 finalization, and compatibility notes. |
 | AppKit | 6.0.1 released on Sigma SDK 6.0.6. | Downstream library updates and examples that adopt AppKit 6. |
 | [FleetSDK](fleet.md) / ergoc | Fleet 2025 work added `AvlTree` serialization, browser bundle changes, and ErgoTree construction from ergoc JSON output. | Release notes, package entrypoints, and examples that depend on newer serialization paths. |
 | [sigma-rust](sigma-rust.md) | Compiler/interpreter parity work and bindings continue. | Consensus-sensitive parity claims, JIT costing, and binding releases. |
 | [ergots](ergots.md) | TypeScript verification and ErgoScript tooling is active, with `0.4.0` NiPoPoW and AVL+ packages adding prover and storage surfaces. | Package stability, JVM-alignment notes, and evaluator coverage. |
-| [Rust Node](rust-node.md) / SANTA | Rust node reached `0.8.1`; SANTA supplies conformance vectors/runners for sigma-rust, arkadianet/ergo, and mwaddip/ergo-node-rust. | Cross-implementation divergences, new vector tiers, and production-readiness statements. |
+| [Rust Node](rust-node.md) / SANTA | Rust node reached `0.8.2`; SANTA supplies conformance vectors/runners for sigma-rust, arkadianet/ergo, and mwaddip/ergo-node-rust. | Cross-implementation divergences, new vector tiers, and production-readiness statements. |
 
 ### Scaling and Mining
 
@@ -369,7 +370,7 @@ The emphasis in 2026 is validation and application work on top of the 6.x stack,
 | --- | --- | --- |
 | [Storage rent](storage-rent.md) and pruning | Live economic/state-management primitives. | Operator guidance, explorer support, and wallet UX. |
 | NiPoPoWs / light clients | Core design primitive, with bootstrapping and proof-serving work continuing. | Node, Rust, and SDK support for practical light-client flows. |
-| [Lithos](lithos.md) | Testnet client releases reached `v5.0.0-test`. | Mainnet-readiness notes, Stratum/miner docs, collateral flows, and risk disclosures. |
+| [Lithos](lithos.md) | Testnet `v5.4.0-test`; mainnet pre-release limited to LithosDex pool/vault and batching. | Mainnet-readiness notes, Stratum/miner docs, collateral flows, and risk disclosures. |
 | Sub-blocks / Layer 2 | Research and development track. | Devnet evidence and clear security assumptions. |
 | Matrix observability | [Matrix Pulse](matrix-pulse.md) provides local Matrix input-block monitoring for arrivals, applies, queues, forks, and status headers. | Maintained releases, operator docs, and whether Matrix tooling becomes part of standard devnet observability. |
 | FIMOs and miner utilities | Fair Initial Mining Offering concepts and miner tooling remain ecosystem-level research / utility work; Sigmanauts added public calculator and operator-tooling plans. | Concrete contracts, mining-pool support, and user-facing risk documentation. |

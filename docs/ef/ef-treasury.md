@@ -231,13 +231,13 @@ Exchange and market-maker names are anonymised here because many centralised exc
 
 ## Salaries
 
-Several contributors have received monthly salaries or rewards for work on the Ergo ecosystem. Most were promoted from within the community after sustained contributions. The chart below compares total amount paid against years worked.
+Several contributors have received monthly salaries or rewards for work on the Ergo ecosystem. Most were promoted from within the community after sustained contributions.
 
-### Salary Distribution by Contributor
+### Average Annual Salaries
 
-This chart shows the total paid to each person against the years they worked or contributed to Ergo.
+This chart shows the distribution of average annual amounts paid to contributors who received monthly salaries. Each figure represents an average amount per year, not a monthly payment. It includes salary records only and excludes unaccounted-for early monthly salaries.
 
-![Salary distribution by amount paid and years worked](salaries_box_chart.png)
+![Distribution of average annual salaries in USD for contributors who received monthly salaries](salaries_box_chart.png)
 
 /// details | Roles
      {type: info}

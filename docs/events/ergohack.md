@@ -182,7 +182,7 @@ Explore the history of innovation. Click any event name to jump to its details o
 
 9. **Community Liquidity Bootstrap (CLB)**
     * **Overview**: A nonprofit initiative to address liquidity in Ergo without venture capital, engaging the community with accessible returns.
-    * [**GitHub**](https://github.com/AcoSmrkas/community-liquidity-bootstrap) | [**Presentation**](https://drive.google.com/file/d/1Qomxp3UpHaKd8SFuCjw26cte4NEjxuvF/view?usp=drive_link)
+    * [**Presentation**](https://drive.google.com/file/d/1Qomxp3UpHaKd8SFuCjw26cte4NEjxuvF/view?usp=drive_link)
 
 **Winners:**
 
@@ -325,7 +325,7 @@ Several ErgoHack IX ideas remain useful prompts for future builders. Treat this 
 3. [**EIP38-Partial-Voting**](https://github.com/WilfordGrimley/eip38PartialVoting): EIP draft empowering miners with a 'partial' vote option for indicative voting, enabling pools to pass governance power to miners. ([Video](https://dalek.zone/w/quqExPoNiabYLKFx1FqUsf), [Draft PR](https://github.com/WilfordGrimley/ergo/blob/EIP-0038/src/main/scala/org/ergoplatform/nodeView/state/VotingData.scala))
 4. **SNISP** (Succinct, Non-Interactive Share Proofs): Proofs allowing accurate/efficient on-chain PoW calculation, useful for decentralized pools, governance, work-backed assets. ([Draft Paper](pdf/SNISP_FINAL_NO_CITATIONS.pdf))
 5. [**Paizo**](https://github.com/deadit/paizo): On-chain mining governance simulation tool for educating miners. ([Live Demo](https://deadit.github.io/paizo/))
-6. **Ergo-Payroll**: Automated payroll distribution tool for ERG/tokens based on amount or USD value. ([GitHub](https://github.com/andrehafner/ergo-payroll))
+6. **Ergo-Payroll**: Automated payroll distribution tool for ERG/tokens based on amount or USD value. (Public repository unavailable.)
 7. [**Obolflip**](https://github.com/obolflip): A decentralised CoinFlip betting application. ([Docs & Client](https://github.com/obolflip/obolflip-client))
 8. **ergo-audit**: DAO-based project for community auditing of ecosystem projects/contracts with standardized frameworks.
 9. [**ErgoNames**](https://github.com/ergonames): Easy-to-remember names for Ergo addresses, tackling multi-contract approach, orphan requests, NSFW engine, etc. ([Proposal](pdf/ergonames5.pdf))
@@ -434,7 +434,7 @@ Several ErgoHack IX ideas remain useful prompts for future builders. Treat this 
 
 1. **ErgoLend**: Lending platform. ([GitHub](https://github.com/Ergo-Lend/))
 2. **Minotaur Wallet**: Wallet development. ([GitHub](https://github.com/minotaur-ergo/minotaur-wallet))
-3. **Ergopad**: Launchpad / Dashboard project. ([GitHub](https://github.com/Ergohack-Dashboard-Project))
+3. **Ergopad**: Launchpad / Dashboard project. (Public repository unavailable.)
 4. **Ergo Subpooling**: Subpooling solution allowing miners to share block rewards. ([GitHub](https://github.com/K-Singh/ergo-subpooling))
 5. **HYPO10USE (QuidGames)**: Game platform focusing on translating game mechanics to the eUTXO model. ([Github](https://github.com/hypo10use/quid-games))
 6. **Ergo Audio**: Project exploring blockchain application in the audio/music enterprise domain.

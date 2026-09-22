@@ -36,7 +36,7 @@ The blockchain ecosystem has witnessed a proliferation of token distribution met
 
 **PROTOTYPE Repos:**
 
-- [Token Flight](https://github.com/The-Last-Byte-Bar/Token-Flight)
+- Token Flight (public repository unavailable)
 - [Token Flight Bot](https://github.com/The-Last-Byte-Bar/Token-Flight-Bot)
 
 These prototypes were successfully used on the testnet to achieve the following:

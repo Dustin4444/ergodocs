@@ -17,5 +17,5 @@ Yoroi removed its Ergo dApp connector example from the active frontend tree, so 
 ## Resources
 
 - [Message signing](message-signing.md)
-- [Yoroi's dApp connector example code](https://github.com/Emurgo/yoroi-frontend/tree/develop/packages/yoroi-connector/example-ergo)
+- [Yoroi's dApp connector example code](https://github.com/Emurgo/yoroi-frontend/tree/2ecad4c777b448333852e8b87c0727cd88d8f116/packages/yoroi-connector/example-ergo)
 - Nautilus and SAFEW implements the same API as Yoroi ([EIP-12](https://github.com/ergoplatform/eips/pull/23/files#diff-cb3f835ea389f22c2f074a6acd820d178e44c82df8898e8ff36aea7f762b6710))

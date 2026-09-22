@@ -5,10 +5,10 @@ tags:
   - Infrastructure
   - Experimental
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: mwaddip/ergo-node-rust
-    branch: master
+    branch: main
     release_watch: true
     paths:
       - README.md
@@ -44,6 +44,7 @@ source_repos:
 source_of_truth:
   - https://github.com/mwaddip/ergo-node-rust
   - https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.1
+  - https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.2
   - https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.0
   - https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.7.11
   - https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.7.10
@@ -76,6 +77,8 @@ source_of_truth:
   - https://github.com/mwaddip/santa-donner
   - https://github.com/arkadianet/ergo
   - https://github.com/arkadianet/ergo/releases/tag/v0.7.0
+  - https://github.com/arkadianet/ergo/releases/tag/v0.8.0
+  - https://github.com/arkadianet/ergo/releases/tag/l4-inputs-2026-09-20
   - https://github.com/arkadianet/ergo/releases/tag/v0.6.0
 ---
 
@@ -95,6 +98,7 @@ Related Rust-node references include [Luivatra/ergo-rust-node](https://github.co
 
 Recent release highlights:
 
+- [v0.8.2](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.2) binds peer-delivered block sections to IDs recomputed from their bytes before storage, and extends the same checks to snapshot manifests/chunks and NiPoPoW light bootstrap. It also separates observed peers from gossiped entries, limits light-bootstrap responses to one per peer, and exposes block-accumulated validation cost for conformance tooling.
 - [v0.8.1](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.1) aligned `CONTEXT.headers` with the reference node's nine preceding headers and allowed missing-parent requests to resume after the unknown-parent request budget had been exhausted.
 - [v0.8.0](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.8.0) removed deferred script evaluation, introduced derived memory-budget and split-cache settings, moved Debian configuration into `/etc/ergo-node/conf.d/`, and fixed external-miner candidates, at-tip candidate serving, and mempool admission. UTXO mode now refuses to start below a 3 GiB memory ceiling unless the operator explicitly overrides the floor.
 - [v0.7.11](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.7.11) fixed a reorg header-index overwrite and fast-sync cold-start gap, and added offline state compaction. Operators whose `v0.7.5`–`v0.7.10` index is already clobbered still need a resync.
@@ -114,7 +118,7 @@ Recent release highlights:
 - [v0.3.1](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.3.1) unblocked mainnet sync stalls around a voting-epoch boundary and a sigma-rust v6 parse-time type check. [v0.3.0](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.3.0) reduced observed peak RSS during mainnet sync from about `14.95 GB` to about `9.5 GB`.
 - [v0.1.0](https://github.com/mwaddip/ergo-node-rust/releases/tag/v0.1.0) was the first public release after early P2P, sync, NiPoPoW, and mining-endpoint work. Treat these early releases as historical implementation milestones, not stable-node recommendations.
 
-The independent [arkadianet/ergo v0.7.0](https://github.com/arkadianet/ergo/releases/tag/v0.7.0) release builds on the `v0.6.0` line with consensus-parity fixes for activated ErgoTree versions, collection costs, value forms and canonical IDs, serializer rejection, persistence durability, header checkpoints, and sync modes. It also adds SSRF protection, mempool budgets, and stricter peer-address handling. It remains pre-1.0 alpha software; verify results against the Scala reference node.
+The independent [arkadianet/ergo](https://github.com/arkadianet/ergo) implementation is currently pre-1.0 alpha software. Its README documents six node modes, UTXO snapshot and NiPoPoW bootstrap, an extra index, external-miner support in UTXO modes, and an HD wallet; it explicitly says not to use the node for production infrastructure or funds custody. The repository's `l4-inputs-2026-09-20` release is a data-only package for mainnet replay tests, not a software release. Verify results against the Scala reference node.
 
 Current development areas include mining endpoint support, NiPoPoW bootstrapping, RequestModifiers serving, mempool/API work, peer penalties, indexer behavior, API parity, and validation against JVM behavior.
 

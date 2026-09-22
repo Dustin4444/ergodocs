@@ -15,7 +15,7 @@ tags:
   - Ruby
   - Python
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: ergoplatform/bounded-vec
     branch: develop
@@ -113,6 +113,8 @@ Additional compiler details:
 
 Compatibility notes:
 
+- Development-branch reduced transactions require matching unsigned/reduced input counts and byte-identical context extensions. Signing and serialization reject inconsistent pairs. For each input, deterministic signing accepts a single `ProveDlog` with its matching secret or a trivial-true reduction; compound propositions and DH tuples return errors ([implementation](https://github.com/ergoplatform/sigma-rust/commit/85e8fd797a51b543d1c94789b745445ce9bdb166)). These changes are not included in the latest tagged `ergo-lib-v0.28.0` release.
+- Context extensions with five or more entries now serialize in Scala 2.12 hash-map iteration order on the development branch; smaller extensions retain insertion order. This aligns signing bytes and transaction IDs with the reference node ([#843](https://github.com/ergoplatform/sigma-rust/pull/843)). Tree reduction also takes the evaluated ErgoTree's version into account, so version-gated operations such as V3 `BigInt` downcasts do not inherit a default V0 context ([#875](https://github.com/ergoplatform/sigma-rust/pull/875)).
 - Some historical mainnet trees use pre-v3 or pre-JIT behavior. Compatibility work covers cases where the JVM interpreter is more permissive than sigma-rust.
 - The Rust node sync process was used as a differential test source for sigma-rust by comparing behavior against the Scala reference implementation.
 - Tooling using sigma-rust should still treat the Scala node as consensus authority unless a release explicitly states parity for the relevant path.
@@ -122,6 +124,7 @@ Library and binding notes:
 - [`bounded-vec`](https://github.com/ergoplatform/bounded-vec) is an Ergo Platform Rust utility crate for vectors with type-level lower and upper bound guarantees. It is low-level infrastructure rather than an application SDK, but useful context when following Rust dependency work around Sigma libraries.
 - August 2025 WASM binding work changed reduced-transaction `SigmaBoolean` JSON serialization to base-16 strings, matching ErgoTree-style encoding.
 - `UnsignedBigInt` support has been added to C/Swift bindings.
+- On the development branch, the WASM `UnsignedBigInt` constructor accepts only nonnegative safe-integer JavaScript `Number` values. Use JavaScript `BigInt` for larger values within the unsigned 256-bit range. Invalid numbers and out-of-range integers return errors; checked division and modular arithmetic also reject zero divisors or moduli ([implementation and binding tests](https://github.com/ergoplatform/sigma-rust/commit/9fa82c07d8cfc6c9fe158d04f6541ccd8d659ed6)). Verify your pinned binding revision before relying on these checks.
 - Python bindings track newer `pyo3` for Python 3.14 support.
 - Python type stubs preserve the named `ErgoBoxCandidate(value=..., script=..., creation_height=...)` constructor signature for static type checkers.
 - WASM serializes `SigmaBoolean` values as base-16 strings.

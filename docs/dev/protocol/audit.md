@@ -75,7 +75,7 @@ proving and verification routines described in Appendix A.
 
 We reviewed these two aspects, based on the code in the repository [sigmastate-interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter), and the [ErgoScript paper](https://ergoplatform.org/docs/ErgoScript.pdf), carefully comparing the intended behaviour (in Appendix A) with the actual behaviour as implemented.
 
-​We notably reviewed code from the [SigSerializer](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/SigSerializer.scala), [Interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/Interpreter.scala), and [ProverInterpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/sigmastate/src/main/scala/sigmastate/interpreter/ProverInterpreter.scala) traits and objects.
+​We notably reviewed code from the [SigSerializer](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/interpreter/shared/src/main/scala/sigmastate/SigSerializer.scala), [Interpreter](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/interpreter/shared/src/main/scala/sigmastate/interpreter/Interpreter.scala), and [ProverInterpreter](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/interpreter/shared/src/main/scala/sigmastate/interpreter/ProverInterpreter.scala) traits and objects.
 
 ​We mainly sought bugs from the following classes:
 

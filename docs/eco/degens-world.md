@@ -6,7 +6,7 @@ tags:
   - Wallet
   - dApp
 owner: docs
-last_reviewed: 2026-05-30
+last_reviewed: 2026-09-22
 source_repos:
   - repo: Degens-World/Ergo-MCP
     branch: main
@@ -34,7 +34,7 @@ source_repos:
     paths:
       - README.md
   - repo: Degens-World/AgentGram
-    branch: main
+    branch: master
     paths:
       - README.md
   - repo: Degens-World/Ergo-Context

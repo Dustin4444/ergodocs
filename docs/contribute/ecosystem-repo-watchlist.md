@@ -182,8 +182,8 @@ These repositories are retained as a broad maintainer reference list. They are n
 | [`ThierryM1212/ergo-token-minter`](https://github.com/ThierryM1212/ergo-token-minter) | `default` | `README.md` |
 | [`ThierryM1212/SAFEW`](https://github.com/ThierryM1212/SAFEW) | `default` | `README.md` |
 | [`ThierryM1212/transaction-builder`](https://github.com/ThierryM1212/transaction-builder) | `default` | `README.md` |
-| [`TremendouslyHighFrequency/eips`](https://github.com/TremendouslyHighFrequency/eips) | `default` | `eip-0044.md` |
-| [`TremendouslyHighFrequency/ErgCaml`](https://github.com/TremendouslyHighFrequency/ErgCaml) | `default` | `README.md` |
+| `TremendouslyHighFrequency/eips` (public repository unavailable) | `default` | `eip-0044.md` |
+| `TremendouslyHighFrequency/ErgCaml` (public repository unavailable) | `default` | `README.md` |
 | [`vorujack/node-stratum-pool`](https://github.com/vorujack/node-stratum-pool) | `default` | `README.md` |
 | [`zargarzadehm/ergo-faucet`](https://github.com/zargarzadehm/ergo-faucet) | `default` | `README.md` |
 | [`zkastn/reduced-transactions`](https://github.com/zkastn/reduced-transactions) | `default` | `README.md` |

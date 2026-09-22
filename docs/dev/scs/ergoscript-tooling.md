@@ -3,7 +3,7 @@ tags:
   - ErgoScript
   - Tooling
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: Emurgo/Emurgo-Research
     branch: master
@@ -51,6 +51,12 @@ The ErgoScript ecosystem offers a wide range of tools and resources to help deve
 - [Kiosk](kiosk.md) lets anyone play with ErgoScript using a basic web-based UI
 - [ergoscript-compiler](https://github.com/ergoplatform/ergoscript-compiler)
 - [ergo-forge](https://github.com/arkadianet/ergo-forge) is an experimental build, inspect, audit, and test playground backed by the independent Rust node's compiler and interpreter.
+
+#### Inspecting deployed contracts with ergo-forge
+
+The `ergo-es tree` command decodes addresses offline. Looking up a box requires an explicitly configured explorer or a recorded source; decoding an address alone does not fetch its boxes. Source ingestion can bind named constants, while `ergo-es match` compares parsed program structure and reports constant differences separately from byte identity. Structural similarity does not establish equivalent behavior.
+
+Interpret results according to their evidence: static findings, sampled spending scenarios, and unsigned preflight checks do not establish full node acceptance. The separate library validator runs the pinned Rust node's transaction pipeline against explicitly supplied state. Its acceptance result applies to that transaction and state, not to a contract's overall security. See the [workbench documentation](https://github.com/arkadianet/ergo-forge#authority-rules).
 
 ### Editor Support
 

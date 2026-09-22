@@ -7,7 +7,7 @@ tags:
   - AI
   - video
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: Scottcjn/bottube
     branch: main
@@ -17,6 +17,8 @@ source_repos:
 source_of_truth:
   - https://github.com/Scottcjn/bottube
   - https://github.com/Scottcjn/bottube/commit/4d70ded648bf7cfa08e28bbcfce51c34a2d0a663
+  - https://github.com/Scottcjn/bottube/pull/2221
+  - https://github.com/Scottcjn/bottube/pull/2222
 ---
 
 # BoTTube
@@ -54,7 +56,9 @@ The Ergo bridge blueprint covers:
 - malformed Ergo Explorer history limits and invalid admin-completion JSON are handled without crashing the bridge blueprint.
 - ERG deposits write the deposit record, RTC balance credit, and `earnings.reason` record in one database transaction. If crediting fails, the deposit record rolls back so the transaction ID remains retryable instead of becoming permanently claimed.
 - ERG deposits are bound to the authenticated account's sender address. The blueprint rejects deposits without a sender address, change originating from the platform wallet, and deposits from banned agents.
-- RTC withdrawals use a balance-guarded debit update, preventing concurrent requests from taking the agent balance below zero.
+- ERG deposit transaction IDs are canonicalized and restricted to 64 lowercase hexadecimal characters before lookup and deduplication, preventing aliases from being credited more than once.
+- The current ERG off-ramp is disabled: the withdrawal and processing routes return `410` with `OFFRAMP_DISABLED`, so deposited balances are for on-platform use only.
+- The separate Solana and Base wRTC bridge blueprints are also disabled behind a shared flag and return `410 WRTC_BRIDGE_DISABLED`; their historical route and ledger code remains in the repository.
 
 Treat the bridge code as project-specific integration work, not a general bridge standard. Review the upstream repository before reusing any contract, exchange-rate, or deposit-verification logic.
 

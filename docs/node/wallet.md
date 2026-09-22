@@ -12,7 +12,7 @@ tags:
   - BIP39
   - BIP32
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -95,7 +95,7 @@ Recent transaction-builder code validates supplied input IDs before constructing
 
 Token burn requests can be combined with asset issuance. Node `v6.0.5` preserves the requested burn, issuance, and payment ordering while building outputs; older affected code could filter burns too early, associate issuance with the wrong output, and fail with `NotEnoughTokensError`.
 
-The unreleased `v6.0.6` branch changes `/wallet/updateChangeAddress` to require an unlocked wallet and a P2PK address that the active wallet tracks and can sign for. It also ignores a legacy persisted change address that the wallet does not own and falls back to the root address. See [ergoplatform/ergo#2477](https://github.com/ergoplatform/ergo/pull/2477); do not assume this rule is present in `v6.0.5`.
+Node `v6.0.6` requires `/wallet/updateChangeAddress` to use an unlocked wallet and a P2PK address that the active wallet tracks and can sign for. It also ignores a legacy persisted change address that the wallet does not own and falls back to the root address. See [ergoplatform/ergo#2477](https://github.com/ergoplatform/ergo/pull/2477); do not assume this rule is present in `v6.0.5`.
 
 ![send ergs](https://user-images.githubusercontent.com/23208922/71129066-a28c1080-2214-11ea-9806-7d768059980a.png)
 

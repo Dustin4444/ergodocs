@@ -7,10 +7,6 @@ tags:
 owner: docs
 last_reviewed: '2026-06-27'
 source_repos:
-  - repo: AcoSmrkas/mew-dex
-    branch: master
-    paths:
-      - README.md
   - repo: AcoSmrkas/mewfinance-ui
     branch: master
     paths:
@@ -29,7 +25,6 @@ source_repos:
       - README.md
 source_of_truth:
   - https://mewfinance.com/
-  - https://github.com/AcoSmrkas/mew-dex
   - https://github.com/AcoSmrkas/mewfinance-ui
   - https://github.com/AcoSmrkas/mew-smart-contracts
 ---

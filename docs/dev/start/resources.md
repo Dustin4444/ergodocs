@@ -57,7 +57,7 @@ This page outlines the resources available on Ergo. Also check out the [dev-tool
 
 ### Test vectors
 
-- [Ergo transaction serialization](https://git.io/fjqwX)
+- [Ergo transaction serialization](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/data/shared/src/main/scala/org/ergoplatform/ErgoLikeTransaction.scala)
 - [Signature scheme](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/interpreter/shared/src/test/scala/sigmastate/crypto/SigningSpecification.scala)
 
 ## Utilities

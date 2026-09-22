@@ -7,7 +7,7 @@ tags:
   - UI
   - RPC Endpoints
 owner: docs
-last_reviewed: 2026-08-25
+last_reviewed: 2026-09-22
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -98,6 +98,8 @@ Current node API versions expose unspent-box lookup routes under `/blockchain/bo
 When `includeUnconfirmed=true`, results can include boxes created by transactions in the mempool. When `excludeMempoolSpent=true`, boxes already spent by mempool transactions are filtered out of the result. Use both flags when you need a wallet- or dApp-facing view that reflects pending mempool spends as well as confirmed UTXO state.
 
 The unconfirmed transaction routes now also expose richer box data for mempool transactions. In particular, unconfirmed input lookup can use both state and pool data to return full input boxes with proof data where available.
+
+Since node v6.0.6, `GET /transactions/unconfirmed`, `GET /transactions/unconfirmed/byTransactionId/{txId}`, and `POST /transactions/unconfirmed/byErgoTree` include an optional `cost` field: the validation cost recorded when the transaction entered the mempool. It is `null` on digest-state nodes and for transactions restored by rollback before revalidation. Clients that support older nodes should also tolerate the field being absent.
 
 Node `v6.0.1` included the indexed block endpoints and richer unconfirmed-input API work. Development discussion around that release also called out a follow-up need for mempool-aware options on newer indexed transaction lookups such as `/blockchain/transaction/byId`.
 

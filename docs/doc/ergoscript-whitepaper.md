@@ -393,7 +393,7 @@ $$
 
 #### Example: arbitrary computation via a simple cellular automaton
 
-The example in the paragraph is not meant for practical implementation; rather, it is here merely to demonstrate the Turing-complete power of self-replication. It implements the so-called *rule 110* one-dimensional cellular automaton [@wolfram1986theory], which is known to be Turing-complete [@cook2004universality] (with only polynomial-time overheard --- i.e., $P$-complete [@NW06]). See [@CKM18] for more details. The code for this example is too complex to be put here; it is available [here](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/master/src/test/scala/sigmastate/utxo/examples/Rule110Specification.scala).
+The example in the paragraph is not meant for practical implementation; rather, it is here merely to demonstrate the Turing-complete power of self-replication. It implements the so-called *rule 110* one-dimensional cellular automaton [@wolfram1986theory], which is known to be Turing-complete [@cook2004universality] (with only polynomial-time overheard --- i.e., $P$-complete [@NW06]). See [@CKM18] for more details. The code for this example is too complex to be put here; it is available [here](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/sc/shared/src/test/scala/sigmastate/utxo/examples/Rule110Specification.scala).
 
 <!---
 ### Merkle Trees

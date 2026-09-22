@@ -10,7 +10,7 @@ tags:
 owner: docs
 last_reviewed: 2026-06-08
 source_repos:
-  - repo: ChainCashLabs/chaincash
+  - repo: BetterMoneyLabs/chaincash
     branch: master
     paths:
       - contracts/onchain/note.es
@@ -19,7 +19,7 @@ source_repos:
     paths:
       - sc/shared/src/test/scala/sigmastate/utxo/examples/FsmExampleSpecification.scala
 source_of_truth:
-  - https://github.com/ChainCashLabs/chaincash/tree/master/contracts/onchain/note.es
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts/onchain/note.es
   - https://github.com/ergoplatform/sigmastate-interpreter/tree/develop/sc/shared/src/test/scala/sigmastate/utxo/examples/FsmExampleSpecification.scala
 ---
 # Tutorial: Finite State Machines (FSM) in Ergo
@@ -118,7 +118,7 @@ Let's model a simple vending machine:
 * **Specifications in `sigmastate-interpreter`:**
   * [`FsmExampleSpecification.scala`](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/sc/shared/src/test/scala/sigmastate/utxo/examples/FsmExampleSpecification.scala): Provides Scala code demonstrating FSM concepts in a testing context.
 * **Real-World Examples:**
-  * **ChainCash:** Contracts like [`note.es`](https://github.com/ChainCashLabs/chaincash/blob/master/contracts/onchain/note.es) implement FSM patterns for managing promissory notes and reserves.
+  * **ChainCash:** Contracts like [`note.es`](https://github.com/BetterMoneyLabs/chaincash/blob/master/contracts/onchain/note.es) implement FSM patterns for managing promissory notes and reserves.
 * **Related Concepts:**
   * [Multi-Stage Contracts](multi.md)
   * [eUTXO Model](eutxo.md)

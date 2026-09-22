@@ -13,7 +13,7 @@ source_repos:
       - contract
       - docs
       - src
-  - repo: ChainCashLabs/chaincash
+  - repo: BetterMoneyLabs/chaincash
     branch: master
     paths:
       - contracts
@@ -29,11 +29,11 @@ source_of_truth:
   - https://github.com/BetterMoneyLabs/chaincash/tree/master/docs/presentation/basis.pdf
   - https://github.com/BetterMoneyLabs/basis-tracker
   - https://github.com/BetterMoneyLabs/chaincash-rs/issues/51
-  - https://github.com/ChainCashLabs/chaincash/tree/master/contracts
-  - https://github.com/ChainCashLabs/chaincash/tree/master/contracts/onchain/note.es
-  - https://github.com/ChainCashLabs/chaincash/tree/master/contracts/onchain/reserve.es
-  - https://github.com/ChainCashLabs/chaincash/tree/master/docs/server.md
-  - https://github.com/ChainCashLabs/chaincash/tree/master/docs/whitepaper/chaincash.pdf
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts/onchain/note.es
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts/onchain/reserve.es
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/docs/server.md
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/docs/whitepaper/chaincash.pdf
   - https://github.com/kushti/chaincash/tree/master/src/main/scala/chaincash/offchain
   - https://www.ergoforum.org/t/call-for-action-building-peer-to-peer-economies-and-free-banking-on-ergo/5221
 ia_status: directory
@@ -43,7 +43,7 @@ ia_status: directory
 
 ## Introduction
 
-[ChainCash](https://github.com/ChainCashLabs) is a decentralized monetary system that enables flexible money creation by combining trust and blockchain-backed assets. It operates on the Ergo blockchain, allowing users to create and manage digital currency securely, adaptably, and transparently.
+[ChainCash](https://github.com/BetterMoneyLabs) is a decentralized monetary system that enables flexible money creation by combining trust and blockchain-backed assets. It operates on the Ergo blockchain, allowing users to create and manage digital currency securely, adaptably, and transparently.
 
 /// admonition | Implementation status
     type: warning
@@ -53,7 +53,7 @@ ChainCash is active research and prototype software, not a finished wallet-nativ
 
 Traditional financial systems often suffer from centralization, high costs, and limited access, while cryptocurrencies like Bitcoin face price volatility and inelastic supply. ChainCash addresses these issues by introducing an elastic money supply system that adjusts to economic conditions through a combination of trust and blockchain reserves, ensuring a stable, decentralized, and efficient financial ecosystem.
 
-This article explains ChainCash's functionality, explores practical applications, and provides links to technical documentation for deeper insights. For more detailed information, refer to the [ChainCash whitepaper](https://github.com/ChainCashLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf) or the [ChainCash server documentation](https://github.com/ChainCashLabs/chaincash/blob/master/docs/server.md).
+This article explains ChainCash's functionality, explores practical applications, and provides links to technical documentation for deeper insights. For more detailed information, refer to the [ChainCash whitepaper](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf) or the [ChainCash server documentation](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/server.md).
 
 ## Recent updates
 
@@ -123,7 +123,7 @@ To start experimenting:
    - Clone the ChainCash server repository from GitHub:
 
       ```bash
-      git clone https://github.com/ChainCashLabs/chaincash-rs.git
+      git clone https://github.com/BetterMoneyLabs/chaincash-rs.git
       ```
 
    - Navigate to the project directory and build the server using Cargo, the Rust package manager:
@@ -140,10 +140,10 @@ To start experimenting:
       ```
 
 2. **Configure the Acceptance Predicate**:
-      - The server allows you to define acceptance rules through a TOML-based configuration. This includes setting up whitelists, blacklists, and collateralization levels that determine which notes your server will accept. For more information, refer to the [ChainCash Server Documentation](https://github.com/ChainCashLabs/chaincash/blob/master/docs/server.md).
+      - The server allows you to define acceptance rules through a TOML-based configuration. This includes setting up whitelists, blacklists, and collateralization levels that determine which notes your server will accept. For more information, refer to the [ChainCash Server Documentation](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/server.md).
 
 3. **Interact with the API**:
-      - Use the API to create reserves, issue notes, and execute transactions. The API provides functions for accepting or rejecting payments, querying account states, and more. Explore the API endpoints by reviewing the [server implementation](https://github.com/ChainCashLabs/chaincash-rs).
+      - Use the API to create reserves, issue notes, and execute transactions. The API provides functions for accepting or rejecting payments, querying account states, and more. Explore the API endpoints by reviewing the [server implementation](https://github.com/BetterMoneyLabs/chaincash-rs).
 
 4. **Prototype Development**:
       - Some prototype code for on-chain data tracking and transaction building is available in the [offchain](https://github.com/kushti/chaincash/tree/master/src/main/scala/chaincash/offchain) folder. This code can help you understand how ChainCash processes transactions.
@@ -336,31 +336,31 @@ At a major international tech and cultural festival, organizers want to introduc
 1. **Agents**
       - **Definition**: Participants in the ChainCash network, including individuals, businesses, or organizations.
       - **Role**: Agents issue, accept, and redeem notes. They provide reserves and establish trust within the network.
-      - **Code Reference**: For a detailed understanding of how agents interact within the system, see the [ChainCash server implementation](https://github.com/ChainCashLabs/chaincash-rs).
+      - **Code Reference**: For a detailed understanding of how agents interact within the system, see the [ChainCash server implementation](https://github.com/BetterMoneyLabs/chaincash-rs).
 
 2. **Reserves**
       - **Definition**: Assets locked in smart contracts to back the notes issued by agents.
       - **Purpose**: Reserves ensure that each note has tangible backing, providing stability and trust.
-      - **Code Reference**: The reserve contract is detailed in the [ChainCash Reserve Contract](https://github.com/ChainCashLabs/chaincash/blob/master/contracts/onchain/reserve.es).
+      - **Code Reference**: The reserve contract is detailed in the [ChainCash Reserve Contract](https://github.com/BetterMoneyLabs/chaincash/blob/master/contracts/onchain/reserve.es).
 
 3. **Notes**
       - **Definition**: Digital representations of value within ChainCash.
       - **Characteristics**:
          - Backed by reserves and the trust of all agents who have held or transacted with it.
          - Transparent, with all transaction histories recorded on the blockchain.
-      - **Code Reference**: The note contract is explained in the [ChainCash Note Contract](https://github.com/ChainCashLabs/chaincash/blob/master/contracts/onchain/note.es) section of the repository.
+      - **Code Reference**: The note contract is explained in the [ChainCash Note Contract](https://github.com/BetterMoneyLabs/chaincash/blob/master/contracts/onchain/note.es) section of the repository.
 
 4. **Smart Contracts**
       - **Definition**: Contracts written in code that automatically execute transactions based on predefined conditions.
       - **Functions**:
          - Manage reserves, validate transactions, and handle redemptions.
-      - **Code Reference**: Details on smart contracts are available in the [ChainCash Smart Contracts Repository](https://github.com/ChainCashLabs/chaincash/tree/master/contracts).
+      - **Code Reference**: Details on smart contracts are available in the [ChainCash Smart Contracts Repository](https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts).
 
 5. **Trust Mechanisms**
       - **Definition**: Protocols that allow agents to establish and evaluate trust within the network.
       - **Implementation**:
          - Reputation scores, whitelists, blacklists, and collective evaluations.
-      - **Code Reference**: The trust mechanisms are part of the [ChainCash server implementation](https://github.com/ChainCashLabs/chaincash-rs).
+      - **Code Reference**: The trust mechanisms are part of the [ChainCash server implementation](https://github.com/BetterMoneyLabs/chaincash-rs).
 
 ### Transaction Workflow
 
@@ -371,7 +371,7 @@ At a major international tech and cultural festival, organizers want to introduc
 5. Charlie redeems the note for assets from any previous holder's reserve. The smart contract handles the redemption and adjusts reserves accordingly.
 6. The blockchain is updated with all transaction details, ensuring transparency and traceability.
 
-This process is automated and managed by the smart contracts detailed in the [ChainCash contracts repository](https://github.com/ChainCashLabs/chaincash/tree/master/contracts).
+This process is automated and managed by the smart contracts detailed in the [ChainCash contracts repository](https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts).
 
 ## Addressing Challenges
 
@@ -423,9 +423,9 @@ This process is automated and managed by the smart contracts detailed in the [Ch
 
 ## References
 
-- [ChainCash Whitepaper](https://github.com/ChainCashLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf)
-- [ChainCash Server Documentation](https://github.com/ChainCashLabs/chaincash/blob/master/docs/server.md)
-- [ChainCash Contracts Repository](https://github.com/ChainCashLabs/chaincash/tree/master/contracts)
+- [ChainCash Whitepaper](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf)
+- [ChainCash Server Documentation](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/server.md)
+- [ChainCash Contracts Repository](https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts)
 - [Ergo Blockchain Platform](https://ergoplatform.org/en/)
 - [Decentralized Finance (DeFi) Overview](https://www.investopedia.com/decentralized-finance-defi-5113835)
 - [Blockchain and Trust in Digital Transactions](https://hbr.org/2017/01/the-truth-about-blockchain)

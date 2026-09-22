@@ -49,7 +49,7 @@ The core idea is to represent your ErgoScript contract logic as Scala code, typi
 
 ## Example Reference
 
-The [AssetsAtomicExchange.scala](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/sigmastate/src/test/scala/sigmastate/utxo/examples/AssetsAtomicExchange.scala) tests within the `sigmastate-interpreter` repository provide practical examples of this pattern. Breakpoints can be set within the `proposition` definitions (which contain Scala code mirroring ErgoScript), and the corresponding tests run in debug mode to step through the logic.
+The [AssetsAtomicExchange.scala](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/sc/shared/src/test/scala/sigmastate/utxo/examples/AssetsAtomicExchange.scala) tests within the `sigmastate-interpreter` repository provide practical examples of this pattern. Breakpoints can be set within the `proposition` definitions (which contain Scala code mirroring ErgoScript), and the corresponding tests run in debug mode to step through the logic.
 
 ```scala
 // Snippet from AssetsAtomicExchange - Breakpoint can be set inside this block
@@ -75,7 +75,7 @@ lazy val buyerProp = proposition("buyer", { ctx: Context =>
 Using the `AssetsAtomicExchange.scala` example:
 
 1. **Set Breakpoint:** Place a breakpoint within the `buyerProp` or `sellerProp` definition in `AssetsAtomicExchange.scala` (e.g., inside the `||` block as shown in the snippet above).
-2. **Locate Test:** Find the corresponding test method in [`AssetsAtomicExchangeTests.scala`](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/sigmastate/src/test/scala/sigmastate/utxo/examples/AssetsAtomicExchangeTests.scala), such as `property("atomic exchange spec")`.
+2. **Locate Test:** Find the corresponding test method in [`AssetsAtomicExchangeTests.scala`](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/sc/shared/src/test/scala/sigmastate/utxo/examples/AssetsAtomicExchangeTests.scala), such as `property("atomic exchange spec")`.
 
     ```scala
     // Test method for atomic exchange in AssetsAtomicExchangeTests.scala

@@ -79,8 +79,8 @@ Here’s a breakdown of each phase:
 - **In `sigma-rust`**: Implemented using the `Logos` crate, which provides an efficient way to define lexing rules in Rust.
   - **Location**: [`ergoscript-compiler/src/lexer.rs`](https://github.com/ergoplatform/sigma-rust/blob/develop/ergoscript-compiler/src/lexer.rs)
 
-- **In `sigmastate-interpreter`**: A custom Scala-based Lexer is used for tokenization.
-  - **Location**: [`parsers/shared/src/main/scala/sigmastate/lang/Lexer.scala`](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/parsers/shared/src/main/scala/sigmastate/lang/Lexer.scala)
+- **In `sigmastate-interpreter`**: Lexical rules are integrated into FastParse-based Scala parser combinators rather than a separate `Lexer.scala` file.
+  - **Location**: [`SigmaParser.scala`](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/parsers/shared/src/main/scala/sigmastate/lang/SigmaParser.scala) and its [parser components](https://github.com/ergoplatform/sigmastate-interpreter/tree/develop/parsers/shared/src/main/scala/sigmastate/lang/parsers).
 
 ## 2. Syntax Analysis (Parser)
 

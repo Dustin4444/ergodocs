@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: arkadianet/ergo-vanitygen-rust
     branch: main
@@ -16,6 +16,8 @@ source_of_truth:
   - https://github.com/arkadianet/ergo-vanitygen-rust
   - https://github.com/arkadianet/Argus
   - https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.43
+  - https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.59
+  - https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.55
   - https://github.com/ergoplatform/ergo-wallet-app/pull/212
   - https://github.com/ergoplatform/ergo-wallet-app/releases/tag/v2.4.2313
   - https://github.com/nautls/nautilus-wallet/releases/tag/v1.3.3
@@ -51,7 +53,8 @@ For broader comparison, see [Wallets Overview](wallets.md).
 - A May 2026 dev-wallet update identified chained mobile transactions as a mempool-awareness issue. [Draft PR #212](https://github.com/ergoplatform/ergo-wallet-app/pull/212) explored a local metadata-only pending-transaction WAL for hot wallet, cold wallet, and ErgoPay flows; treat it as development work unless release notes say it shipped.
 - [Nautilus `v1.3.3`](https://github.com/nautls/nautilus-wallet/releases/tag/v1.3.3) adds Crux and HOF token metadata, updates token-rate fetching, adds Javanese and Malaysian translations, and bumps dependencies.
 - [Satergo `v1.9.4`](https://github.com/Satergo/Satergo/releases/tag/v1.9.4) fixes node launching and improves send-option address labels.
-- [Argus `v1.0.0-alpha.43`](https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.43) is an experimental Android wallet with wallet creation/import, watch-only addresses, ErgoPay, an EIP-12 dApp browser, UTXO tools, token-fee support, swaps and liquidity, several Ergo DeFi integrations, Rosen transfers, stealth addresses, and ZeroJoin mixing. The release is debug-signed, unaudited, not device-tested, and explicitly not for production funds.
+- [Argus `v1.0.0-alpha.59`](https://github.com/arkadianet/Argus/releases/tag/v1.0.0-alpha.59) is the current experimental Android build. It resolves token names, decimals, and descriptions during ordinary wallet sync and caches them per wallet; automatic resolution requires an `extraIndex` node, never falls back to the explorer, and does not automatically resolve stealth-only holdings. Issuer metadata remains untrusted. Earlier alpha releases stopped automatic NFT artwork requests; remote previews require an IPFS gateway you choose and ordinary web URLs are not fetched automatically.
+- Recent alpha releases also make token-heavy transactions safer to construct: token change is split by the serialized box-size limit and funded at the required per-byte minimum, mixed-token boxes can be spent, and token change returns to the wallet for Dexy actions. Watch-only accounts and the initial EIP-19 offline-signing flow are available, but the upstream notes still describe the device and camera path as untested. The build remains debug-signed, unaudited, and unsuitable for production funds.
 
 ## Quick Decision
 

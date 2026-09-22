@@ -6,7 +6,7 @@ tags:
 - dApp
 - Celaut
 owner: docs
-last_reviewed: 2026-05-30
+last_reviewed: 2026-09-22
 source_repos:
   - repo: reputation-systems/reputation-system
     branch: master
@@ -136,6 +136,8 @@ This reputation system directly powers Celaut’s trust layer:
 * **Browser Interface**: [Sigma Reputation System](https://reputation-systems.github.io/reputation-system/) provides a user-friendly interface to browse, assign, and verify reputation records.
 
 * **Library Integration**: Developers can use the [Reputation System library](https://github.com/reputation-systems/reputation-system) to build bots and services that interact directly with the reputation system. This supports automated evaluation, staking, and advanced analytics.
+
+The current library also documents `fetchProfileById`, which reconstructs a complete profile from the unspent boxes for a reputation token. Its Node entry adds a signer abstraction for the browser wallet, a standard BIP-39/BIP-32 mnemonic signer compatible with Nautilus derivation, and an unsigned transaction mode for external signing. The repository also includes an MCP server with read operations plus profile and opinion publishing; configure and review signer credentials before using it with real funds.
 
 * **Forum Application**: [reputation-systems/forum-application](https://github.com/reputation-systems/forum-application) provides a forum-style application and library around reputation-system interactions. Its README describes Svelte 4 forum components where profiles, topics, replies, spam flags, and profile-level blocks are represented as Ergo boxes with fixed register layouts.
 

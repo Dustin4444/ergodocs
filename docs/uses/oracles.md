@@ -63,7 +63,6 @@ For an easy docker setup see [easy-ergo-oracle](https://github.com/reqlez/ergo-e
 
 ### GitHub
 
-- [eth/usd connector](https://github.com/Luivatra/oracle-core/tree/eth-connector)
 - [Ergo oracles](https://github.com/sininen-taivas/ergo-oracle) | A command-line tool to launch oracles, with implementations for USD/ERG, EUR/ERG, BTC/ERG, AUG/ERG prices. [Forum topic with example](https://www.ergoforum.org/t/erg-usd-oracle-on-top-of-ergo/119).
 
 ### Articles

@@ -53,7 +53,7 @@ This page contains links to documents with a general overview of Ergo platform, 
 - [Succinct, Non-Interactive Share Proofs](https://docs.ergoplatform.com/events/pdf/SNISP_FINAL_NO_CITATIONS.pdf) (See [Lithos Protocol](lithos.md))
 - [Dexy](assets/pdf/dexy.pdf) (See [Dexy](dexy.md))
 - [Sigmajoin](https://github.com/ergoplatform/ergo-jde/blob/main/kiosk/src/test/scala/kiosk/mixer/doc/main.pdf)
-- [ChainCash](https://github.com/kushti/chaincash/blob/master/paper/chaincash.pdf)
+- [ChainCash](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf)
 - [KYA - A Treatise On Assumptions in Cryptocurrencies and Defi](https://github.com/kushti/kya/blob/master/kya.pdf)
 
 ## Video

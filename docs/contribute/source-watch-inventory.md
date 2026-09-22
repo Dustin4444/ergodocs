@@ -18,10 +18,10 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 ## Summary
 
 - Source-watched pages: `240`
-- Watched repositories: `239`
-- Watched GitHub owners: `101`
-- Watched repo/branch pairs: `245`
-- Watched paths: `520`
+- Watched repositories: `236`
+- Watched GitHub owners: `99`
+- Watched repo/branch pairs: `242`
+- Watched paths: `518`
 - Release-watched page/repository refs: `15`
 
 ## Coverage Groups
@@ -29,8 +29,8 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | Group | Owners | Repositories | Pages | Paths |
 | --- | ---: | ---: | ---: | ---: |
 | Core / infrastructure | 5 | 31 | 133 | 196 |
-| Ecosystem org | 10 | 39 | 25 | 36 |
-| Developer / project | 83 | 166 | 119 | 104 |
+| Ecosystem org | 9 | 38 | 25 | 36 |
+| Developer / project | 82 | 164 | 119 | 104 |
 | External standard/vendor | 3 | 3 | 6 | 6 |
 
 ## Coverage By Area
@@ -60,16 +60,15 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`arkadianet`](https://github.com/arkadianet) | Developer / project | 7 | 8 | 4 |
 | [`cannonQ`](https://github.com/cannonQ) | Developer / project | 5 | 8 | 3 |
 | [`mgpai22`](https://github.com/mgpai22) | Developer / project | 5 | 7 | 4 |
+| [`BetterMoneyLabs`](https://github.com/BetterMoneyLabs) | Ecosystem org | 3 | 6 | 15 |
 | [`kushti`](https://github.com/kushti) | Developer / project | 4 | 6 | 8 |
 | [`SavonarolaLabs`](https://github.com/SavonarolaLabs) | Ecosystem org | 7 | 6 | 8 |
 | [`ThierryM1212`](https://github.com/ThierryM1212) | Developer / project | 4 | 6 | 5 |
+| [`arobsn`](https://github.com/arobsn) | Developer / project | 4 | 5 | 1 |
 | [`Lithos-Protocol`](https://github.com/Lithos-Protocol) | Ecosystem org | 3 | 5 | 4 |
 | [`MrStahlfelge`](https://github.com/MrStahlfelge) | Developer / project | 3 | 5 | 7 |
 | [`odiseusme`](https://github.com/odiseusme) | Developer / project | 3 | 5 | 5 |
 | [`a-shannon`](https://github.com/a-shannon) | Developer / project | 3 | 4 | 4 |
-| [`arobsn`](https://github.com/arobsn) | Developer / project | 3 | 4 | 1 |
-| [`BetterMoneyLabs`](https://github.com/BetterMoneyLabs) | Ecosystem org | 3 | 4 | 10 |
-| [`ChainCashLabs`](https://github.com/ChainCashLabs) | Ecosystem org | 1 | 4 | 5 |
 | [`DeCo-Education`](https://github.com/DeCo-Education) | Developer / project | 2 | 4 | 4 |
 | [`FlyingPig5`](https://github.com/FlyingPig5) | Developer / project | 3 | 4 | 2 |
 | [`anon-real`](https://github.com/anon-real) | Developer / project | 3 | 3 | 3 |
@@ -106,7 +105,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`scalahub`](https://github.com/scalahub) | Core / infrastructure | 1 | 2 | 5 |
 | [`2ndtlmining`](https://github.com/2ndtlmining) | Developer / project | 1 | 1 | 1 |
 | [`accord-protocol`](https://github.com/accord-protocol) | Developer / project | 1 | 1 | 3 |
-| [`AcoSmrkas`](https://github.com/AcoSmrkas) | Developer / project | 5 | 1 | 1 |
+| [`AcoSmrkas`](https://github.com/AcoSmrkas) | Developer / project | 4 | 1 | 1 |
 | [`andrehafner`](https://github.com/andrehafner) | Developer / project | 1 | 1 | 1 |
 | [`Auction-Coin`](https://github.com/Auction-Coin) | Developer / project | 3 | 1 | 1 |
 | [`Blitz-TCG`](https://github.com/Blitz-TCG) | Developer / project | 2 | 1 | 1 |
@@ -131,10 +130,8 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`KeystoneHQ`](https://github.com/KeystoneHQ) | External standard/vendor | 1 | 1 | 2 |
 | [`knizhnik`](https://github.com/knizhnik) | Developer / project | 1 | 1 | 1 |
 | [`lazypinkpatrick`](https://github.com/lazypinkpatrick) | Developer / project | 1 | 1 | 1 |
-| [`ldgaetano`](https://github.com/ldgaetano) | Developer / project | 1 | 1 | 1 |
 | [`lucagdangelo`](https://github.com/lucagdangelo) | Developer / project | 1 | 1 | 1 |
 | [`minotaur-ergo`](https://github.com/minotaur-ergo) | Developer / project | 1 | 1 | 3 |
-| [`moon-miner`](https://github.com/moon-miner) | Developer / project | 1 | 1 | 1 |
 | [`Moria-Finance`](https://github.com/Moria-Finance) | Developer / project | 2 | 1 | 1 |
 | [`nautls`](https://github.com/nautls) | Developer / project | 1 | 1 | 2 |
 | [`nightowlcasino`](https://github.com/nightowlcasino) | Developer / project | 2 | 1 | 1 |
@@ -142,9 +139,10 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`nirvanush`](https://github.com/nirvanush) | Developer / project | 1 | 1 | 1 |
 | [`noob77777`](https://github.com/noob77777) | Developer / project | 1 | 1 | 1 |
 | [`ObolFlip`](https://github.com/ObolFlip) | Developer / project | 1 | 1 | 1 |
-| [`pandavio`](https://github.com/pandavio) | Developer / project | 2 | 1 | 1 |
+| [`pandavio`](https://github.com/pandavio) | Developer / project | 1 | 1 | 1 |
 | [`pattern-tech`](https://github.com/pattern-tech) | Developer / project | 2 | 1 | 1 |
 | [`paulmillr`](https://github.com/paulmillr) | Developer / project | 1 | 1 | 1 |
+| [`PhoenixErgo`](https://github.com/PhoenixErgo) | Developer / project | 1 | 1 | 1 |
 | [`pulsarz`](https://github.com/pulsarz) | Developer / project | 1 | 1 | 1 |
 | [`reputation-systems`](https://github.com/reputation-systems) | Developer / project | 2 | 1 | 3 |
 | [`scruper`](https://github.com/scruper) | Developer / project | 1 | 1 | 1 |
@@ -167,7 +165,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`ergoplatform/ergo-jde`](https://github.com/ergoplatform/ergo-jde) | Core / infrastructure | `main` | 7 | 7 |
 | [`ergoplatform/oracle-core`](https://github.com/ergoplatform/oracle-core) | Core / infrastructure | `develop`, `master` | 6 | 5 |
 | [`ergoplatform/scrypto`](https://github.com/ergoplatform/scrypto) | Core / infrastructure | `master` | 6 | 8 |
-| [`ChainCashLabs/chaincash`](https://github.com/ChainCashLabs/chaincash) | Ecosystem org | `master` | 4 | 5 |
+| [`BetterMoneyLabs/chaincash`](https://github.com/BetterMoneyLabs/chaincash) | Ecosystem org | `master` | 4 | 6 |
 | [`ergoplatform/sigmastate-interpreter`](https://github.com/ergoplatform/sigmastate-interpreter) | Core / infrastructure | `develop` | 4 | 8 |
 | [`mwaddip/ergo-proxy`](https://github.com/mwaddip/ergo-proxy) | Developer / project | `master` | 4 | 2 |
 | [`aslesarenko/ergo-appkit-examples`](https://github.com/aslesarenko/ergo-appkit-examples) | Developer / project | `master` | 3 | 7 |
@@ -216,7 +214,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`Luivatra/ergoscript-zed-extension`](https://github.com/Luivatra/ergoscript-zed-extension) | Developer / project | `main` | 2 | 1 |
 | [`MrStahlfelge/ergopay-server-example`](https://github.com/MrStahlfelge/ergopay-server-example) | Developer / project | `master` | 2 | 2 |
 | [`MrStahlfelge/mosaik`](https://github.com/MrStahlfelge/mosaik) | Developer / project | `develop` | 2 | 3 |
-| [`mwaddip/ergo-node-rust`](https://github.com/mwaddip/ergo-node-rust) | Developer / project | `master` | 2 | 1 |
+| [`mwaddip/ergo-node-rust`](https://github.com/mwaddip/ergo-node-rust) | Developer / project | `main` | 2 | 1 |
 | [`mwaddip/ergo-relay`](https://github.com/mwaddip/ergo-relay) | Developer / project | `master` | 2 | 1 |
 | [`mwaddip/ergots`](https://github.com/mwaddip/ergots) | Developer / project | `master` | 2 | 6 |
 | [`mwaddip/santa-blitzen`](https://github.com/mwaddip/santa-blitzen) | Developer / project | `master` | 2 | 1 |
@@ -238,7 +236,6 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`a-shannon/ergo-research`](https://github.com/a-shannon/ergo-research) | Developer / project | `main` | 1 | 1 |
 | [`a-shannon/ergo-sidechain-bridge`](https://github.com/a-shannon/ergo-sidechain-bridge) | Developer / project | `main` | 1 | 3 |
 | [`accord-protocol/accord-protocol`](https://github.com/accord-protocol/accord-protocol) | Developer / project | `main` | 1 | 3 |
-| [`AcoSmrkas/mew-dex`](https://github.com/AcoSmrkas/mew-dex) | Developer / project | `master` | 1 | 1 |
 | [`AcoSmrkas/mew-lock`](https://github.com/AcoSmrkas/mew-lock) | Developer / project | `main` | 1 | 1 |
 | [`AcoSmrkas/mew-prediction`](https://github.com/AcoSmrkas/mew-prediction) | Developer / project | `main` | 1 | 1 |
 | [`AcoSmrkas/mew-smart-contracts`](https://github.com/AcoSmrkas/mew-smart-contracts) | Developer / project | `main` | 1 | 1 |
@@ -252,12 +249,12 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`arkadianet/erg-vanity-gpu`](https://github.com/arkadianet/erg-vanity-gpu) | Developer / project | `main` | 1 | 1 |
 | [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | Developer / project | `main` | 1 | 1 |
 | [`arkadianet/ergo-vanitygen-rust`](https://github.com/arkadianet/ergo-vanitygen-rust) | Developer / project | `main` | 1 | 1 |
+| [`arobsn/ergo-paper-wallet`](https://github.com/arobsn/ergo-paper-wallet) | Developer / project | `master` | 1 | 1 |
 | [`arobsn/keystone-ergo-js`](https://github.com/arobsn/keystone-ergo-js) | Developer / project | `master` | 1 | 1 |
 | [`aslesarenko/ergo-appkit`](https://github.com/aslesarenko/ergo-appkit) | Developer / project | `master` | 1 | 1 |
 | [`Auction-Coin/contracts`](https://github.com/Auction-Coin/contracts) | Developer / project | `main` | 1 | 1 |
 | [`Auction-Coin/frontend`](https://github.com/Auction-Coin/frontend) | Developer / project | `main` | 1 | 1 |
 | [`Auction-Coin/off-chain`](https://github.com/Auction-Coin/off-chain) | Developer / project | `master` | 1 | 1 |
-| [`BetterMoneyLabs/chaincash`](https://github.com/BetterMoneyLabs/chaincash) | Ecosystem org | `master` | 1 | 1 |
 | [`Blitz-TCG/Game-Client`](https://github.com/Blitz-TCG/Game-Client) | Developer / project | `main` | 1 | 1 |
 | [`Blitz-TCG/Website`](https://github.com/Blitz-TCG/Website) | Developer / project | `main` | 1 | 1 |
 | [`cannonQ/ergo-mempool-watcher`](https://github.com/cannonQ/ergo-mempool-watcher) | Developer / project | `main` | 1 | 1 |
@@ -272,7 +269,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`cruxfinance/ergo-address-labels`](https://github.com/cruxfinance/ergo-address-labels) | Developer / project | `main` | 1 | 1 |
 | [`danieloravec/ergo-token-swap`](https://github.com/danieloravec/ergo-token-swap) | Developer / project | `main` | 1 | 1 |
 | [`Degens-World/agente`](https://github.com/Degens-World/agente) | Ecosystem org | `master` | 1 | 1 |
-| [`Degens-World/AgentGram`](https://github.com/Degens-World/AgentGram) | Ecosystem org | `main` | 1 | 1 |
+| [`Degens-World/AgentGram`](https://github.com/Degens-World/AgentGram) | Ecosystem org | `master` | 1 | 1 |
 | [`Degens-World/ai-radio-mcp`](https://github.com/Degens-World/ai-radio-mcp) | Ecosystem org | `main` | 1 | 1 |
 | [`Degens-World/ergo-block-timestamps`](https://github.com/Degens-World/ergo-block-timestamps) | Ecosystem org | `main` | 1 | 1 |
 | [`Degens-World/Ergo-Context`](https://github.com/Degens-World/Ergo-Context) | Ecosystem org | `main` | 1 | 1 |
@@ -326,7 +323,6 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`kushti/dexy-stable`](https://github.com/kushti/dexy-stable) | Developer / project | `master` | 1 | 3 |
 | [`kushti/ergo-book`](https://github.com/kushti/ergo-book) | Developer / project | `master` | 1 | 1 |
 | [`lazypinkpatrick/minotaur-wallet`](https://github.com/lazypinkpatrick/minotaur-wallet) | Developer / project | `main` | 1 | 1 |
-| [`ldgaetano/hodlcoin-contracts`](https://github.com/ldgaetano/hodlcoin-contracts) | Developer / project | `main` | 1 | 1 |
 | [`LiliumErgo/nest-api`](https://github.com/LiliumErgo/nest-api) | Developer / project | `main` | 1 | 1 |
 | [`Lithos-Protocol/ErgoScript-IntelliJ`](https://github.com/Lithos-Protocol/ErgoScript-IntelliJ) | Ecosystem org | `main` | 1 | 1 |
 | [`lucagdangelo/trade-in`](https://github.com/lucagdangelo/trade-in) | Developer / project | `main` | 1 | 1 |
@@ -342,7 +338,6 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`mhssamadani/ErgoWell`](https://github.com/mhssamadani/ErgoWell) | Developer / project | `master` | 1 | 1 |
 | [`mhssamadani/gravity-core`](https://github.com/mhssamadani/gravity-core) | Developer / project | `dev` | 1 | 2 |
 | [`minotaur-ergo/minotaur-wallet`](https://github.com/minotaur-ergo/minotaur-wallet) | Developer / project | `dev` | 1 | 3 |
-| [`moon-miner/ergo-paper-wallet`](https://github.com/moon-miner/ergo-paper-wallet) | Developer / project | `main` | 1 | 1 |
 | [`Moria-Finance/moria-backend`](https://github.com/Moria-Finance/moria-backend) | Developer / project | `main` | 1 | 1 |
 | [`Moria-Finance/multi-sig-test`](https://github.com/Moria-Finance/multi-sig-test) | Developer / project | `main` | 1 | 1 |
 | [`MrStahlfelge/mosaik-ageusddemo`](https://github.com/MrStahlfelge/mosaik-ageusddemo) | Developer / project | `master` | 1 | 2 |
@@ -358,11 +353,11 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`odiseusme/ergo-rust-sync-dashboard`](https://github.com/odiseusme/ergo-rust-sync-dashboard) | Developer / project | `main` | 1 | 1 |
 | [`paideiadao/paideia-contracts`](https://github.com/paideiadao/paideia-contracts) | Developer / project | `main` | 1 | 1 |
 | [`paideiadao/paideia-sdk`](https://github.com/paideiadao/paideia-sdk) | Developer / project | `dev` | 1 | 3 |
-| [`pandavio/PandaV`](https://github.com/pandavio/PandaV) | Developer / project | `main` | 1 | 1 |
-| [`pandavio/pdvserver`](https://github.com/pandavio/pdvserver) | Developer / project | `main` | 1 | 1 |
+| [`pandavio/PDV-Access-Control-System`](https://github.com/pandavio/PDV-Access-Control-System) | Developer / project | `main` | 1 | 1 |
 | [`pattern-tech/pattern-app`](https://github.com/pattern-tech/pattern-app) | Developer / project | `dev` | 1 | 1 |
 | [`pattern-tech/pattern-core`](https://github.com/pattern-tech/pattern-core) | Developer / project | `develop` | 1 | 1 |
 | [`paulmillr/noble-ciphers`](https://github.com/paulmillr/noble-ciphers) | Developer / project | `main` | 1 | 1 |
+| [`PhoenixErgo/phoenix-hodlcoin-contracts`](https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts) | Developer / project | `main` | 1 | 1 |
 | [`pulsarz/hodlcoin-frontend`](https://github.com/pulsarz/hodlcoin-frontend) | Developer / project | `master` | 1 | 1 |
 | [`reputation-systems/forum-application`](https://github.com/reputation-systems/forum-application) | Developer / project | `master` | 1 | 1 |
 | [`reputation-systems/reputation-system`](https://github.com/reputation-systems/reputation-system) | Developer / project | `master` | 1 | 3 |
@@ -414,20 +409,20 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`dev/scs/ergoscript-tooling.md`](ergoscript-tooling.md) | 5 | 5 |
 | [`dev/scs/ergoscript.md`](ergoscript.md) | 5 | 9 |
 | [`dev/tutorials/blockchain-indexing.md`](blockchain-indexing.md) | 5 | 5 |
-| [`eco/mew-finance.md`](mew-finance.md) | 5 | 5 |
 | [`dev/tutorials/blockchain-indexing/custom-indexer.md`](custom-indexer.md) | 4 | 5 |
 | [`dev/tutorials/hardware-wallet-integration.md`](hardware-wallet-integration.md) | 4 | 6 |
 | [`eco/celaut_v_netnotes.md`](celaut_v_netnotes.md) | 4 | 4 |
 | [`eco/ergonames.md`](ergonames.md) | 4 | 4 |
 | [`eco/game-of-prompts.md`](game-of-prompts.md) | 4 | 5 |
+| [`eco/mew-finance.md`](mew-finance.md) | 4 | 4 |
 | [`node/deploy-runbook.md`](deploy-runbook.md) | 4 | 5 |
-| [`uses/chaincash.md`](chaincash.md) | 4 | 11 |
 | [`ai.md`](ai.md) | 3 | 7 |
 | [`dev/interact.md`](interact.md) | 3 | 4 |
 | [`dev/oc/dex_bots.md`](dex_bots.md) | 3 | 7 |
 | [`dev/p2p/network.md`](network.md) | 3 | 8 |
 | [`dev/p2p/p2p-handshake.md`](p2p-handshake.md) | 3 | 6 |
 | [`dev/protocol/tx/read-only-inputs.md`](read-only-inputs.md) | 3 | 3 |
+| [`dev/scs/sigma/verifying.md`](verifying.md) | 3 | 3 |
 
 ## Repo And Path Coverage
 
@@ -439,7 +434,6 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`a-shannon/ergo-research`](https://github.com/a-shannon/ergo-research) | `main` | `papers/curve-trees` | `docs/dev/protocol/zkp.md` |
 | [`a-shannon/ergo-sidechain-bridge`](https://github.com/a-shannon/ergo-sidechain-bridge) | `main` | `README.md`<br>`docs/public-audit-alpha-manifest.json`<br>`docs/public-audit-alpha.md` | `docs/uses/sidechains.md` |
 | [`accord-protocol/accord-protocol`](https://github.com/accord-protocol/accord-protocol) | `main` | `README.md`<br>`docs/status.md`<br>`specs` | `docs/ai.md` |
-| [`AcoSmrkas/mew-dex`](https://github.com/AcoSmrkas/mew-dex) | `master` | `README.md` | `docs/eco/mew-finance.md` |
 | [`AcoSmrkas/mew-lock`](https://github.com/AcoSmrkas/mew-lock) | `main` | `README.md` | `docs/eco/mew-finance.md` |
 | [`AcoSmrkas/mew-prediction`](https://github.com/AcoSmrkas/mew-prediction) | `main` | `README.md` | `docs/eco/mew-finance.md` |
 | [`AcoSmrkas/mew-smart-contracts`](https://github.com/AcoSmrkas/mew-smart-contracts) | `main` | `README.md` | `docs/eco/mew-finance.md` |
@@ -455,6 +449,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`arkadianet/ergo`](https://github.com/arkadianet/ergo) | `main` | `README.md` | `docs/node/rust-node.md`<br>`docs/roadmap.md` |
 | [`arkadianet/ergo-forge`](https://github.com/arkadianet/ergo-forge) | `main` | `README.md` | `docs/dev/scs/ergoscript-tooling.md` |
 | [`arkadianet/ergo-vanitygen-rust`](https://github.com/arkadianet/ergo-vanitygen-rust) | `main` | `README.md` | `docs/wallets-overview.md` |
+| [`arobsn/ergo-paper-wallet`](https://github.com/arobsn/ergo-paper-wallet) | `master` | `README.md` | `docs/dev/wallet/paper-wallet.md` |
 | [`arobsn/hergmes`](https://github.com/arobsn/hergmes) | `master` | `README.md` | `docs/dev/tutorials/blockchain-indexing.md`<br>`docs/dev/tutorials/blockchain-indexing/custom-indexer.md` |
 | [`arobsn/keystone-ergo-js`](https://github.com/arobsn/keystone-ergo-js) | `master` | `README.md` | `docs/dev/tutorials/hardware-wallet-integration.md` |
 | [`arobsn/ledger-ergo-js`](https://github.com/arobsn/ledger-ergo-js) | `master` | `README.md` | `docs/dev/tutorials/hardware-wallet-integration.md`<br>`docs/dev/wallet/payments/ledger.md` |
@@ -465,7 +460,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`Auction-Coin/off-chain`](https://github.com/Auction-Coin/off-chain) | `master` | `README.md` | `docs/eco/auction-coin.md` |
 | [`BetterMoneyLabs/basis-tracker`](https://github.com/BetterMoneyLabs/basis-tracker) | `master` | `README.md`<br>`contract`<br>`docs`<br>`src` | `docs/dev/scs/contracts.md`<br>`docs/uses/chaincash.md` |
 | [`BetterMoneyLabs/braid`](https://github.com/BetterMoneyLabs/braid) | `master` | `README.md`<br>`docs/bitcoin-mergedmining.md`<br>`docs/braid.md`<br>`docs/ergo-mergedmining.md`<br>`whitepaper/whitepaper.pdf`<br>`whitepaper/whitepaper.tex` | `docs/uses/sidechains.md`<br>`docs/uses/sidechains/braid.md` |
-| [`BetterMoneyLabs/chaincash`](https://github.com/BetterMoneyLabs/chaincash) | `master` | `docs/presentation/basis.pdf` | `docs/uses/chaincash.md` |
+| [`BetterMoneyLabs/chaincash`](https://github.com/BetterMoneyLabs/chaincash) | `master` | `contracts`<br>`contracts/onchain/note.es`<br>`contracts/onchain/reserve.es`<br>`docs/presentation/basis.pdf`<br>`docs/server.md`<br>`docs/whitepaper/chaincash.pdf` | `docs/dev/scs/contracts.md`<br>`docs/dev/scs/tx/fsm-example.md`<br>`docs/roadmap.md`<br>`docs/uses/chaincash.md` |
 | [`Blitz-TCG/Game-Client`](https://github.com/Blitz-TCG/Game-Client) | `main` | `README.md` | `docs/eco/blitz.md` |
 | [`Blitz-TCG/Website`](https://github.com/Blitz-TCG/Website) | `main` | `README.md` | `docs/eco/blitz.md` |
 | [`cannonQ/ergo-mempool-watcher`](https://github.com/cannonQ/ergo-mempool-watcher) | `main` | `README.md` | `docs/eco/mempool-vis.md` |
@@ -477,7 +472,6 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`celaut-project/nodo`](https://github.com/celaut-project/nodo) | `stable` | `README.md`<br>`docs/PRICING.md`<br>`docs/USAGE.md` | `docs/eco/celaut.md`<br>`docs/eco/celaut_v_netnotes.md` |
 | [`celaut-project/paradigm`](https://github.com/celaut-project/paradigm) | `master` | `README.md` | `docs/eco/celaut.md`<br>`docs/eco/celaut_v_netnotes.md` |
 | [`celaut-project/skills`](https://github.com/celaut-project/skills) | `main` | `README.md` | `docs/eco/celaut.md` |
-| [`ChainCashLabs/chaincash`](https://github.com/ChainCashLabs/chaincash) | `master` | `contracts`<br>`contracts/onchain/note.es`<br>`contracts/onchain/reserve.es`<br>`docs/server.md`<br>`docs/whitepaper/chaincash.pdf` | `docs/dev/scs/contracts.md`<br>`docs/dev/scs/tx/fsm-example.md`<br>`docs/roadmap.md`<br>`docs/uses/chaincash.md` |
 | [`codeUTXO/ergo-price-mcp`](https://github.com/codeUTXO/ergo-price-mcp) | `main` | `README.md` | `docs/eco/codeutxo.md` |
 | [`CometCommunity/CometCommunity`](https://github.com/CometCommunity/CometCommunity) | `main` | `RefundableIcoContract` | `docs/dev/scs/tx/ico.md` |
 | [`cornbelt-dev/sigma-subscriptions`](https://github.com/cornbelt-dev/sigma-subscriptions) | `master` | `README.md` | `docs/eco/sigma-subscriptions.md` |
@@ -489,7 +483,7 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`DeCo-Education/DeCo-Homeworks`](https://github.com/DeCo-Education/DeCo-Homeworks) | `main` | `ErgoScript-Developer-Course/batch-0/team-tensile/future contract/`<br>`ErgoScript-Developer-Course/batch-0/team-tensile/future contract/future-contract-v2.ergo`<br>`ErgoScript-Developer-Course/batch-0/team-tensile/future contract/hw3-future-contract-code-v1.md` | `docs/eco/tensile.md`<br>`docs/events/ergohack.md` |
 | [`DeCo-Education/ErgoScript-Developer-Course`](https://github.com/DeCo-Education/ErgoScript-Developer-Course) | `main` | `Class-Documents/Class-1/Materials/Class1.MD` | `docs/dev/scs/sigma/sigma-prop.md`<br>`docs/dev/scs/syntax.md` |
 | [`Degens-World/agente`](https://github.com/Degens-World/agente) | `master` | `README.md` | `docs/eco/degens-world.md` |
-| [`Degens-World/AgentGram`](https://github.com/Degens-World/AgentGram) | `main` | `README.md` | `docs/eco/degens-world.md` |
+| [`Degens-World/AgentGram`](https://github.com/Degens-World/AgentGram) | `master` | `README.md` | `docs/eco/degens-world.md` |
 | [`Degens-World/ai-radio-mcp`](https://github.com/Degens-World/ai-radio-mcp) | `main` | `README.md` | `docs/eco/degens-world.md` |
 | [`Degens-World/ergo-block-timestamps`](https://github.com/Degens-World/ergo-block-timestamps) | `main` | `README.md` | `docs/eco/degens-world.md` |
 | [`Degens-World/Ergo-Context`](https://github.com/Degens-World/Ergo-Context) | `main` | `README.md` | `docs/eco/degens-world.md` |
@@ -570,7 +564,6 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`kushti/ergo-book`](https://github.com/kushti/ergo-book) | `master` | `src/SUMMARY.md` | `docs/ef/ef-future.md` |
 | [`kushti/kya`](https://github.com/kushti/kya) | `master` | `kya.pdf` | `docs/contribute/standards/kya.md`<br>`docs/documents.md` |
 | [`lazypinkpatrick/minotaur-wallet`](https://github.com/lazypinkpatrick/minotaur-wallet) | `main` | `doc/MultiSig.md` | `docs/events/ergohack.md` |
-| [`ldgaetano/hodlcoin-contracts`](https://github.com/ldgaetano/hodlcoin-contracts) | `main` | `README.md` | `docs/eco/hodlcoin.md` |
 | [`LEEKOHCHING/TabbyPOS-Introduction`](https://github.com/LEEKOHCHING/TabbyPOS-Introduction) | `main` | `README.md` | `docs/eco/emerging-projects.md`<br>`docs/eco/tabbypos.md` |
 | [`LiliumErgo/nest-api`](https://github.com/LiliumErgo/nest-api) | `main` | `README.md` | `docs/eco/lilium.md` |
 | [`LiliumErgo/scala-api`](https://github.com/LiliumErgo/scala-api) | `main` | `README.md`<br>`app/contracts/LiliumContracts.scala` | `docs/dev/scs/contracts.md`<br>`docs/eco/lilium.md` |
@@ -595,13 +588,12 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`mhssamadani/ErgoWell`](https://github.com/mhssamadani/ErgoWell) | `master` | `README.md` | `docs/eco/ergowell.md` |
 | [`mhssamadani/gravity-core`](https://github.com/mhssamadani/gravity-core) | `dev` | `contracts/ergo/gravity.scala`<br>`contracts/ergo/nebula.scala` | `docs/dev/scs/contracts.md` |
 | [`minotaur-ergo/minotaur-wallet`](https://github.com/minotaur-ergo/minotaur-wallet) | `dev` | `README.md`<br>`apps`<br>`packages` | `docs/dev/wallet/minotaur.md` |
-| [`moon-miner/ergo-paper-wallet`](https://github.com/moon-miner/ergo-paper-wallet) | `main` | `README.md` | `docs/dev/wallet/paper-wallet.md` |
 | [`Moria-Finance/moria-backend`](https://github.com/Moria-Finance/moria-backend) | `main` | `README.md` | `docs/eco/moria-finance.md` |
 | [`Moria-Finance/multi-sig-test`](https://github.com/Moria-Finance/multi-sig-test) | `main` | `README.md` | `docs/eco/moria-finance.md` |
 | [`MrStahlfelge/ergopay-server-example`](https://github.com/MrStahlfelge/ergopay-server-example) | `master` | `src/main/java/org/ergoplatform/ergopay/ErgoPaySampleController.java`<br>`src/main/java/org/ergoplatform/ergopay/UserSessionService.java` | `docs/dev/stack/appkit/gradle.md`<br>`docs/dev/wallet/payments/ergopay/ep-tutorial.md` |
 | [`MrStahlfelge/mosaik`](https://github.com/MrStahlfelge/mosaik) | `develop` | `README.md`<br>`backend-demo`<br>`backend-demo-kotlin` | `docs/dev/stack/mosaik.md`<br>`docs/dev/stack/mosaik/examples.md` |
 | [`MrStahlfelge/mosaik-ageusddemo`](https://github.com/MrStahlfelge/mosaik-ageusddemo) | `master` | `src/main/kotlin/org/ergoplatform/mosaik/example/ageusd/AgeUsdController.kt`<br>`src/main/kotlin/org/ergoplatform/mosaik/example/ageusd/AgeUsdService.kt` | `docs/uses/sigmausd/sigusd-dev.md` |
-| [`mwaddip/ergo-node-rust`](https://github.com/mwaddip/ergo-node-rust) | `master` | `README.md` | `docs/node/rust-node.md`<br>`docs/roadmap.md` |
+| [`mwaddip/ergo-node-rust`](https://github.com/mwaddip/ergo-node-rust) | `main` | `README.md` | `docs/node/rust-node.md`<br>`docs/roadmap.md` |
 | [`mwaddip/ergo-proxy`](https://github.com/mwaddip/ergo-proxy) | `master` | `README.md`<br>`docs/protocol/ergo-p2p-wire-format.md` | `docs/dev/p2p/network.md`<br>`docs/dev/p2p/p2p-handshake.md`<br>`docs/eco/emerging-projects.md`<br>`docs/node/ergo-proxy.md` |
 | [`mwaddip/ergo-relay`](https://github.com/mwaddip/ergo-relay) | `master` | `README.md` | `docs/eco/emerging-projects.md`<br>`docs/node/ergo-relay.md` |
 | [`mwaddip/ergots`](https://github.com/mwaddip/ergots) | `master` | `README.md`<br>`packages/avltree/package.json`<br>`packages/ergoscript`<br>`packages/nipopow/package.json`<br>`packages/scorex/package.json`<br>`packages/transaction/package.json` | `docs/dev/lib/ergots.md`<br>`docs/roadmap.md` |
@@ -625,11 +617,11 @@ Source Watch checks watched repositories for commits touching declared paths. Gi
 | [`oliverw/miningcore`](https://github.com/oliverw/miningcore) | `master` | `README.md` | `docs/mining/pool-ops.md`<br>`docs/mining/setup/miningcore.md` |
 | [`paideiadao/paideia-contracts`](https://github.com/paideiadao/paideia-contracts) | `main` | `paideia_contracts/contracts/plasma_staking/ErgoScript/latest/plasmaStaking.es` | `docs/dev/scs/ergoscript-tooling.md` |
 | [`paideiadao/paideia-sdk`](https://github.com/paideiadao/paideia-sdk) | `dev` | `README.md`<br>`docs`<br>`src/main/resources/ergoscript` | `docs/eco/paideia.md` |
-| [`pandavio/PandaV`](https://github.com/pandavio/PandaV) | `main` | `README.md` | `docs/eco/pandav.md` |
-| [`pandavio/pdvserver`](https://github.com/pandavio/pdvserver) | `main` | `README.md` | `docs/eco/pandav.md` |
+| [`pandavio/PDV-Access-Control-System`](https://github.com/pandavio/PDV-Access-Control-System) | `main` | `README.md` | `docs/eco/pandav.md` |
 | [`pattern-tech/pattern-app`](https://github.com/pattern-tech/pattern-app) | `dev` | `README.md` | `docs/eco/pattern.md` |
 | [`pattern-tech/pattern-core`](https://github.com/pattern-tech/pattern-core) | `develop` | `README.md` | `docs/eco/pattern.md` |
 | [`paulmillr/noble-ciphers`](https://github.com/paulmillr/noble-ciphers) | `main` | `README.md` | `docs/dev/stack/fleet.md` |
+| [`PhoenixErgo/phoenix-hodlcoin-contracts`](https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts) | `main` | `README.md` | `docs/eco/hodlcoin.md` |
 | [`pulsarz/hodlcoin-frontend`](https://github.com/pulsarz/hodlcoin-frontend) | `master` | `README.md` | `docs/eco/hodlcoin.md` |
 | [`reputation-systems/forum-application`](https://github.com/reputation-systems/forum-application) | `master` | `README.md` | `docs/eco/reputation-system.md` |
 | [`reputation-systems/reputation-system`](https://github.com/reputation-systems/reputation-system) | `master` | `LIBRARY.md`<br>`README.md`<br>`src/lib` | `docs/eco/reputation-system.md` |

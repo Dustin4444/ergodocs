@@ -6,7 +6,7 @@ tags:
   - Setup
   - Guide
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -16,8 +16,8 @@ source_repos:
       - src/main/scala/org/ergoplatform/nodeView/
 source_of_truth:
   - https://github.com/ergoplatform/ergo
-  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.5
-  - https://github.com/ergoplatform/ergo/releases/tag/v6.1.5
+  - https://github.com/ergoplatform/ergo/releases/tag/v6.0.6
+  - https://github.com/ergoplatform/ergo/releases/tag/v6.1.6
   - https://github.com/ergoplatform/ergo/releases/tag/v6.5.0-RC3
 ---
 
@@ -47,9 +47,9 @@ sdk install java 11.0.13.8.1-amzn
 
 The minimum hardware requirements are approximately ~20GB of storage for the blockchain and ~8GB of RAM for handling the initial sync. Due to potentially intensive disk I/O during sync, we recommend having at least 4-6GB of RAM available for the node process and using a fast SSD. Running with the `-Xmx4G` flag on the JVM is advised.
 
-Current reference-node configuration advertises the 6.0.x app version. Mainnet protocol settings use protocol version 4 for the 6.0 interpreter feature set.
+The default `application.conf` is a testnet configuration and advertises `appVersion = 6.0.6`. Both mainnet and testnet chain configurations use protocol version 4 for the 6.0 interpreter feature set.
 
-The latest checked stable reference-client release is [v6.0.5](https://github.com/ergoplatform/ergo/releases/tag/v6.0.5), published on 2026-09-01. It validates locally requested and inbound NiPoPoW parameters and proof-header work, fixes fee-estimation bounds and token issuance combined with burns, bounds per-peer outbound buffering, closes all live connections for blacklisted IPs, and resumes deferred ExtraIndexer catch-up without reindexing. [v6.1.5](https://github.com/ergoplatform/ergo/releases/tag/v6.1.5) contains the same changes with RocksDB and remains marked as a prerelease. For Matrix DevNet testing, [v6.5.0-RC3](https://github.com/ergoplatform/ergo/releases/tag/v6.5.0-RC3) remains the special prerelease build.
+The latest checked stable reference-client release is [v6.0.6](https://github.com/ergoplatform/ergo/releases/tag/v6.0.6). It improves NiPoPoW and UTXO-snapshot bootstrap recovery, retries cached block sections when their headers arrive, retries mining candidate assembly after proof-generation failure, and adds wallet change-address ownership checks. [v6.1.6](https://github.com/ergoplatform/ergo/releases/tag/v6.1.6) carries the same release changes on RocksDB and remains a prerelease. For Matrix DevNet testing, [v6.5.0-RC3](https://github.com/ergoplatform/ergo/releases/tag/v6.5.0-RC3) remains the special prerelease build.
 
 If node-view validation rejects a locally mined block, v6.0.4 clears the solved-block and candidate caches so the next mining request can build fresh work. When the validation error identifies a failing transaction, the node also removes that transaction from the mempool. Operators should still inspect the warning and underlying transaction failure; the recovery prevents the miner from remaining stuck on the rejected candidate.
 ////

@@ -5,19 +5,19 @@ tags:
   - Gaming
   - dApp
 owner: docs
-last_reviewed: '2026-05-29'
+last_reviewed: '2026-09-22'
 source_repos:
   - repo: pulsarz/hodlcoin-frontend
     branch: master
     paths:
       - README.md
-  - repo: ldgaetano/hodlcoin-contracts
+  - repo: PhoenixErgo/phoenix-hodlcoin-contracts
     branch: main
     paths:
       - README.md
 source_of_truth:
   - https://github.com/pulsarz/hodlcoin-frontend
-  - https://github.com/ldgaetano/hodlcoin-contracts
+  - https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts
   - https://app.hodlcoin.co.in/
   - https://phoenixfi.app/
 ---

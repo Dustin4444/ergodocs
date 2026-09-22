@@ -5,18 +5,14 @@ tags:
   - Access Control
   - dApp
 owner: docs
-last_reviewed: '2026-05-29'
+last_reviewed: '2026-09-22'
 source_repos:
-  - repo: pandavio/PandaV
-    branch: main
-    paths:
-      - README.md
-  - repo: pandavio/pdvserver
+  - repo: pandavio/PDV-Access-Control-System
     branch: main
     paths:
       - README.md
 source_of_truth:
-  - https://github.com/pandavio
+  - https://github.com/pandavio/PDV-Access-Control-System
   - https://www.pandav.io
 ia_status: directory
 ---

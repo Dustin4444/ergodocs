@@ -272,7 +272,7 @@ Current Sigma SDK releases are published from the `ergoplatform/sigmastate-inter
 
 ## Test vectors
 
-- [Ergo transaction serialization](https://git.io/fjqwX)
+- [Ergo transaction serialization](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/data/shared/src/main/scala/org/ergoplatform/ErgoLikeTransaction.scala)
 - [Signature scheme](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/interpreter/shared/src/test/scala/sigmastate/crypto/SigningSpecification.scala)
 
 ## Analysis

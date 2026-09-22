@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: ergoplatform/ergo
     branch: master
@@ -56,6 +56,7 @@ The BlockP2P protocol operates through a series of messages exchanged between no
 
 3. **Synchronization Requests**: Nodes that are out of sync with the network can send synchronization requests to their peers. These requests ask for the latest blocks or transactions that the node is missing. In response, the peer node sends the required data to help the requesting node catch up with the network.
    - Synchronization is facilitated by [`SyncInfoMessageSpec`](https://github.com/ergoplatform/ergo/blob/master/ergo-core/src/main/scala/org/ergoplatform/network/message/SyncInfoMessageSpec.scala), which handles synchronization messages between peers.
+   - In v6.0.6, block sections cached before their matching header are retried after that header is processed, so received data does not remain stalled in the cache.
 
 ### Security Considerations
 

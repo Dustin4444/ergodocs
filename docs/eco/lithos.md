@@ -7,7 +7,7 @@ tags:
   - dApp
   - dApp-InDev
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: Lithos-Protocol/Lithos-Client
     branch: master
@@ -17,6 +17,8 @@ source_repos:
       - TestnetNode.md
 source_of_truth:
   - https://github.com/Lithos-Protocol/Lithos-Client
+  - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v1.0.0-prerelease
+  - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.4.0-test
   - https://github.com/Lithos-Protocol/LitePaper
   - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test
   - https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.1.0-test
@@ -37,9 +39,9 @@ Lithos is a project that aims to create a decentralized mining pool infrastructu
 Traditionally, attempts to create decentralized mining pools have faced challenges such as security concerns, lack of miner usage, and failures to achieve both efficiency and full decentralization. However, Lithos proposes a new solution to these challenges by using a new protocol that verifies miners' work and pays them out accordingly while utilizing Stratum as the "networking layer" for the protocol. The protocol is blockchain-agnostic, meaning that Lithos may support mining pools for any Proof of Work (PoW) blockchain.
 Recently, Lithos has completed collateral contracts, and the ability of miners to directly insert necessary transactions into blocks has been successfully demonstrated during the ERGOHACK VI event. Overall, the goal of Lithos is to usher in a new era for PoW mining, where mining pools are fully decentralized, efficient, and trustless.
 
-## Current Testnet Client
+## Current Client Status
 
-The [Lithos Client](https://github.com/Lithos-Protocol/Lithos-Client) is the reference client for the Lithos Protocol. Recent testnet releases focus on synchronization, mempool tracking, transaction scheduling, rollup evaluation, and Stratum behavior.
+The [Lithos Client](https://github.com/Lithos-Protocol/Lithos-Client) is the reference client for the Lithos Protocol. The upstream project currently publishes both a mainnet pre-release and an active testnet line. The mainnet [`v1.0.0-prerelease`](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v1.0.0-prerelease) enables the initial LithosDex pool and vault plus order batching; emissions, rollup, mining, and other non-batching services remain disabled. It requires a fully synced, indexed Ergo node, Java 11, roughly 6–8 GB RAM, and about 30 GB for the node.
 
 The current README describes Lithos as requiring a fully synced Ergo node and Java 11. Miners connect through the Lithos Stratum server, with Rigel Miner recommended. Lithos evaluates Non-Interactive Share Proofs rather than ordinary pool shares, so the miner address and worker name used by the Stratum client are not payout identifiers in the same way they are for a conventional pool.
 
@@ -51,7 +53,9 @@ The first public testnet releases arrived in November 2025. [`v1.0-test`](https:
 
 For testnet use, the client needs node API access and a testnet wallet keystore so it can sign and generate transactions. The upstream testnet guide warns users to create a new testnet-only secret key rather than reusing a mainnet wallet.
 
-[v5.2.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test) is the current testnet client. It rolls NISP commitments together, reducing reported peak transaction size from about 70 KB to 29 KB, changes bonds and slashing to `0.002 ERG`, and updates contracts, APIs, configuration, transaction construction, and fraud-proof handling. It incorporates the preceding `v5.1.0-test` and `v5.0.x-test` work. The client still requires an indexed Ergo node running v6.0.4 or later. Existing testnet operators should rebuild their overrides against the current README and `application.conf` rather than reusing an older configuration unchanged.
+[v5.4.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.4.0-test) is the current testnet client. It adds LithosDex order contracts and a LithosDex batcher, supports swap/deposit/redeem orders in the API and web panel, retains transaction ancestors during candidate building, and adds bounded mempool/order handling intended to keep batching available during spam. It also returns the best candidate work before timeout and retries a rare indexer-lag desynchronization. The client still requires an indexed Ergo node running v6.0.4 or later.
+
+Earlier [v5.2.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v5.2.0-test) rolled NISP commitments together, reducing reported peak transaction size from about 70 KB to 29 KB, changed bonds and slashing to `0.002 ERG`, and updated contracts, APIs, configuration, transaction construction, and fraud-proof handling. Existing testnet operators should rebuild their overrides against the current README and `application.conf` rather than reusing an older configuration unchanged.
 
 [v4.2.0-test](https://github.com/Lithos-Protocol/Lithos-Client/releases/tag/v4.2.0-test) changes mempool synchronization so subscribers are notified when mempool updates occur rather than receiving full mempool contents. It also moves major transaction code into dedicated transaction actors, represents future transactions as transaction stubs, and fixes rollup synchronization around chained payout-contract rollups.
 

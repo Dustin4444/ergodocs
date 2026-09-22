@@ -48,6 +48,8 @@ The public [Ergo-Substrate Sidechain Bridge](https://github.com/a-shannon/ergo-s
 
 This repository is a local research candidate, not a deployed or trustless bridge. Its authenticated path still relies on federated sidechain-finality authority, and its release gate remains blocked on an activated Ergo-verifiable finality profile, exact target-node acceptance, recovery evidence, and independent security review. Do not treat public source or passing local audit checks as mainnet readiness.
 
+The open [WP-06-FED implementation PR](https://github.com/a-shannon/ergo-sidechain-bridge/pull/7) reports a fresh local federated lifecycle: Ergo deposit, sidechain mint, native burn, runtime event-root commitment, checkpoint attestation, tracker inclusion, and canonical Ergo payout. This is local research evidence only; the PR does not establish source finality, trustless burn verification, production readiness, public-network operation, independent custody, or safety for real funds.
+
 ### Aegis-USE research prototype
 
 [Aegis-USE](https://github.com/arkadianet/Aegis-USE) is a public research prototype for private USE payments on an Ergo-merge-mined sidechain. Its current design uses encrypted private notes, nullifiers, 64-bit amounts, and a hash-native Plonky3/BabyBear/Poseidon2 STARK stack. The repository reports that the private engine, wallet, node, and a networked merge-mined testnet are implemented.

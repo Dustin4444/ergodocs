@@ -62,9 +62,9 @@ For an alternative and potentially more detailed documentation source generated 
 ### Key Components
 
 - **ErgoScript Compiler**:
-  - The [ErgoScript Compiler](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/sigmastate/src/main/scala/sigmastate/lang/SigmaCompiler.scala) translates high-level ErgoScript code into low-level ErgoTree bytecode. This bytecode can then be stored in UTXO coins to define spending conditions, akin to how scripts function in Bitcoin but with enhanced flexibility and capabilities.
+  - The [ErgoScript Compiler](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/sc/shared/src/main/scala/sigma/compiler/SigmaCompiler.scala) translates high-level ErgoScript code into low-level ErgoTree bytecode. This bytecode can then be stored in UTXO coins to define spending conditions, akin to how scripts function in Bitcoin but with enhanced flexibility and capabilities.
 - **ErgoTree Interpreter**:
-  - The [ErgoTree Interpreter](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/sigmastate/src/main/scala/sigmastate/interpreter/Interpreter.scala) executes the ErgoTree bytecode within a specific blockchain context. It evaluates the scripts against the current state of the blockchain and the spending transaction, ultimately producing a boolean outcome that determines the validity of the transaction.
+  - The [ErgoTree Interpreter](https://github.com/ergoplatform/sigmastate-interpreter/blob/develop/interpreter/shared/src/main/scala/sigmastate/interpreter/Interpreter.scala) executes the ErgoTree bytecode within a specific blockchain context. It evaluates the scripts against the current state of the blockchain and the spending transaction, ultimately producing a boolean outcome that determines the validity of the transaction.
 
 ### Sigma Language Background
 

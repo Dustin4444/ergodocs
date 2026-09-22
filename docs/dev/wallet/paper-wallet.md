@@ -1,13 +1,13 @@
 ---
 owner: docs
-last_reviewed: 2026-02-07
+last_reviewed: 2026-09-22
 source_repos:
-  - repo: moon-miner/ergo-paper-wallet
-    branch: main
+  - repo: arobsn/ergo-paper-wallet
+    branch: master
     paths:
       - README.md
 source_of_truth:
-  - https://github.com/moon-miner/ergo-paper-wallet
+  - https://github.com/arobsn/ergo-paper-wallet
   - https://ergopaperwallet.vercel.app/
 ---
 
@@ -24,4 +24,4 @@ Discover how to utilize the Ergo Paper Wallet effectively by viewing the detaile
 
 - [Paper Wallet Generator](https://ergopaperwallet.org/)
 - [GitHub Repository](https://github.com/arobsn/ergo-paper-wallet)
-- [BIP39 passphrase fork](https://github.com/moon-miner/ergo-paper-wallet)
+- BIP39 passphrase fork (no longer publicly available)

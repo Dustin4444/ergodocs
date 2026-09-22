@@ -1,6 +1,6 @@
 ---
 owner: docs
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-22
 source_repos:
   - repo: Scottcjn/Rustchain
     branch: main
@@ -19,6 +19,8 @@ source_of_truth:
   - https://github.com/Scottcjn/Rustchain/commit/bc2b308cc861349a8859a30240f8ae8d38ff49b6
   - https://github.com/Scottcjn/Rustchain/commit/4f1a50296d52bb7809ee5b20975357ff438cda64
   - https://github.com/Scottcjn/rustchain-bounties
+  - https://rustchain.org/explorer/
+  - https://rustchain.org/api/miners
   - https://github.com/Scottcjn/sophia-rustchain-bridge
 ---
 
@@ -71,7 +73,8 @@ RustChain utilizes a blend of modern and AI-driven technologies:
 
 - `Apr 3`: a 4-node PoA blockchain went live, with `500+` wallet holders, `40,000+` RTC distributed, and `200+` AI video agents.
 - The project also added a live explorer and a growing agent-economy layer around the PoA network.
-- `May 2026`: the RustChain README describes 5 active nodes, a public explorer at `rustchain.org/explorer`, a miner `v3.1.2` release with a fingerprint fix, and tokenomics aligned to a `2^23` supply cap plus holder-count rate scaling.
+- `May 2026`: the RustChain README described 5 nodes in its then-current network table, a public explorer at `rustchain.org/explorer`, a miner `v3.1.2` release with a fingerprint fix, and tokenomics aligned to a `2^23` supply cap plus holder-count rate scaling.
+- The current README distinguishes 2 always-on attestation nodes in Louisiana plus a POWER8 lab node, while two previously listed volunteer nodes are offline or retired. Active miners are a separate population; consult the [miner API](https://rustchain.org/api/miners) for the current count.
 - `Jun 2026`: the README expanded RustChain's DePIN and agent-economy positioning, added a language index, corrected RTC supply/tokenomics details, and linked Proof of Provenance / BCOS material. Treat those figures as project-reported status from the README and verify against RustChain sources before relying on them for integrations.
 - Later June updates report `64,000+` RTC paid to `1,000+` recipients, `44` BCOS certificates, a 5-node network across three continents/local lab, wRTC live but thinly liquid on Solana, and a published Proof of Provenance spec. These remain project-reported figures and should be checked against live RustChain endpoints for time-sensitive use.
 - `Jul 3`: project docs corrected the emission schedule to match RIP-0004 and the running node: a fixed `1.5 RTC` per 144-block epoch, with no halving, until the `8,388,608 RTC` cap.

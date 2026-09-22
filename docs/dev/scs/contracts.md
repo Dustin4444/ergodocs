@@ -9,7 +9,7 @@ source_repos:
     branch: master
     paths:
       - contract
-  - repo: ChainCashLabs/chaincash
+  - repo: BetterMoneyLabs/chaincash
     branch: master
     paths:
       - contracts
@@ -126,7 +126,7 @@ source_repos:
       - contracts
 source_of_truth:
   - https://github.com/BetterMoneyLabs/basis-tracker/tree/master/contract
-  - https://github.com/ChainCashLabs/chaincash/tree/master/contracts
+  - https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts
   - https://github.com/Ergo-Lend/edge/tree/main/src/main/scala/edge/contracts/Contract.scala
   - https://github.com/ErgoRaffle/raffle-backend/tree/master/app/raffle/RaffleContract.scala
   - https://github.com/GetBlok-io/Subpooling/tree/mainnet_plasma/conf/scripts
@@ -213,7 +213,7 @@ The [ergo-contracts](https://github.com/ergoplatform/ergo-contracts) repository 
 - [Paideia](https://github.com/paideiadao/paideia-contracts)
 - [ErgoMixer](https://github.com/ergoMixer/ergoMixBack/tree/master/mixer/app/mixer)
 - [Rosen Bridge](https://github.com/rosen-bridge/contract)
-- [Thz.FM](https://github.com/TremendouslyHighFrequency/SmartContracts)
+- Thz.FM (public repository unavailable)
 - [EXLE](https://github.com/Ergo-Lend/edge/blob/main/src/main/scala/edge/contracts/Contract.scala)
 - [Spectrum Finance](https://github.com/spectrum-finance/ergo-dex/tree/master/contracts)
 - [Pheonix Finance (Hodlcoin V2)](https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts)
@@ -244,8 +244,8 @@ The [ergo-contracts](https://github.com/ergoplatform/ergo-contracts) repository 
 - [Bitdomains](https://github.com/bitdomains/contracts)
 - [ErgoNames](https://github.com/ergonames/ergonames/blob/master/src/main/scala/)
 - [Analog Ergo](https://github.com/dzyphr/ScalaSigmaParticle)
-- [Chaincash](https://github.com/ChainCashLabs/chaincash/tree/master/contracts)
-- [AnetaBTC](https://github.com/anetabtc/aneta_contracts)
+- [Chaincash](https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts)
+- AnetaBTC (public repository unavailable)
 - [Lithos](https://github.com/Lithos-Protocol/Lithos/tree/master/src/main/scala)
 - [SigmaJoin](https://github.com/ergoplatform/ergo-jde/tree/main/kiosk/src/test/scala/kiosk/mixer)
 - [Trade-In Contracts (BlitzTCG)](https://github.com/lucagdangelo/trade-in/tree/main/src/main/scala/contracts)

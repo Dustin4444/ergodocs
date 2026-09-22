@@ -97,7 +97,6 @@
 - [EIP-23 Oracle Pools 2.0 Spec](https://github.com/ergoplatform/eips/pull/41)
 - [Ergo Oracles V1 Overview](https://github.com/Emurgo/Emurgo-Research/blob/master/oracles/Oracle-Pools.md)
 - [Ergo Easy Oracle](https://github.com/reqlez/ergo-easy-oracle) – Docker deployment helper. [`Docker`]
-- [Oracle Core ETH Connector Fork](https://github.com/Luivatra/oracle-core/tree/eth-connector) [`Rust`]
 - [Sininen Taivas Oracle CLI](https://github.com/sininen-taivas/ergo-oracle) [`Go`?]
 - [Oracle Pool V1 Kiosk Example](https://github.com/scalahub/Kiosk/tree/master/src/test/scala/kiosk/oraclepool/v4a) [`Scala`]
 - [Oracle Pool Stats Backend (Delphi)](https://github.com/thedelphiproject/ergo-oracle-stats-backend)
@@ -326,7 +325,7 @@
 - **[AppKit Examples](https://github.com/aslesarenko/ergo-appkit-examples)** – multi-language AppKit usage examples. [`Java`, `Scala`, `JS`, `Python`, `Ruby`, `C`]
 - **[Fleet Examples](https://github.com/fleet-sdk/fleet-by-example)** – repository showcasing Fleet SDK usage. [`TS`]
 - [Ergo Contracts](https://github.com/ergoplatform/ergo-contracts) – early contract examples with verification. [`Scala`]
-- [SigmaState Interpreter Examples](https://github.com/ScorexFoundation/sigmastate-interpreter/tree/develop/sc/src/test/scala/sigmastate/utxo/examples) – examples within interpreter tests. [`Scala`]
+- [SigmaState Interpreter Examples](https://github.com/ergoplatform/sigmastate-interpreter/tree/develop/sc/shared/src/test/scala/sigmastate/utxo/examples) – examples within interpreter tests. [`Scala`]
 - [Kiosk Offchain Examples](https://github.com/scalahub/Kiosk/tree/master/src/test/scala/kiosk/offchain) – examples using Kiosk off-chain assembler. [`JSON`]
 - [Headless dApp Framework Tutorials](https://github.com/ergoplatform/ergo-headless-dapp-framework/tree/main/tutorials) – Math Bounty dApp tutorial. [`Rust`]
 - [Mosaik Examples](https://github.com/MrStahlfelge?tab=repositories&q=mosaik&type=source) – various Mosaik UI framework examples. [`Kotlin`, `Java`]
@@ -337,7 +336,7 @@
 - [Profit Sharing dApp](https://github.com/mhssamadani/ErgoProfitSharingDapp) – example profit sharing contract. [`Scala`?]
 - [Trade-In Protocol](https://github.com/lucagdangelo/trade-in) – example token burning/trading protocol. [`Scala`, `JS/TS`]
 - [SigmaFi UI Plugins](https://github.com/capt-nemo429/sigmafi-ui/blob/main/src/offchain/plugins.ts) – example off-chain logic for SigmaFi. [`TS`]
-- [Ergo Payroll (ErgoHack)](https://github.com/andrehafner/ergo-payroll) – payroll project from ErgoHack.
+- Ergo Payroll (ErgoHack) (public repository unavailable) – payroll project from ErgoHack.
 - [LETS Backend (ErgoHack)](https://github.com/arkan294/LETS-backend) – LETS backend from ErgoHack.
 - [Inergitance (ErgoHack)](https://github.com/inergitance) – inheritance dApp PoC from ErgoHack.
 - [dAppStep Play (ErgoPay Example)](https://github.com/nirvanush/dappstep-play) – example backend using ErgoPay. [`TS`]
@@ -434,19 +433,19 @@
 - [TabbyPOS](https://tabbypos.com/) – Point-of-Sale system *(Live)*. [GitHub](https://github.com/Kolmen-Tech/ErgoPOS) | [Telegram](https://t.me/tabbypos) *(Active)*
 - [Benefaction Platform](https://github.com/StabilityNexus/BenefactionPlatform-Ergo) – charity/donation platform prototype. *(Development)*
 - [Moria Finance](https://github.com/Moria-Finance) – ERG derivatives project. *(Development)*
-- [ChainCash](https://github.com/ChainCashLabs) – decentralized monetary system. [Whitepaper](https://github.com/kushti/chaincash/blob/master/paper/chaincash.pdf) | [Server](https://github.com/ChainCashLabs/chaincash-rs) | [Contracts](https://github.com/ChainCashLabs/chaincash/tree/master/contracts) *(Active)*
+- [ChainCash](https://github.com/BetterMoneyLabs) – decentralized monetary system. [Whitepaper](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf) | [Server](https://github.com/BetterMoneyLabs/chaincash-rs) | [Contracts](https://github.com/BetterMoneyLabs/chaincash/tree/master/contracts) *(Active)*
 - [Sigma Subscriptions](https://github.com/cornbelt-dev/sigma-subscriptions) – subscription service framework. [Manager UI](https://github.com/cornbelt-dev/sigma-subscriptions-manager) *(Paused?)*
 - [Ergo Marketplace Design](https://github.com/decentbob/ergo-marketplace) – early-stage decentralized marketplace design for permissionless trade infrastructure. *(Design/Prototype)*
 - [ErgoWell](https://github.com/mhssamadani/ErgoWell) – crowdfunding/investment platform concept. [`JS/TS`] *(Inactive/Concept)*
 - [Lithos Protocol](https://lithosprotocol.org/) – DeFi protocol for ERG liquidity. [GitHub Org](https://github.com/Lithos-Protocol) | [LitePaper](https://github.com/Lithos-Protocol/LitePaper) *(Active)*
 - [Off The Grid](https://github.com/Telefragged/off-the-grid) – decentralized grid trading bot. [`Rust`]
 - [Sigmarand](https://github.com/noob77777/ergo-randgen) – commit-reveal RNG scheme. [`Scala`]
-- [Community Liquidity Bootstrap](https://github.com/AcoSmrkas/community-liquidity-bootstrap) – platform from ErgoHack VII. [`JS/TS`?]
+- Community Liquidity Bootstrap (public repository unavailable) – platform from ErgoHack VII. [`JS/TS`?]
 - [Perma Ergo](https://github.com/firashebili/permergo-microfinancing-dao) – RealFi micro-finance project (ErgoHack VI).
 - [DumDumDum](https://github.com/kii-dot/dumdumdum) – on-chain Twitter alternative (ErgoHack V). [`Scala`?]
 - [Ergo Index](https://github.com/ergo-index) – decentralized indexing service (ErgoHack VII). [Backend](https://github.com/ergo-index/ergo-index-backend) | [Python Backend](https://github.com/ergo-index/ergo-index-backend-python) | [Contracts](https://github.com/ergo-index/ergo-index-contracts) | [Frontend](https://github.com/ergo-index/ergo-index-frontend) *(Development)*
 - [SigmaStamp](https://sigmastamp.com/) – document timestamping service (ErgoHack VII). [GitHub Org](https://github.com/sigmastamp) | [Docs](https://github.com/sigmastamp/docs) | [Frontend](https://github.com/sigmastamp/sigmastamp-frontend) *(Development)*
-- [ErgoHack Dashboard Project](https://github.com/Ergohack-Dashboard-Project) – Dashboard concept from Ergohack. *(Inactive/Concept)*
+- ErgoHack Dashboard Project (public repository unavailable) – Dashboard concept from Ergohack. *(Inactive/Concept)*
 
 ---
 
@@ -508,7 +507,7 @@
 - [Miner Rewarder](https://github.com/mgpai22/miner-rewarder) – bot to reward miners. [`JS/TS`]
 - [Miner Reward Consolidator](https://github.com/mgpai22/ergo-miner-reward-consolidator) – tool to consolidate rewards. [`JS/TS`?]
 - [Miner Rights Protocol](https://github.com/The-Last-Byte-Bar/Miner-Rights-Protocol) – concept for rights-based token distribution.
-  - [Token Flight](https://github.com/The-Last-Byte-Bar/Token-Flight) – related implementation.
+  - Token Flight (public repository unavailable) – related implementation.
   - [Token Flight Bot](https://github.com/The-Last-Byte-Bar/Token-Flight-Bot) – bot for Token Flight.
 - [Sigmanaut Mining Pool UI](https://github.com/marctheshark3/sigmanaut-mining-pool-ui) – community UI for Sigmanauts pool. [`JS/TS`]
 - [Ergo CYTI Miner](https://github.com/Telefragged/ergo-cyti-miner) – miner for CYTI NFT minting contract. [`Rust`]
@@ -573,6 +572,7 @@
 - **[Ergo Explorer (Official)](https://explorer.ergoplatform.com/)** – canonical chain explorer. [Frontend](https://github.com/ergoplatform/explorer-frontend) | [Backend](https://github.com/ergoplatform/explorer-backend)
 - [Sigmaspace](https://sigmaspace.io/) – alternative explorer with tools & charts. [GitHub](https://github.com/pulsarz/sigmaexplorer)
 - [eBiome](https://ebiome.cc/) – ecosystem analytics, explorer, and forensics dashboard.
+- [ErgoScan](https://ergoscan.me/) – beta explorer for blocks, transactions, tokens, mempool, and DeFi activity. [Public API](https://ergoscan.me/docs)
 - [erg-explorer](https://github.com/AcoSmrkas/ErgExplorer) – community-built explorer. [`JS/TS`] [Telegram](https://t.me/ErgExplorer)
 - [uexplorer](https://github.com/pragmaxim/ergo-uexplorer) – minimalist UTXO set explorer. [`Scala`]
 - [Indexed Node Explorer](https://github.com/Luivatra/indexed-node-explorer) – simple UI for indexed node. [`JS/TS`]
@@ -682,8 +682,8 @@
 - [ErgoScript Language Specification](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/docs/LangSpec.md) – syntax & semantics spec.
 - [Sigma Language DSL Documentation](https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/docs/sigma-dsl.md) – Sigma protocol language features.
 - [Know Your Assumptions (KYA)](https://github.com/kushti/kya) – protocol assumption analysis framework. [PDF](https://github.com/kushti/kya/blob/master/kya.pdf)
-- [ChainCash Whitepaper](https://github.com/kushti/chaincash/blob/master/paper/chaincash.pdf) – ChainCash protocol paper.
-  - [ChainCash Server Docs](https://github.com/ChainCashLabs/chaincash/blob/master/docs/server.md)
+- [ChainCash Whitepaper](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/whitepaper/chaincash.pdf) – ChainCash protocol paper.
+  - [ChainCash Server Docs](https://github.com/BetterMoneyLabs/chaincash/blob/master/docs/server.md)
 - [High Level Design Patterns In Extended UTXO Systems](https://github.com/Emurgo/Emurgo-Research/blob/master/smart-contracts/High%20Level%20Design%20Patterns%20In%20Extended%20UTXO%20Systems.md) – eUTXO dApp patterns research.
 - [Ergo Scala Style Guide](https://github.com/ergoplatform/ergo-scala-style-guide) – style guide for Scala contributions.
 - [Ergo Social Contract](https://ergoplatform.org/en/blog/2022-04-26-the-ergo-manifesto-revised-edition/) – guiding principles & manifesto.
